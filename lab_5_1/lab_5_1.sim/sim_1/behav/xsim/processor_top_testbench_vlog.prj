@@ -1,0 +1,28 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../lab5_provided_fa24/srcs/control.sv" \
+"../../../../../lab5_provided_fa24/srcs/load_reg.sv" \
+"../../../../../lab5_provided_fa24/srcs/mux_4_1.sv" \
+"../../../../../lab5_provided_fa24/srcs/cpu.sv" \
+
+verilog xil_defaultlib  \
+"../../../../lab_5_1.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
+
+sv xil_defaultlib  \
+"../../../../../lab5_provided_fa24/srcs/cpu_to_io.sv" \
+"../../../../../lab5_provided_fa24/srcs/hex_driver.sv" \
+"../../../../../lab5_provided_fa24/srcs/types.sv" \
+"../../../../../lab5_provided_fa24/srcs/instantiate_ram.sv" \
+"../../../../../lab5_provided_fa24/srcs/memory.sv" \
+"../../../../../lab5_provided_fa24/srcs/slc3.sv" \
+"../../../../../lab5_provided_fa24/srcs/sync.sv" \
+"../../../../../lab5_provided_fa24/srcs/processor_top.sv" \
+"../../../../../lab5_provided_fa24/srcs/test_memory.sv" \
+"../../../../../lab5_provided_fa24/srcs/mux_bus.sv" \
+"../../../../lab_5_1.srcs/sim_1/new/testbench.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
