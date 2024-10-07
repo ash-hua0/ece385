@@ -84,7 +84,7 @@ always begin : CLOCK_GEN
 	#1 clk = ~clk;
 end
 
-//monitored signals
+//monitored bus, registers
 logic [15:0] data_bus_monitor;
 assign data_bus_monitor = slc3.cpu.data_bus;
 logic [15:0] pc_monitor;
@@ -95,16 +95,36 @@ logic [15:0] mar_monitor;
 assign mar_monitor = slc3.cpu.mar;
 logic [15:0] mdr_monitor;
 assign mdr_monitor = slc3.cpu.mdr;
+
+//monitored control signals
 logic [3:0] gate_monitor;
 assign gate_monitor = {slc3.cpu.gate_marmux, slc3.cpu.gate_pc, slc3.cpu.gate_alu, slc3.cpu.gate_mdr};  
+logic ld_pc_monitor;
+assign ld_pc_monitor = slc3.cpu.ld_pc;
+logic ld_mar_monitor;
+assign ld_mar_monitor = slc3.cpu.ld_mar;
+logic ld_mdr_monitor;
+assign ld_mdr_monitor = slc3.cpu.ld_mdr;
+logic ld_ir_monitor;
+assign ld_ir_monitor = slc3.cpu.ld_ir;
 
 // test
 initial begin: TEST_VECTORS
     $display("Monitoring the bus!");
     reset_s <= 1;
-    counter <= 16'h0000;
     #2;
     reset_s <= 0;
+    #2;
+    force slc3.cpu.pc_reg.data_d = 16'h0000;
+    force slc3.cpu.pc_reg.data_q = 16'h0000;
+    //force slc3.cpu.pc_in = 16'h0001;  //Forcing the starting address of PC
+    //force slc3.cpu.ld_pc = 1'b1;
+    #2;
+    release slc3.cpu.pc_reg.data_d;
+    release slc3.cpu.pc_reg.data_q;
+    //force slc3.cpu.ld_pc = 1'b0;
+    //release slc3.cpu.pc_in;
+    //release slc3.cpu.ld_pc;
     run_s   <= 1;
     #2;
     run_s <= 0;
@@ -113,7 +133,7 @@ initial begin: TEST_VECTORS
     //force memory.ena = 1'b1;
     //$display("Address %h - %h", counter, memContents(counter));
     
-    #30 $finish();
+    #16 $finish();
 end
 
 

@@ -118,12 +118,12 @@ load_reg #(.DATA_WIDTH(16)) mdr_reg (
 );
 
 mux_4_1 #(.DATA_WIDTH(16)) pc_mux (
-    .A0(16'h0000), //CONNECT TO DATA BUS 
-    .A1(16'h0000), //CONNECT TO ADDER
-    .A2(pc_next),
+    .A0(pc_next), 
+    .A1(16'h0000), //CONNECT TO DATA BUS 
+    .A2(16'h0000),  //CONNECT TO ADDER
     .A3(16'h0000),
     
-    .S(2'b10),     //CONNECT TO CONTROL UNIT
+    .S(pcmux),     //CONNECT TO CONTROL UNIT
     .C(pc_in)
 );
 

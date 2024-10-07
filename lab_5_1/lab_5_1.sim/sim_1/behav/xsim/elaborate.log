@@ -1,31 +1,16 @@
 Vivado Simulator v2022.2
 Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot processor_top_testbench_behav xil_defaultlib.processor_top_testbench xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot mini_testbench_behav xil_defaultlib.mini_testbench xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3823] variable 'reset_s' might have multiple concurrent drivers [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.srcs/sim_1/new/testbench.sv:103]
 Completed static elaboration
 Starting simulation data flow analysis
 WARNING: [XSIM 43-4100] "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
 WARNING: [XSIM 43-4100] "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling package xil_defaultlib.$unit_cpu_to_io_sv_1420279498
-Compiling package xil_defaultlib.SLC3_TYPES
-Compiling module xil_defaultlib.sync_debounce
-Compiling module xil_defaultlib.sync_flop
-Compiling module xil_defaultlib.control
-Compiling module xil_defaultlib.load_reg(DATA_WIDTH=16)
-Compiling module xil_defaultlib.mux_4_1
-Compiling module xil_defaultlib.mux_bus
-Compiling module xil_defaultlib.cpu
-Compiling module xil_defaultlib.nibble_to_hex
-Compiling module xil_defaultlib.hex_driver_default
-Compiling module xil_defaultlib.cpu_to_io
-Compiling module xil_defaultlib.slc3
-Compiling module xil_defaultlib.test_memory
-Compiling module xil_defaultlib.memory
-Compiling module xil_defaultlib.processor_top_testbench
+Compiling module xil_defaultlib.sext(DATA_WIDTH=6)
+Compiling module xil_defaultlib.mini_testbench
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot processor_top_testbench_behav
+Built simulation snapshot mini_testbench_behav
