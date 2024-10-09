@@ -16,7 +16,7 @@ begin: case_process
 case (S)
  1'b0 : C = A0;
  1'b1 : C = A1;
- default : C = A0;
+ default : C = {(DATA_WIDTH){1'bX}};
  endcase
 end
     

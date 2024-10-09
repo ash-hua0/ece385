@@ -10,23 +10,17 @@ initial begin: CLOCK_INTIT
 always begin : CLOCK_GEN
 	#1 clk = ~clk;
 end
-    
-    
-logic [15:0] A;
-logic [15:0] C;
-sext #(.DATA_WIDTH(6)) sext(.*);    
 
-logic reset;
+logic A;
+logic B;
+logic C;
 initial begin: TEST_VECTORS
-    reset <= 1'b1;
+    A <= 1'b1;
+    B <= 1'b0;
     #2;
-    reset <= 1'b0;
-    A <= 16'h0020;
+    C <= A^B;
     #2;
-    A <= 16'h0001;
-    #2;
-    A <= 16'hFFE0;
-    #2;
+    C <= A&B;
     
     #4 $finish();
 end

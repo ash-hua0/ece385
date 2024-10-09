@@ -1,17 +1,17 @@
-// INPUTS: 16-bit word data_i, 3-bit select signals DR, SR1 and SR2, load signal, clock, reset
-// OUTPUTS: 16-bit words SR1_out and SR2_out
+// INPUTS: 16-bit word data_i, 3-bit select signals dr, sr1 and sr2, load signal, clock, reset
+// OUTPUTS: 16-bit words sr1_out and sr2_out
 
 module reg_file(
     input logic  [15:0] data_i,
-    input logic  [2:0]  DR,
-    input logic  [2:0]  SR1,
-    input logic  [2:0]  SR2,
+    input logic  [2:0]  dr,
+    input logic  [2:0]  sr1,
+    input logic  [2:0]  sr2,
     input logic         load,
     input logic         clk,
     input logic         reset,
     
-    output logic [15:0] SR1_out,
-    output logic [15:0] SR2_out
+    output logic [15:0] sr1_out,
+    output logic [15:0] sr2_out
     );
     
     logic [7:0]  ld_r;
@@ -111,7 +111,7 @@ module reg_file(
         ld_r = 8'b00000000;
         if (load)
         begin
-            case(DR)
+            case(dr)
                 3'b000:  ld_r = 8'b00000001;
                 3'b001:  ld_r = 8'b00000010;
                 3'b010:  ld_r = 8'b00000100;
@@ -123,29 +123,29 @@ module reg_file(
                 default: ld_r = 8'b00000000;
             endcase
         end
-        SR1_out = r0_out; 
-        case(SR1)          
-            3'b000:  SR1_out = r0_out;
-            3'b001:  SR1_out = r1_out;
-            3'b010:  SR1_out = r2_out;
-            3'b011:  SR1_out = r3_out;
-            3'b100:  SR1_out = r4_out;
-            3'b101:  SR1_out = r5_out;
-            3'b110:  SR1_out = r6_out;
-            3'b111:  SR1_out = r7_out;
-            default: SR1_out = r0_out;
+        sr1_out = r0_out; 
+        case(sr1)          
+            3'b000:  sr1_out = r0_out;
+            3'b001:  sr1_out = r1_out;
+            3'b010:  sr1_out = r2_out;
+            3'b011:  sr1_out = r3_out;
+            3'b100:  sr1_out = r4_out;
+            3'b101:  sr1_out = r5_out;
+            3'b110:  sr1_out = r6_out;
+            3'b111:  sr1_out = r7_out;
+            default: sr1_out = 16'hXX;
         endcase
-        SR2_out = r0_out; 
-        case(SR2)          
-            3'b000:  SR2_out = r0_out;
-            3'b001:  SR2_out = r1_out;
-            3'b010:  SR2_out = r2_out;
-            3'b011:  SR2_out = r3_out;
-            3'b100:  SR2_out = r4_out;
-            3'b101:  SR2_out = r5_out;
-            3'b110:  SR2_out = r6_out;
-            3'b111:  SR2_out = r7_out;
-            default: SR2_out = r0_out;
+        sr2_out = r0_out; 
+        case(sr2)          
+            3'b000:  sr2_out = r0_out;
+            3'b001:  sr2_out = r1_out;
+            3'b010:  sr2_out = r2_out;
+            3'b011:  sr2_out = r3_out;
+            3'b100:  sr2_out = r4_out;
+            3'b101:  sr2_out = r5_out;
+            3'b110:  sr2_out = r6_out;
+            3'b111:  sr2_out = r7_out;
+            default: sr2_out = 16'hXX;
         endcase
     end
     
@@ -155,26 +155,26 @@ endmodule
 //CODE FOR TESTING MODULE:
 /*
 logic [15:0] data_bus;
-logic [2:0]  DR;
-logic [2:0]  SR1;
-logic [2:0]  SR2;
+logic [2:0]  dr;
+logic [2:0]  sr1;
+logic [2:0]  sr2;
 logic        load;
 logic        reset;
 
-logic [15:0] SR1_out;
-logic [15:0] SR2_out;
+logic [15:0] sr1_out;
+logic [15:0] sr2_out;
 
 reg_file reg_file(
     .data_i(data_bus),
-    .DR(DR),
-    .SR1(SR1),
-    .SR2(SR2),
+    .dr(dr),
+    .sr1(sr1),
+    .sr2(sr2),
     .load(load),
     .clk(clk),
     .reset(reset),
     
-    .SR1_out(SR1_out),
-    .SR2_out(SR2_out)
+    .sr1_out(sr1_out),
+    .sr2_out(sr2_out)
 );
 
 
@@ -185,12 +185,12 @@ initial begin: TEST_VECTORS
     #2;
     reset <= 1'b0;
     data_bus <= 16'h1701;
-    DR <= 3'b001;
+    dr <= 3'b001;
     load <= 1'b1;
     #2 
     load <= 1'b0;
     data_bus <= 16'h0000;
-    SR1 <= 3'b001;
+    sr1 <= 3'b001;
     
     #4 $finish();
 end

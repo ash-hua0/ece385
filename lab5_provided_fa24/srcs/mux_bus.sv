@@ -19,7 +19,7 @@ case (S)
  4'b0010 : C = A1;
  4'b0100 : C = A2;
  4'b1000 : C = A3;
- default : C = 16'h0000; //Drives bus low if there are any glitches with one-hot select signal
+ default : C = 16'hXXXX; //Drives bus with X's if there are any glitches with one-hot select signal
  endcase
 end
     

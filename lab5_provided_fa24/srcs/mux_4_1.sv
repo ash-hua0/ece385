@@ -14,13 +14,12 @@ module mux_4_1
     
 always_comb
 begin: case_process
-
-case (S)
- 2'b00 : C = A0;
- 2'b01 : C = A1;
- 2'b10 : C = A2;
- 2'b11 : C = A3;
- default : C = A0;
+ case (S)
+    2'b00 : C = A0;
+    2'b01 : C = A1;
+    2'b10 : C = A2;
+    2'b11 : C = A3;
+    default : C = {(DATA_WIDTH){1'bX}};
  endcase
 end
     

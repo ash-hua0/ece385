@@ -115,7 +115,7 @@ initial begin: TEST_VECTORS
     #2;
     reset_s <= 0;
     #2;
-    force slc3.cpu.pc_reg.data_d = 16'h0000;
+    force slc3.cpu.ir = 16'b0001000;
     force slc3.cpu.pc_reg.data_q = 16'h0000;
     //force slc3.cpu.pc_in = 16'h0001;  //Forcing the starting address of PC
     //force slc3.cpu.ld_pc = 1'b1;

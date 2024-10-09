@@ -10,7 +10,6 @@ WARNING: [XSIM 43-4100] "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/
 WARNING: [XSIM 43-4100] "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.sext(DATA_WIDTH=6)
 Compiling module xil_defaultlib.mini_testbench
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot mini_testbench_behav
