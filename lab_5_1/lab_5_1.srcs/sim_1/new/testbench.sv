@@ -97,6 +97,8 @@ logic [15:0] mdr_monitor;
 assign mdr_monitor = slc3.cpu.mdr;
 
 //monitored control signals
+logic [4:0] state;
+assign state = slc3.cpu.cpu_control.state;
 logic [3:0] gate_monitor;
 assign gate_monitor = {slc3.cpu.gate_marmux, slc3.cpu.gate_pc, slc3.cpu.gate_alu, slc3.cpu.gate_mdr};  
 logic ld_pc_monitor;
@@ -117,13 +119,45 @@ initial begin: TEST_VECTORS
     run_s   <= 1;
     #2;
     run_s <= 0;
-    #2;
     
-    //force slc3.cpu.sr1_in = 16'h0000;
-    //force slc3.cpu.ir = instr_addi(3'b000, 3'b000, 5'b00001);
-    #10;
+    
+    #10; //Waiting until fetch is complete
+    force slc3.cpu.ir = instr_addi(3'b010, 3'b010, 5'b00101);
+    #4; //R2 = 5
+    
+    /*
+    #10; //Waiting until fetch is complete
+    force slc3.cpu.ir = instr_addi(3'b001, 3'b001, 5'b00100);
+    #4; //R1 = 4
+    
+    #10; //Waiting until fetch is complete
+    force slc3.cpu.ir = instr_str(3'b000, 3'b001, 6'b000010);
+    #12; //M[R1 + imm6] = R0  (M[6] = 5)
+    
+    #10; //Waiting until fetch is complete
+    force slc3.cpu.ir = instr_pse(12'b000000000000);
+    #4; //Locking LC3 in pause state
+    
+    force sram_addr = 16'h0006;
+    force sram_mem_ena = 1'b1;
+    #2;
+    //sram_rdata = M[6] = 5
+    */
+    
+    #10; //Waiting until fetch is complete
+    force slc3.cpu.ir = instr_ldr(3'b001, 3'b010, 6'b000010);
+    #2;
+    #10; //R1 = M[R2 + imm6] = M[7] = 623f
+    
+    
+    /*
+    #10; //Waiting until fetch is complete  
+    force slc3.cpu.ir = instr_not(3'b001, 3'b000);
+    #6; //R1 = ~R0 = FFFC
+    */
 
-    #16 $finish();
+    
+    #10 $finish();
 end
 
 

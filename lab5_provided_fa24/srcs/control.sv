@@ -50,6 +50,9 @@ module control (
 	output logic [2:0]  sr2_in,
 	output logic [1:0]  aluk,
 	
+	output logic        addr1_mux_S,
+	output logic [1:0]  addr2_mux_S,
+	
 	output logic        ld_cc,
 	input logic         n,
     input logic         z,
@@ -58,8 +61,8 @@ module control (
     output logic        mio_en,
 	output logic		ld_mar,
 	output logic		ld_mdr,
-	output logic		mem_mem_ena, // Mem Operation Enable
-	output logic		mem_wr_ena  // Mem Write Enable
+	output logic		mem_mem_ena,
+	output logic		mem_wr_ena
 );
 
     logic ben;
@@ -69,8 +72,25 @@ module control (
 		halted, 
 		pause_ir1,
 		pause_ir2, 
+		s_0,
 		s_1,
+		s_4,
+		s_5,
+		s_6,
+		s_7,
+		s_9,
+		s_12,
+		s_16_1,
+		s_16_2,
+		s_16_3,
 		s_18, 
+		s_21,
+		s_22,
+		s_23,
+		s_25_1,
+		s_25_2,
+		s_25_3,
+		s_27,
 		s_32,
 		s_33_1,
 		s_33_2,
@@ -109,6 +129,9 @@ module control (
 		sr2_in = 3'bXXX;
 		aluk = 2'bXX;
 		
+		addr1_mux_S = 1'bX;
+		addr2_mux_S = 2'bXX;
+		
 		ld_cc = 1'b0;
 		
 		mio_en = 1'bX;
@@ -120,6 +143,7 @@ module control (
 		// Assign relevant control signals based on current state
 		case (state)
 			halted: ; 
+			s_0 : ;//BR 1 
 			s_1 : //ADD
 			    begin
 			        dr_mux_S = 1'b0;
@@ -131,20 +155,111 @@ module control (
 			        ld_cc = 1'b1;
 			        gate_alu = 1'b1;
 			    end
-			s_18 : 
+			s_4 : //JSR 1
+			    begin
+			        gate_pc = 1'b1;
+			        dr_mux_S = 1'b1;
+			        ld_reg = 1'b1;
+			    end
+			s_5 : //AND
+		        begin
+		            dr_mux_S = 1'b0;
+			        sr1_mux_S = 1'b1;
+			        sr2_mux_S = ir[5];
+			        ld_reg = 1'b1;
+			        sr2_in = ir[2:0];
+			        aluk = 2'b01;
+			        ld_cc = 1'b1;
+			        gate_alu = 1'b1;
+			    end
+			s_6 : //LDR 1
+			    begin
+			        sr1_mux_S = 1'b1;
+			        addr1_mux_S = 1'b1;
+			        addr2_mux_S = 2'b01;
+			        gate_marmux = 1'b1;
+			        ld_mar = 1'b1;
+			    end
+			s_7 : //STR 1
+			    begin
+			        sr1_mux_S = 1'b1;
+			        addr1_mux_S = 1'b1;
+			        addr2_mux_S = 2'b01;
+			        gate_marmux = 1'b1;
+			        ld_mar = 1'b1;
+			    end
+			s_9 : //NOT
+			    begin
+			        sr1_mux_S = 1'b1;
+			        aluk = 2'b10;
+			        gate_alu = 1'b1;
+			        dr_mux_S = 1'b0;
+			        ld_reg = 1'b1;
+			        ld_cc = 1'b1;
+			    end
+			s_12 : //JMP
+			    begin
+			        sr1_mux_S = 1'b1;
+			        addr1_mux_S = 1'b1;
+			        addr2_mux_S = 2'b00;
+			        pc_mux_S = 2'b10;
+			        ld_pc = 1'b1;
+			    end
+			s_16_1, s_16_2, s_16_3 : //STR 3-5
+			    begin
+			        mem_mem_ena = 1'b1;
+			        mem_wr_ena = 1'b1;
+			    end
+			s_18 : //Fetch 1
 				begin 
 					gate_pc = 1'b1;
 					ld_mar = 1'b1;
 					pc_mux_S = 2'b00;
 					ld_pc = 1'b1;
 				end
-			s_33_1, s_33_2, s_33_3 : //you may have to think about this as well to adapt to ram with wait-states
+		    s_21 : //JSR 2
+		        begin
+		            addr1_mux_S = 1'b0;
+		            addr2_mux_S = 2'b11;
+		            pc_mux_S = 2'b10;
+		            ld_pc = 1'b1;
+		        end
+			s_22 : //BR 2
+			    begin
+			        ld_pc = 1'b1;
+			        pc_mux_S = 2'b10;
+			        addr1_mux_S = 1'b0;
+			        addr2_mux_S = 2'b10;
+			    end
+			s_23 : //STR 2
+			    begin
+			        sr1_mux_S = 1'b0;
+			        addr1_mux_S = 1'b1;
+			        addr2_mux_S = 2'b00;
+			        gate_marmux = 1'b1;
+			        mio_en = 1'b0;
+			        ld_mdr = 1'b1;
+			    end
+			s_25_1, s_25_2, s_25_3 : //LDR 2-4
+			    begin
+			        mem_mem_ena = 1'b1;
+			        ld_mdr = 1'b1;
+			        mio_en = 1'b1;
+			    end
+			s_27 : //LDR 5
+			    begin
+			        gate_mdr = 1'b1;
+			        dr_mux_S = 1'b0;
+			        ld_reg = 1'b1;
+			        ld_cc = 1'b1;
+			    end
+			s_33_1, s_33_2, s_33_3 : //Fetch 2-4
 				begin
 					mem_mem_ena = 1'b1;
 					ld_mdr = 1'b1;
 					mio_en = 1'b1;
 				end
-			s_35 : 
+			s_35 : //Fetch 3
 				begin 
 					gate_mdr = 1'b1;
 					ld_ir = 1'b1;
@@ -167,25 +282,70 @@ module control (
 			halted : 
 				if (run_i) 
 					state_nxt = s_18;
-			s_18 : //Fetch
-				state_nxt = s_33_1; 
-			s_33_1 : //Fetch
+			s_0 : //BR 1
+			     if(ben)
+			         state_nxt = s_22;
+			     else
+			         state_nxt = s_18;
+			s_1 : //ADD
+		        state_nxt = s_18;   
+		    s_4 : //JSR 1
+		        state_nxt = s_21;
+		    s_5 : //AND
+		        state_nxt = s_18;
+		    s_6 : //LDR 1
+		        state_nxt = s_25_1;
+		    s_7 : //STR 1
+		        state_nxt = s_23;
+		    s_9 : //NOT
+		        state_nxt = s_18;
+		    s_12 : //JMP
+		        state_nxt = s_18;
+		    s_16_1: //STR 3
+		        state_nxt = s_16_2;
+		    s_16_2: //STR 4
+		        state_nxt = s_16_3;
+		    s_16_3: //STR 5
+		        state_nxt = s_18;
+			s_18 : //Fetch 1
+				state_nxt = s_33_1;
+		    s_21 : //JSR 2
+		        state_nxt = s_18; 
+	        s_22 : //BR 2
+	            state_nxt = s_18;
+	        s_23 : //STR 2
+	            state_nxt = s_16_1;
+	        s_25_1 : //LDR 2
+	            state_nxt = s_25_2;
+	        s_25_2 : //LDR 3
+	            state_nxt = s_25_3;
+	        s_25_3 : //LDR 4
+	            state_nxt = s_27;
+	        s_27 : //LDR 5
+	            state_nxt = s_18;
+			s_33_1 : //Fetch 2
 				state_nxt = s_33_2;
-			s_33_2 : //Fetch
+			s_33_2 : //Fetch 3
 				state_nxt = s_33_3;
-			s_33_3 : //Fetch
+			s_33_3 : //Fetch 4
 				state_nxt = s_35;
-			s_35 :  //Fetch
+			s_35 :  //Fetch 5
 				state_nxt = s_32;
             s_32: //Decode
 		        case (ir[15:12])
 		          4'b0001: state_nxt = s_1; //ADD
+		          4'b0101: state_nxt = s_5; //ADD
+		          4'b0000: state_nxt = s_0; //BR
+		          4'b1001: state_nxt = s_9; //NOT
+		          4'b0100: state_nxt = s_4; //JSR
+		          4'b1100: state_nxt = s_12;//JMP
+		          4'b0111: state_nxt = s_7; //STR
+		          4'b0110: state_nxt = s_6; //LDR
+		          4'b1101: state_nxt = pause_ir1; //PSE
 		          default: state_nxt = pause_ir1;
 		        endcase    
 		        
-		    s_1: //ADD
-		        state_nxt = s_18;   
-		        
+		    
 		        
 			// pause_ir1 and pause_ir2 are only for week 1 such that TAs can see 
 			// the values in ir.
