@@ -110,29 +110,19 @@ assign ld_ir_monitor = slc3.cpu.ld_ir;
 
 // test
 initial begin: TEST_VECTORS
-    $display("Monitoring the bus!");
     reset_s <= 1;
     #2;
     reset_s <= 0;
     #2;
-    force slc3.cpu.ir = 16'b0001000;
-    force slc3.cpu.pc_reg.data_q = 16'h0000;
-    //force slc3.cpu.pc_in = 16'h0001;  //Forcing the starting address of PC
-    //force slc3.cpu.ld_pc = 1'b1;
-    #2;
-    release slc3.cpu.pc_reg.data_d;
-    release slc3.cpu.pc_reg.data_q;
-    //force slc3.cpu.ld_pc = 1'b0;
-    //release slc3.cpu.pc_in;
-    //release slc3.cpu.ld_pc;
     run_s   <= 1;
     #2;
     run_s <= 0;
     #2;
-    //force memory.address = 9'b000000001;
-    //force memory.ena = 1'b1;
-    //$display("Address %h - %h", counter, memContents(counter));
     
+    //force slc3.cpu.sr1_in = 16'h0000;
+    //force slc3.cpu.ir = instr_addi(3'b000, 3'b000, 5'b00001);
+    #10;
+
     #16 $finish();
 end
 

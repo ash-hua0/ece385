@@ -55,6 +55,7 @@ module control (
     input logic         z,
     input logic         p,
 
+    output logic        mio_en,
 	output logic		ld_mar,
 	output logic		ld_mdr,
 	output logic		mem_mem_ena, // Mem Operation Enable
@@ -110,6 +111,7 @@ module control (
 		
 		ld_cc = 1'b0;
 		
+		mio_en = 1'bX;
 		ld_mar = 1'b0;
 		ld_mdr = 1'b0;
 		mem_mem_ena = 1'b0;
@@ -118,7 +120,7 @@ module control (
 		// Assign relevant control signals based on current state
 		case (state)
 			halted: ; 
-			s_1 :
+			s_1 : //ADD
 			    begin
 			        dr_mux_S = 1'b0;
 			        sr1_mux_S = 1'b1;
@@ -140,6 +142,7 @@ module control (
 				begin
 					mem_mem_ena = 1'b1;
 					ld_mdr = 1'b1;
+					mio_en = 1'b1;
 				end
 			s_35 : 
 				begin 
