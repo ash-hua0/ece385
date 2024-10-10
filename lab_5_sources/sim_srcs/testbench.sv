@@ -1,7 +1,7 @@
 //`include "types.sv"
 //import SLC3_TYPES::*;
 
-module processor_top_testbench (
+module testbench (
 	//input  logic		clk, 
 	input  logic 		reset,
 
@@ -122,8 +122,8 @@ initial begin: TEST_VECTORS
     
     
     #10; //Waiting until fetch is complete
-    force slc3.cpu.ir = instr_addi(3'b010, 3'b010, 5'b00101);
-    #4; //R2 = 5
+    force slc3.cpu.ir = instr_addi(3'b000, 3'b010, 5'b00101);
+    #4; //R0 = 5
     
     /*
     #10; //Waiting until fetch is complete
@@ -145,9 +145,9 @@ initial begin: TEST_VECTORS
     */
     
     #10; //Waiting until fetch is complete
-    force slc3.cpu.ir = instr_ldr(3'b001, 3'b010, 6'b000010);
+    force slc3.cpu.ir = instr_ldr(3'b001, 3'b000, 6'b000010);
     #2;
-    #10; //R1 = M[R2 + imm6] = M[7] = 623f
+    #10; //R1 = M[R0 + imm6] = M[7] = 623f
     
     
     /*

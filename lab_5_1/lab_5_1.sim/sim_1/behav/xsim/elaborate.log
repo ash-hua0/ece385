@@ -1,11 +1,11 @@
 Vivado Simulator v2022.2
 Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot processor_top_testbench_behav xil_defaultlib.processor_top_testbench xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'data_i' [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/nzp_reg.sv:62]
-WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'data_q' [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/nzp_reg.sv:64]
-WARNING: [VRFC 10-3823] variable 'reset_s' might have multiple concurrent drivers [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.srcs/sim_1/new/testbench.sv:114]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'data_i' [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/nzp_reg.sv:62]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'data_q' [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/nzp_reg.sv:64]
+WARNING: [VRFC 10-3823] variable 'reset_s' might have multiple concurrent drivers [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/sim_srcs/testbench.sv:114]
 Completed static elaboration
 INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

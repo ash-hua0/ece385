@@ -141,3 +141,1107 @@ $finish called at time : 52 ns : File "C:/Users/Shane/Documents/Classes/ECE_385/
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'processor_top_testbench_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for all
 launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1183.574 ; gain = 20.285
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'processor_top_testbench'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'processor_top_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj processor_top_testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot processor_top_testbench_behav xil_defaultlib.processor_top_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot processor_top_testbench_behav xil_defaultlib.processor_top_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'data_i' [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/nzp_reg.sv:62]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'data_q' [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/nzp_reg.sv:64]
+WARNING: [VRFC 10-3823] variable 'reset_s' might have multiple concurrent drivers [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.srcs/sim_1/new/testbench.sv:114]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "processor_top_testbench_behav -key {Behavioral:sim_1:Functional:processor_top_testbench} -tclbatch {processor_top_testbench.tcl} -view {C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/processor_top_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/processor_top_testbench_behav.wcfg
+source processor_top_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run all
+$finish called at time : 52 ns : File "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.srcs/sim_1/new/testbench.sv" Line 160
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'processor_top_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for all
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1183.574 ; gain = 0.000
+export_ip_user_files -of_objects  [get_files C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.srcs/sources_1/new/alu.sv] -no_script -reset -force -quiet
+remove_files  C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.srcs/sources_1/new/alu.sv
+add_files -norecurse C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/alu.sv
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'processor_top_testbench'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'processor_top_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj processor_top_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot processor_top_testbench_behav xil_defaultlib.processor_top_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot processor_top_testbench_behav xil_defaultlib.processor_top_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'data_i' [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/nzp_reg.sv:62]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'data_q' [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/nzp_reg.sv:64]
+WARNING: [VRFC 10-3823] variable 'reset_s' might have multiple concurrent drivers [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.srcs/sim_1/new/testbench.sv:114]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_cpu_to_io_sv_163086933
+Compiling package xil_defaultlib.SLC3_TYPES
+Compiling module xil_defaultlib.sync_debounce
+Compiling module xil_defaultlib.sync_flop
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.load_reg(DATA_WIDTH=16)
+Compiling module xil_defaultlib.mux_4_1
+Compiling module xil_defaultlib.mux_2_1(DATA_WIDTH=3)
+Compiling module xil_defaultlib.reg_file
+Compiling module xil_defaultlib.mux_bus
+Compiling module xil_defaultlib.sext
+Compiling module xil_defaultlib.sext(DATA_WIDTH=6)
+Compiling module xil_defaultlib.sext(DATA_WIDTH=9)
+Compiling module xil_defaultlib.sext(DATA_WIDTH=11)
+Compiling module xil_defaultlib.mux_2_1
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.load_reg
+Compiling module xil_defaultlib.nzp_reg
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.nibble_to_hex
+Compiling module xil_defaultlib.hex_driver_default
+Compiling module xil_defaultlib.cpu_to_io
+Compiling module xil_defaultlib.slc3
+Compiling module xil_defaultlib.test_memory
+Compiling module xil_defaultlib.memory
+Compiling module xil_defaultlib.processor_top_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot processor_top_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "processor_top_testbench_behav -key {Behavioral:sim_1:Functional:processor_top_testbench} -tclbatch {processor_top_testbench.tcl} -view {C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/processor_top_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/processor_top_testbench_behav.wcfg
+source processor_top_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run all
+$finish called at time : 52 ns : File "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.srcs/sim_1/new/testbench.sv" Line 160
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'processor_top_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for all
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1186.133 ; gain = 2.559
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'processor_top_testbench'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'processor_top_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj processor_top_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/control.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/load_reg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_reg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/mux_4_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/cpu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/cpu_to_io.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_to_io
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/hex_driver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hex_driver
+INFO: [VRFC 10-311] analyzing module nibble_to_hex
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/types.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/instantiate_ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instantiate_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/slc3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module slc3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/sync.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sync_debounce
+INFO: [VRFC 10-311] analyzing module sync_flop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/processor_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/test_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/mux_bus.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_bus
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/reg_file.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/mux_2_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/nzp_reg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nzp_reg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/sext.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sext
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.srcs/sim_1/new/testbench.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor_top_testbench
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/mini_testbench.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mini_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot processor_top_testbench_behav xil_defaultlib.processor_top_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot processor_top_testbench_behav xil_defaultlib.processor_top_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'data_i' [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/nzp_reg.sv:62]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'data_q' [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/nzp_reg.sv:64]
+WARNING: [VRFC 10-3823] variable 'reset_s' might have multiple concurrent drivers [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.srcs/sim_1/new/testbench.sv:114]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_cpu_to_io_sv_163086933
+Compiling package xil_defaultlib.SLC3_TYPES
+Compiling module xil_defaultlib.sync_debounce
+Compiling module xil_defaultlib.sync_flop
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.load_reg(DATA_WIDTH=16)
+Compiling module xil_defaultlib.mux_4_1
+Compiling module xil_defaultlib.mux_2_1(DATA_WIDTH=3)
+Compiling module xil_defaultlib.reg_file
+Compiling module xil_defaultlib.mux_bus
+Compiling module xil_defaultlib.sext
+Compiling module xil_defaultlib.sext(DATA_WIDTH=6)
+Compiling module xil_defaultlib.sext(DATA_WIDTH=9)
+Compiling module xil_defaultlib.sext(DATA_WIDTH=11)
+Compiling module xil_defaultlib.mux_2_1
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.load_reg
+Compiling module xil_defaultlib.nzp_reg
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.nibble_to_hex
+Compiling module xil_defaultlib.hex_driver_default
+Compiling module xil_defaultlib.cpu_to_io
+Compiling module xil_defaultlib.slc3
+Compiling module xil_defaultlib.test_memory
+Compiling module xil_defaultlib.memory
+Compiling module xil_defaultlib.processor_top_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot processor_top_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "processor_top_testbench_behav -key {Behavioral:sim_1:Functional:processor_top_testbench} -tclbatch {processor_top_testbench.tcl} -view {C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/processor_top_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/processor_top_testbench_behav.wcfg
+source processor_top_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run all
+$finish called at time : 52 ns : File "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.srcs/sim_1/new/testbench.sv" Line 160
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'processor_top_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for all
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1189.906 ; gain = 3.035
+export_ip_user_files -of_objects  [get_files C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.srcs/sim_1/new/testbench.sv] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.srcs/sim_1/new/testbench.sv
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/testbench.sv
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'processor_top_testbench'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'processor_top_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj processor_top_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/testbench.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor_top_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot processor_top_testbench_behav xil_defaultlib.processor_top_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot processor_top_testbench_behav xil_defaultlib.processor_top_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2989] 'instr_addi' is not declared [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/testbench.sv:125]
+ERROR: [VRFC 10-2989] 'instr_ldr' is not declared [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/testbench.sv:148]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'processor_top_testbench'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'processor_top_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj processor_top_testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/control.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/load_reg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_reg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/mux_4_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/cpu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/cpu_to_io.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_to_io
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/hex_driver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hex_driver
+INFO: [VRFC 10-311] analyzing module nibble_to_hex
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/types.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/instantiate_ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instantiate_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/slc3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module slc3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/sync.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sync_debounce
+INFO: [VRFC 10-311] analyzing module sync_flop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/processor_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/test_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/mux_bus.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_bus
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/reg_file.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/mux_2_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/nzp_reg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nzp_reg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/sext.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sext
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/mini_testbench.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mini_testbench
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/testbench.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor_top_testbench
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot processor_top_testbench_behav xil_defaultlib.processor_top_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot processor_top_testbench_behav xil_defaultlib.processor_top_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'data_i' [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/nzp_reg.sv:62]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'data_q' [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/nzp_reg.sv:64]
+WARNING: [VRFC 10-3823] variable 'reset_s' might have multiple concurrent drivers [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/testbench.sv:114]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_cpu_to_io_sv_163086933
+Compiling package xil_defaultlib.SLC3_TYPES
+Compiling module xil_defaultlib.sync_debounce
+Compiling module xil_defaultlib.sync_flop
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.load_reg(DATA_WIDTH=16)
+Compiling module xil_defaultlib.mux_4_1
+Compiling module xil_defaultlib.mux_2_1(DATA_WIDTH=3)
+Compiling module xil_defaultlib.reg_file
+Compiling module xil_defaultlib.mux_bus
+Compiling module xil_defaultlib.sext
+Compiling module xil_defaultlib.sext(DATA_WIDTH=6)
+Compiling module xil_defaultlib.sext(DATA_WIDTH=9)
+Compiling module xil_defaultlib.sext(DATA_WIDTH=11)
+Compiling module xil_defaultlib.mux_2_1
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.load_reg
+Compiling module xil_defaultlib.nzp_reg
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.nibble_to_hex
+Compiling module xil_defaultlib.hex_driver_default
+Compiling module xil_defaultlib.cpu_to_io
+Compiling module xil_defaultlib.slc3
+Compiling module xil_defaultlib.test_memory
+Compiling module xil_defaultlib.memory
+Compiling module xil_defaultlib.processor_top_testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot processor_top_testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "processor_top_testbench_behav -key {Behavioral:sim_1:Functional:processor_top_testbench} -tclbatch {processor_top_testbench.tcl} -view {C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/processor_top_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/processor_top_testbench_behav.wcfg
+source processor_top_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run all
+$finish called at time : 52 ns : File "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/testbench.sv" Line 160
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'processor_top_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for all
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1196.957 ; gain = 6.582
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'processor_top_testbench'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'processor_top_testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj processor_top_testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot processor_top_testbench_behav xil_defaultlib.processor_top_testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot processor_top_testbench_behav xil_defaultlib.processor_top_testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'data_i' [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/nzp_reg.sv:62]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'data_q' [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/nzp_reg.sv:64]
+WARNING: [VRFC 10-3823] variable 'reset_s' might have multiple concurrent drivers [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/testbench.sv:114]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "processor_top_testbench_behav -key {Behavioral:sim_1:Functional:processor_top_testbench} -tclbatch {processor_top_testbench.tcl} -view {C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/processor_top_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/processor_top_testbench_behav.wcfg
+source processor_top_testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run all
+$finish called at time : 52 ns : File "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/testbench.sv" Line 160
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'processor_top_testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for all
+add_files -norecurse C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/sync.sv
+add_files -norecurse {C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/mux_4_1.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/reg_file.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/test_memory.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/hex_driver.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/slc3.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/sext.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/cpu.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/alu.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/instantiate_ram.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/nzp_reg.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/load_reg.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/mux_bus.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/types.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/memory.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/cpu_to_io.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/mux_2_1.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/control.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/processor_top.sv}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse {C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/sim_srcs/mini_testbench.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/sim_srcs/testbench.sv}
+set_property top testbench [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'testbench'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+export_ip_user_files -of_objects  [get_files C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/alu.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/control.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/cpu.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/cpu_to_io.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/hex_driver.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/instantiate_ram.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/load_reg.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/memory.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/mux_2_1.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/mux_4_1.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/mux_bus.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/nzp_reg.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/processor_top.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/reg_file.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/sext.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/slc3.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/sync.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/test_memory.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/types.sv] -no_script -reset -force -quiet
+remove_files  {C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/alu.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/control.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/cpu.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/cpu_to_io.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/hex_driver.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/instantiate_ram.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/load_reg.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/memory.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/mux_2_1.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/mux_4_1.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/mux_bus.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/nzp_reg.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/processor_top.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/reg_file.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/sext.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/slc3.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/sync.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/test_memory.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/types.sv}
+export_ip_user_files -of_objects  [get_files C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/mini_testbench.sv] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/testbench.sv] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 {C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/mini_testbench.sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/testbench.sv}
+file mkdir C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/pin_assignment
+add_files -fileset constrs_1 -norecurse C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/pin_assignment/top.xdc
+export_ip_user_files -of_objects  [get_files C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/pin_assignment/top.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/pin_assignment/top.xdc
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'testbench'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/sync.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sync_debounce
+INFO: [VRFC 10-311] analyzing module sync_flop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/mux_4_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/reg_file.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/test_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/hex_driver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hex_driver
+INFO: [VRFC 10-311] analyzing module nibble_to_hex
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/slc3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module slc3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/sext.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sext
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/cpu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/instantiate_ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instantiate_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/nzp_reg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nzp_reg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/load_reg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_reg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/mux_bus.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_bus
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/types.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/cpu_to_io.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_to_io
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/mux_2_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/control.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/processor_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/sim_srcs/mini_testbench.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mini_testbench
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/sim_srcs/testbench.sv" into library xil_defaultlib
+ERROR: [VRFC 10-3195] cannot open include file 'types.sv' [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/sim_srcs/testbench.sv:1]
+INFO: [VRFC 10-311] analyzing module testbench
+ERROR: [VRFC 10-8530] module 'testbench' is ignored due to previous errors [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/sim_srcs/testbench.sv:4]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim/xvlog.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim/xvlog.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'testbench'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj testbench_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/sync.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sync_debounce
+INFO: [VRFC 10-311] analyzing module sync_flop
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/mux_4_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_4_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/reg_file.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_file
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/test_memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/hex_driver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hex_driver
+INFO: [VRFC 10-311] analyzing module nibble_to_hex
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/slc3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module slc3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/sext.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sext
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/cpu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/alu.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/instantiate_ram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instantiate_ram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/nzp_reg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module nzp_reg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/load_reg.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module load_reg
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/mux_bus.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_bus
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/types.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/memory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/cpu_to_io.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_to_io
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/mux_2_1.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_2_1
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/control.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/processor_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module processor_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/sim_srcs/mini_testbench.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mini_testbench
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/sim_srcs/testbench.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testbench
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'data_i' [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/nzp_reg.sv:62]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'data_q' [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/nzp_reg.sv:64]
+WARNING: [VRFC 10-3823] variable 'reset_s' might have multiple concurrent drivers [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/sim_srcs/testbench.sv:114]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_sync_sv_3344065072
+Compiling package xil_defaultlib.SLC3_TYPES
+Compiling module xil_defaultlib.sync_debounce
+Compiling module xil_defaultlib.sync_flop
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.load_reg(DATA_WIDTH=16)
+Compiling module xil_defaultlib.mux_4_1
+Compiling module xil_defaultlib.mux_2_1(DATA_WIDTH=3)
+Compiling module xil_defaultlib.reg_file
+Compiling module xil_defaultlib.mux_bus
+Compiling module xil_defaultlib.sext
+Compiling module xil_defaultlib.sext(DATA_WIDTH=6)
+Compiling module xil_defaultlib.sext(DATA_WIDTH=9)
+Compiling module xil_defaultlib.sext(DATA_WIDTH=11)
+Compiling module xil_defaultlib.mux_2_1
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.load_reg
+Compiling module xil_defaultlib.nzp_reg
+Compiling module xil_defaultlib.cpu
+Compiling module xil_defaultlib.nibble_to_hex
+Compiling module xil_defaultlib.hex_driver_default
+Compiling module xil_defaultlib.cpu_to_io
+Compiling module xil_defaultlib.slc3
+Compiling module xil_defaultlib.test_memory
+Compiling module xil_defaultlib.memory
+Compiling module xil_defaultlib.testbench
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot testbench_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -view {C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/processor_top_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/processor_top_testbench_behav.wcfg
+WARNING: Simulation object /processor_top_testbench/reset was not found in the design.
+WARNING: Simulation object /processor_top_testbench/run_i was not found in the design.
+WARNING: Simulation object /processor_top_testbench/continue_i was not found in the design.
+WARNING: Simulation object /processor_top_testbench/clk was not found in the design.
+WARNING: Simulation object /processor_top_testbench/reset_s was not found in the design.
+WARNING: Simulation object /processor_top_testbench/run_s was not found in the design.
+WARNING: Simulation object /processor_top_testbench/continue_s was not found in the design.
+WARNING: Simulation object /processor_top_testbench/sw_s was not found in the design.
+WARNING: Simulation object /processor_top_testbench/sram_rdata was not found in the design.
+WARNING: Simulation object /processor_top_testbench/sram_wdata was not found in the design.
+WARNING: Simulation object /processor_top_testbench/sram_addr was not found in the design.
+WARNING: Simulation object /processor_top_testbench/sram_mem_ena was not found in the design.
+WARNING: Simulation object /processor_top_testbench/sram_wr_ena was not found in the design.
+WARNING: Simulation object /processor_top_testbench/data_bus_monitor was not found in the design.
+WARNING: Simulation object /processor_top_testbench/pc_monitor was not found in the design.
+WARNING: Simulation object /processor_top_testbench/mar_monitor was not found in the design.
+WARNING: Simulation object /processor_top_testbench/mdr_monitor was not found in the design.
+WARNING: Simulation object /processor_top_testbench/ir_monitor was not found in the design.
+WARNING: Simulation object /processor_top_testbench/gate_monitor was not found in the design.
+WARNING: Simulation object /processor_top_testbench/ld_pc_monitor was not found in the design.
+WARNING: Simulation object /processor_top_testbench/ld_mar_monitor was not found in the design.
+WARNING: Simulation object /processor_top_testbench/ld_mdr_monitor was not found in the design.
+WARNING: Simulation object /processor_top_testbench/ld_ir_monitor was not found in the design.
+WARNING: Simulation object /processor_top_testbench/slc3/cpu/cpu_control/state was not found in the design.
+WARNING: Simulation object /processor_top_testbench/slc3/cpu/reg_file/r0_out was not found in the design.
+WARNING: Simulation object /processor_top_testbench/slc3/cpu/reg_file/r1_out was not found in the design.
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run all
+$finish called at time : 52 ns : File "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/sim_srcs/testbench.sv" Line 160
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for all
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1197.414 ; gain = 0.000
+add_wave {{/testbench/clk}} 
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'testbench'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'data_i' [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/nzp_reg.sv:62]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'data_q' [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/nzp_reg.sv:64]
+WARNING: [VRFC 10-3823] variable 'reset_s' might have multiple concurrent drivers [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/sim_srcs/testbench.sv:114]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -view {C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/processor_top_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/processor_top_testbench_behav.wcfg
+WARNING: Simulation object /processor_top_testbench/reset was not found in the design.
+WARNING: Simulation object /processor_top_testbench/run_i was not found in the design.
+WARNING: Simulation object /processor_top_testbench/continue_i was not found in the design.
+WARNING: Simulation object /processor_top_testbench/clk was not found in the design.
+WARNING: Simulation object /processor_top_testbench/reset_s was not found in the design.
+WARNING: Simulation object /processor_top_testbench/run_s was not found in the design.
+WARNING: Simulation object /processor_top_testbench/continue_s was not found in the design.
+WARNING: Simulation object /processor_top_testbench/sw_s was not found in the design.
+WARNING: Simulation object /processor_top_testbench/sram_rdata was not found in the design.
+WARNING: Simulation object /processor_top_testbench/sram_wdata was not found in the design.
+WARNING: Simulation object /processor_top_testbench/sram_addr was not found in the design.
+WARNING: Simulation object /processor_top_testbench/sram_mem_ena was not found in the design.
+WARNING: Simulation object /processor_top_testbench/sram_wr_ena was not found in the design.
+WARNING: Simulation object /processor_top_testbench/data_bus_monitor was not found in the design.
+WARNING: Simulation object /processor_top_testbench/pc_monitor was not found in the design.
+WARNING: Simulation object /processor_top_testbench/mar_monitor was not found in the design.
+WARNING: Simulation object /processor_top_testbench/mdr_monitor was not found in the design.
+WARNING: Simulation object /processor_top_testbench/ir_monitor was not found in the design.
+WARNING: Simulation object /processor_top_testbench/gate_monitor was not found in the design.
+WARNING: Simulation object /processor_top_testbench/ld_pc_monitor was not found in the design.
+WARNING: Simulation object /processor_top_testbench/ld_mar_monitor was not found in the design.
+WARNING: Simulation object /processor_top_testbench/ld_mdr_monitor was not found in the design.
+WARNING: Simulation object /processor_top_testbench/ld_ir_monitor was not found in the design.
+WARNING: Simulation object /processor_top_testbench/slc3/cpu/cpu_control/state was not found in the design.
+WARNING: Simulation object /processor_top_testbench/slc3/cpu/reg_file/r0_out was not found in the design.
+WARNING: Simulation object /processor_top_testbench/slc3/cpu/reg_file/r1_out was not found in the design.
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run all
+$finish called at time : 52 ns : File "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/sim_srcs/testbench.sv" Line 160
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for all
+export_ip_user_files -of_objects  [get_files C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/processor_top_testbench_behav.wcfg] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/processor_top_testbench_behav.wcfg
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/processor_top_testbench_behav.wcfg
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'testbench'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'data_i' [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/nzp_reg.sv:62]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'data_q' [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/nzp_reg.sv:64]
+WARNING: [VRFC 10-3823] variable 'reset_s' might have multiple concurrent drivers [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/sim_srcs/testbench.sv:114]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -view {C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/processor_top_testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/processor_top_testbench_behav.wcfg
+WARNING: Simulation object /processor_top_testbench/reset was not found in the design.
+WARNING: Simulation object /processor_top_testbench/run_i was not found in the design.
+WARNING: Simulation object /processor_top_testbench/continue_i was not found in the design.
+WARNING: Simulation object /processor_top_testbench/clk was not found in the design.
+WARNING: Simulation object /processor_top_testbench/reset_s was not found in the design.
+WARNING: Simulation object /processor_top_testbench/run_s was not found in the design.
+WARNING: Simulation object /processor_top_testbench/continue_s was not found in the design.
+WARNING: Simulation object /processor_top_testbench/sw_s was not found in the design.
+WARNING: Simulation object /processor_top_testbench/sram_rdata was not found in the design.
+WARNING: Simulation object /processor_top_testbench/sram_wdata was not found in the design.
+WARNING: Simulation object /processor_top_testbench/sram_addr was not found in the design.
+WARNING: Simulation object /processor_top_testbench/sram_mem_ena was not found in the design.
+WARNING: Simulation object /processor_top_testbench/sram_wr_ena was not found in the design.
+WARNING: Simulation object /processor_top_testbench/data_bus_monitor was not found in the design.
+WARNING: Simulation object /processor_top_testbench/pc_monitor was not found in the design.
+WARNING: Simulation object /processor_top_testbench/mar_monitor was not found in the design.
+WARNING: Simulation object /processor_top_testbench/mdr_monitor was not found in the design.
+WARNING: Simulation object /processor_top_testbench/ir_monitor was not found in the design.
+WARNING: Simulation object /processor_top_testbench/gate_monitor was not found in the design.
+WARNING: Simulation object /processor_top_testbench/ld_pc_monitor was not found in the design.
+WARNING: Simulation object /processor_top_testbench/ld_mar_monitor was not found in the design.
+WARNING: Simulation object /processor_top_testbench/ld_mdr_monitor was not found in the design.
+WARNING: Simulation object /processor_top_testbench/ld_ir_monitor was not found in the design.
+WARNING: Simulation object /processor_top_testbench/slc3/cpu/cpu_control/state was not found in the design.
+WARNING: Simulation object /processor_top_testbench/slc3/cpu/reg_file/r0_out was not found in the design.
+WARNING: Simulation object /processor_top_testbench/slc3/cpu/reg_file/r1_out was not found in the design.
+INFO: [Common 17-365] Interrupt caught but 'launch_simulation' cannot be canceled. Please wait for command to finish.
+INFO: [Common 17-681] Processing pending cancel.
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run all
+$finish called at time : 52 ns : File "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/sim_srcs/testbench.sv" Line 160
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for all
+export_ip_user_files -of_objects  [get_files C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/processor_top_testbench_behav.wcfg] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/processor_top_testbench_behav.wcfg
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/testbench_behav.wcfg
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'testbench'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'data_i' [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/nzp_reg.sv:62]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'data_q' [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/nzp_reg.sv:64]
+WARNING: [VRFC 10-3823] variable 'reset_s' might have multiple concurrent drivers [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/sim_srcs/testbench.sv:114]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -view {C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/testbench_behav.wcfg
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run all
+$finish called at time : 52 ns : File "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/sim_srcs/testbench.sv" Line 160
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for all
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1210.289 ; gain = 0.227
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'testbench'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'testbench' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj testbench_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_5 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot testbench_behav xil_defaultlib.testbench xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'data_i' [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/nzp_reg.sv:62]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 16 for port 'data_q' [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/nzp_reg.sv:64]
+WARNING: [VRFC 10-3823] variable 'reset_s' might have multiple concurrent drivers [C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/sim_srcs/testbench.sv:114]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_behav -key {Behavioral:sim_1:Functional:testbench} -tclbatch {testbench.tcl} -view {C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/testbench_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/testbench_behav.wcfg
+source testbench.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run all
+$finish called at time : 52 ns : File "C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/sim_srcs/testbench.sv" Line 160
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for all
+save_wave_config {C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/testbench_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 10 14:40:17 2024...

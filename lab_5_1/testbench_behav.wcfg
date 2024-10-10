@@ -3,23 +3,23 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="processor_top_testbench_behav.wdb" id="1">
+      <db_ref path="testbench_behav.wdb" id="1">
          <top_modules>
             <top_module name="SLC3_TYPES" />
-            <top_module name="\$unit_cpu_to_io_sv_163086933 " />
+            <top_module name="\$unit_sync_sv_3344065072 " />
             <top_module name="glbl" />
-            <top_module name="processor_top_testbench" />
+            <top_module name="testbench" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="26.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="61.441 ns"></ZoomEndTime>
-      <Cursor1Time time="52.000 ns"></Cursor1Time>
+      <ZoomStartTime time="24.043 ns"></ZoomStartTime>
+      <ZoomEndTime time="59.604 ns"></ZoomEndTime>
+      <Cursor1Time time="44.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="304"></NameColumnWidth>
-      <ValueColumnWidth column_width="105"></ValueColumnWidth>
+      <ValueColumnWidth column_width="99"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="26" />
    <wave_markers>
@@ -29,107 +29,107 @@
       <marker time="32000" label="" />
       <marker time="42000" label="" />
    </wave_markers>
-   <wvobject fp_name="/processor_top_testbench/reset" type="logic">
+   <wvobject fp_name="/testbench/reset" type="logic">
       <obj_property name="ElementShortName">reset</obj_property>
       <obj_property name="ObjectShortName">reset</obj_property>
    </wvobject>
-   <wvobject fp_name="/processor_top_testbench/run_i" type="logic">
+   <wvobject fp_name="/testbench/run_i" type="logic">
       <obj_property name="ElementShortName">run_i</obj_property>
       <obj_property name="ObjectShortName">run_i</obj_property>
    </wvobject>
-   <wvobject fp_name="/processor_top_testbench/continue_i" type="logic">
+   <wvobject fp_name="/testbench/continue_i" type="logic">
       <obj_property name="ElementShortName">continue_i</obj_property>
       <obj_property name="ObjectShortName">continue_i</obj_property>
    </wvobject>
-   <wvobject fp_name="/processor_top_testbench/clk" type="logic">
+   <wvobject fp_name="/testbench/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/processor_top_testbench/reset_s" type="logic">
+   <wvobject fp_name="/testbench/reset_s" type="logic">
       <obj_property name="ElementShortName">reset_s</obj_property>
       <obj_property name="ObjectShortName">reset_s</obj_property>
    </wvobject>
-   <wvobject fp_name="/processor_top_testbench/run_s" type="logic">
+   <wvobject fp_name="/testbench/run_s" type="logic">
       <obj_property name="ElementShortName">run_s</obj_property>
       <obj_property name="ObjectShortName">run_s</obj_property>
    </wvobject>
-   <wvobject fp_name="/processor_top_testbench/continue_s" type="logic">
+   <wvobject fp_name="/testbench/continue_s" type="logic">
       <obj_property name="ElementShortName">continue_s</obj_property>
       <obj_property name="ObjectShortName">continue_s</obj_property>
    </wvobject>
-   <wvobject fp_name="/processor_top_testbench/sw_s" type="array">
+   <wvobject fp_name="/testbench/sw_s" type="array">
       <obj_property name="ElementShortName">sw_s[15:0]</obj_property>
       <obj_property name="ObjectShortName">sw_s[15:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/processor_top_testbench/sram_rdata" type="array">
+   <wvobject fp_name="/testbench/sram_rdata" type="array">
       <obj_property name="ElementShortName">sram_rdata[15:0]</obj_property>
       <obj_property name="ObjectShortName">sram_rdata[15:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/processor_top_testbench/sram_wdata" type="array">
+   <wvobject fp_name="/testbench/sram_wdata" type="array">
       <obj_property name="ElementShortName">sram_wdata[15:0]</obj_property>
       <obj_property name="ObjectShortName">sram_wdata[15:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/processor_top_testbench/sram_addr" type="array">
+   <wvobject fp_name="/testbench/sram_addr" type="array">
       <obj_property name="ElementShortName">sram_addr[15:0]</obj_property>
       <obj_property name="ObjectShortName">sram_addr[15:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/processor_top_testbench/sram_mem_ena" type="logic">
+   <wvobject fp_name="/testbench/sram_mem_ena" type="logic">
       <obj_property name="ElementShortName">sram_mem_ena</obj_property>
       <obj_property name="ObjectShortName">sram_mem_ena</obj_property>
    </wvobject>
-   <wvobject fp_name="/processor_top_testbench/sram_wr_ena" type="logic">
+   <wvobject fp_name="/testbench/sram_wr_ena" type="logic">
       <obj_property name="ElementShortName">sram_wr_ena</obj_property>
       <obj_property name="ObjectShortName">sram_wr_ena</obj_property>
    </wvobject>
-   <wvobject fp_name="/processor_top_testbench/data_bus_monitor" type="array">
+   <wvobject fp_name="/testbench/data_bus_monitor" type="array">
       <obj_property name="ElementShortName">data_bus_monitor[15:0]</obj_property>
       <obj_property name="ObjectShortName">data_bus_monitor[15:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/processor_top_testbench/pc_monitor" type="array">
+   <wvobject fp_name="/testbench/pc_monitor" type="array">
       <obj_property name="ElementShortName">pc_monitor[15:0]</obj_property>
       <obj_property name="ObjectShortName">pc_monitor[15:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/processor_top_testbench/mar_monitor" type="array">
+   <wvobject fp_name="/testbench/mar_monitor" type="array">
       <obj_property name="ElementShortName">mar_monitor[15:0]</obj_property>
       <obj_property name="ObjectShortName">mar_monitor[15:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/processor_top_testbench/mdr_monitor" type="array">
+   <wvobject fp_name="/testbench/mdr_monitor" type="array">
       <obj_property name="ElementShortName">mdr_monitor[15:0]</obj_property>
       <obj_property name="ObjectShortName">mdr_monitor[15:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/processor_top_testbench/ir_monitor" type="array">
+   <wvobject fp_name="/testbench/ir_monitor" type="array">
       <obj_property name="ElementShortName">ir_monitor[15:0]</obj_property>
       <obj_property name="ObjectShortName">ir_monitor[15:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/processor_top_testbench/gate_monitor" type="array">
+   <wvobject fp_name="/testbench/gate_monitor" type="array">
       <obj_property name="ElementShortName">gate_monitor[3:0]</obj_property>
       <obj_property name="ObjectShortName">gate_monitor[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/processor_top_testbench/ld_pc_monitor" type="logic">
+   <wvobject fp_name="/testbench/ld_pc_monitor" type="logic">
       <obj_property name="ElementShortName">ld_pc_monitor</obj_property>
       <obj_property name="ObjectShortName">ld_pc_monitor</obj_property>
    </wvobject>
-   <wvobject fp_name="/processor_top_testbench/ld_mar_monitor" type="logic">
+   <wvobject fp_name="/testbench/ld_mar_monitor" type="logic">
       <obj_property name="ElementShortName">ld_mar_monitor</obj_property>
       <obj_property name="ObjectShortName">ld_mar_monitor</obj_property>
    </wvobject>
-   <wvobject fp_name="/processor_top_testbench/ld_mdr_monitor" type="logic">
+   <wvobject fp_name="/testbench/ld_mdr_monitor" type="logic">
       <obj_property name="ElementShortName">ld_mdr_monitor</obj_property>
       <obj_property name="ObjectShortName">ld_mdr_monitor</obj_property>
    </wvobject>
-   <wvobject fp_name="/processor_top_testbench/ld_ir_monitor" type="logic">
+   <wvobject fp_name="/testbench/ld_ir_monitor" type="logic">
       <obj_property name="ElementShortName">ld_ir_monitor</obj_property>
       <obj_property name="ObjectShortName">ld_ir_monitor</obj_property>
    </wvobject>
-   <wvobject fp_name="/processor_top_testbench/slc3/cpu/cpu_control/state" type="array">
+   <wvobject fp_name="/testbench/slc3/cpu/cpu_control/state" type="array">
       <obj_property name="ElementShortName">state[4:0]</obj_property>
       <obj_property name="ObjectShortName">state[4:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/processor_top_testbench/slc3/cpu/reg_file/r0_out" type="array">
+   <wvobject fp_name="/testbench/slc3/cpu/reg_file/r0_out" type="array">
       <obj_property name="ElementShortName">r0_out[15:0]</obj_property>
       <obj_property name="ObjectShortName">r0_out[15:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/processor_top_testbench/slc3/cpu/reg_file/r1_out" type="array">
+   <wvobject fp_name="/testbench/slc3/cpu/reg_file/r1_out" type="array">
       <obj_property name="ElementShortName">r1_out[15:0]</obj_property>
       <obj_property name="ObjectShortName">r1_out[15:0]</obj_property>
    </wvobject>
