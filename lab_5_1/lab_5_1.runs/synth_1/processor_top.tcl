@@ -70,12 +70,9 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param checkpoint.writeSynthRtdsInDcp 1
 set_param chipscope.maxJobs 2
-set_param synth.incrementalSynthesisCache C:/Users/Shane/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-45176-HP/incrSyn
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
+set_msg_config  -id {Synth 8-87}  -new_severity {ERROR} 
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7s50csga324-1
 
@@ -93,22 +90,27 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
-  C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/control.sv
-  C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/load_reg.sv
-  C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/mux_4_1.sv
-  C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/cpu.sv
-  C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/cpu_to_io.sv
-  C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/hex_driver.sv
-  C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/types.sv
-  C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/instantiate_ram.sv
-  C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/memory.sv
-  C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/slc3.sv
-  C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/sync.sv
-  C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/processor_top.sv
-  C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/test_memory.sv
-  C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/srcs/mux_bus.sv
+  C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/sync.sv
+  C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/mux_4_1.sv
+  C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/reg_file.sv
+  C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/test_memory.sv
+  C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/hex_driver.sv
+  C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/slc3.sv
+  C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/sext.sv
+  C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/cpu.sv
+  C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/alu.sv
+  C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/instantiate_ram.sv
+  C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/nzp_reg.sv
+  C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/load_reg.sv
+  C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/mux_bus.sv
+  C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/types.sv
+  C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/memory.sv
+  C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/cpu_to_io.sv
+  C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/mux_2_1.sv
+  C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/control.sv
+  C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/design_srcs/processor_top.sv
 }
-read_ip -quiet c:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+read_ip -quiet C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
 set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_1/lab_5_1.gen/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }
@@ -120,8 +122,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/pin_assignment/top.xdc
-set_property used_in_implementation false [get_files C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab5_provided_fa24/pin_assignment/top.xdc]
+read_xdc C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/pin_assignment/top.xdc
+set_property used_in_implementation false [get_files C:/Users/Shane/Documents/Classes/ECE_385/Lab_5/lab_5_sources/pin_assignment/top.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
