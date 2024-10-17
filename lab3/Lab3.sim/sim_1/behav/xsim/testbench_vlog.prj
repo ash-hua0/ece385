@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../design_source/adder_toplevel.sv" \
+"../../../../design_source/hex_driver.sv" \
+"../../../../design_source/load_reg.sv" \
+"../../../../design_source/lookahead_adder.sv" \
+"../../../../design_source/negedge_detector.sv" \
+"../../../../design_source/sync_debounce.sv" \
+"../../../../Lab3.srcs/sim_1/new/testbench_4.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

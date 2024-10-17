@@ -1,12 +1,12 @@
-//mb_blink.c
+//mb_6_1.c
 //
-//Provided boilerplate "LED Blink" code for ECE 385
-//First released in ECE 385, Fall 2023 distribution
+//Code for Lab 6.1 for ECE 385
+//ECE 385 Fall 2024
 //
-//Note: you will have to refer to the memory map of your MicroBlaze
-//system to find the proper address for the LED GPIO peripheral.
+//16-bit accumulator, sum on hex1
+// probably should edit blocks or something so that switches are on hex0
 //
-//Modified on 7/25/23 Zuofu Cheng
+//10/17/2024 Ash Huang
 
 #include <stdio.h>
 #include <xparameters.h>

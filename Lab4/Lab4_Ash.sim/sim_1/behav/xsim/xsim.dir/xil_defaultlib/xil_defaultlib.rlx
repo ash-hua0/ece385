@@ -1,0 +1,15 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/Orion/Documents/Lab4_Ash/Lab4_Ash.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/Orion/Documents/Lab4_Ash/Lab4_Ash.srcs/sim_1/new/mod_test.sv,1727363531,systemVerilog,,,,mod_test,,uvm,,,,,,
+,,,,C:/Users/Orion/Documents/Lab4_Ash/Lab4_Ash.srcs/sources_1/new/Synchronizers.sv,,HexDriver,,,,,,,,
+,,,,C:/Users/Orion/Documents/Lab4_Ash/Lab4_Ash.srcs/sources_1/new/reg_1.sv,,sync_debounce,,,,,,,,
+C:/Users/Orion/Documents/Lab4_Ash/Lab4_Ash.srcs/sources_1/new/add_sub.sv,1727385524,systemVerilog,,C:/Users/Orion/Documents/Lab4_Ash/Lab4_Ash.srcs/sources_1/new/control_unit.sv,,add_sub,,uvm,,,,,,
+C:/Users/Orion/Documents/Lab4_Ash/Lab4_Ash.srcs/sources_1/new/adder_la.sv,1727232657,systemVerilog,,C:/Users/Orion/Documents/Lab4_Ash/Lab4_Ash.srcs/sources_1/new/HexDriver.sv,,la;lookahead_adder;lookahead_adder_4,,uvm,,,,,,
+C:/Users/Orion/Documents/Lab4_Ash/Lab4_Ash.srcs/sources_1/new/control_unit.sv,1727385560,systemVerilog,,C:/Users/Orion/Documents/Lab4_Ash/Lab4_Ash.srcs/sources_1/new/adder_la.sv,,control_unit,,uvm,,,,,,
+C:/Users/Orion/Documents/Lab4_Ash/Lab4_Ash.srcs/sources_1/new/multiplier_top.sv,1727390138,systemVerilog,,C:/Users/Orion/Documents/Lab4_Ash/Lab4_Ash.srcs/sources_1/new/add_sub.sv,,multiplier_top,,uvm,,,,,,
+,,,,C:/Users/Orion/Documents/Lab4_Ash/Lab4_Ash.srcs/sim_1/new/mod_test.sv,,reg_1,,,,,,,,
+C:/Users/Orion/Documents/Lab4_Ash/Lab4_Ash.srcs/sources_1/new/reg_8.sv,1727229758,systemVerilog,C:/Users/Orion/Documents/Lab4_Ash/Lab4_Ash.srcs/sim_1/new/mod_test.sv;C:/Users/Orion/Documents/Lab4_Ash/Lab4_Ash.srcs/sources_1/new/HexDriver.sv;C:/Users/Orion/Documents/Lab4_Ash/Lab4_Ash.srcs/sources_1/new/Synchronizers.sv;C:/Users/Orion/Documents/Lab4_Ash/Lab4_Ash.srcs/sources_1/new/add_sub.sv;C:/Users/Orion/Documents/Lab4_Ash/Lab4_Ash.srcs/sources_1/new/adder_la.sv;C:/Users/Orion/Documents/Lab4_Ash/Lab4_Ash.srcs/sources_1/new/control_unit.sv;C:/Users/Orion/Documents/Lab4_Ash/Lab4_Ash.srcs/sources_1/new/multiplier_top.sv;C:/Users/Orion/Documents/Lab4_Ash/Lab4_Ash.srcs/sources_1/new/reg_1.sv;C:/Users/Orion/Documents/Lab4_Ash/Lab4_Ash.srcs/sources_1/new/reg_XAB.sv,C:/Users/Orion/Documents/Lab4_Ash/Lab4_Ash.srcs/sources_1/new/reg_XAB.sv,,$unit_reg_8_sv_2999581248;reg_8,,uvm,,,,,,
+C:/Users/Orion/Documents/Lab4_Ash/Lab4_Ash.srcs/sources_1/new/reg_XAB.sv,1727386940,systemVerilog,,C:/Users/Orion/Documents/Lab4_Ash/Lab4_Ash.srcs/sources_1/new/multiplier_top.sv,,reg_XAB,,uvm,,,,,,

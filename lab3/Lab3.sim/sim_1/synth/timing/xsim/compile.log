@@ -1,0 +1,9 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/OneDrive - University of Illinois - Urbana/homework/ECE 385/Lab3/Lab3.sim/sim_1/synth/timing/xsim/adder_toplevel_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder_toplevel
+INFO: [VRFC 10-311] analyzing module hex_driver
+INFO: [VRFC 10-311] analyzing module load_reg
+INFO: [VRFC 10-311] analyzing module load_reg__parameterized0
+INFO: [VRFC 10-311] analyzing module negedge_detector
+INFO: [VRFC 10-311] analyzing module sync_debounce
+INFO: [VRFC 10-311] analyzing module sync_debounce_0
+INFO: [VRFC 10-311] analyzing module glbl

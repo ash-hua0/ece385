@@ -1,4 +1,8 @@
 //SLC-3 Top level module for both simulation and synthesis using test_memory
+// ECE 385 Fall 2024
+// 10/11/2024
+// Shane Andres
+// Ash Huang
 
 module processor_top (
 	input  logic		clk, 
