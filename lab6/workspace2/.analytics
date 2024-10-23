@@ -1,0 +1,82 @@
+timestamp=[2024-10-22 19:36:11], mode=WORKBENCH_START, duration=0:00:12.837, duration_ms=12837, data={}
+timestamp=[2024-10-22 19:36:12], mode=WORKBENCH_UI_INIT, duration=0:00:01.037, duration_ms=1037, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2024-10-22 19:36:13], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.071, duration_ms=71, data={}
+timestamp=[2024-10-22 19:38:44], mode=APP_CREATION, duration=0:00:13.285, duration_ms=13285, data={name=mb_usb, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=mb_usb_hdmi_top, application_type=application}
+timestamp=[2024-10-22 23:36:53], mode=PLATFORM_GENERATION, duration=0:00:17.119, duration_ms=17119, data={name=mb_usb_hdmi_top}
+timestamp=[2024-10-22 23:36:55], mode=BUILD, duration=0:00:01.689, duration_ms=1689, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-22 23:37:27], mode=BUILD, duration=0:00:03.965, duration_ms=3965, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-22 23:40:07], mode=BUILD, duration=0:00:00.953, duration_ms=953, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-22 23:40:37], mode=BUILD, duration=0:00:02.481, duration_ms=2481, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-22 23:47:46], mode=BUILD, duration=0:00:02.795, duration_ms=2795, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-22 23:49:11], mode=BUILD, duration=0:00:00.675, duration_ms=675, data={name=mb_usb, configuration=Debug, clean_build=true}
+timestamp=[2024-10-22 23:49:18], mode=PLATFORM_GENERATION, duration=0:00:06.315, duration_ms=6315, data={name=mb_usb_hdmi_top}
+timestamp=[2024-10-22 23:49:20], mode=PLATFORM_GENERATION, duration=0:00:02.146, duration_ms=2146, data={name=mb_usb_hdmi_top}
+timestamp=[2024-10-22 23:49:24], mode=PLATFORM_GENERATION, duration=0:00:03.568, duration_ms=3568, data={name=mb_usb_hdmi_top}
+timestamp=[2024-10-22 23:49:25], mode=PLATFORM_GENERATION, duration=0:00:01.429, duration_ms=1429, data={name=mb_usb_hdmi_top}
+timestamp=[2024-10-22 23:50:01], mode=WORKBENCH_START, duration=0:00:12.716, duration_ms=12716, data={}
+timestamp=[2024-10-22 23:50:03], mode=WORKBENCH_UI_INIT, duration=0:00:01.780, duration_ms=1780, data={editors_count=11, platform_editors_count=3, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,mb_usb,mb_usb_hdmi_top,mb_usb_system}
+timestamp=[2024-10-22 23:50:03], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.051, duration_ms=51, data={}
+timestamp=[2024-10-22 23:50:23], mode=PLATFORM_GENERATION, duration=0:00:11.728, duration_ms=11728, data={name=mb_usb_hdmi_top}
+timestamp=[2024-10-22 23:50:29], mode=BUILD, duration=0:00:05.714, duration_ms=5714, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-22 23:50:30], mode=BUILD, duration=0:00:00.433, duration_ms=433, data={name=mb_usb_system, configuration=Debug, clean_build=false}
+timestamp=[2024-10-22 23:53:11], mode=WORKBENCH_START, duration=0:00:11.596, duration_ms=11596, data={}
+timestamp=[2024-10-22 23:53:12], mode=WORKBENCH_UI_INIT, duration=0:00:01.691, duration_ms=1691, data={editors_count=11, platform_editors_count=3, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,mb_usb,mb_usb_hdmi_top,mb_usb_system}
+timestamp=[2024-10-22 23:53:12], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.092, duration_ms=92, data={}
+timestamp=[2024-10-22 23:54:59], mode=PLATFORM_GENERATION, duration=0:00:11.957, duration_ms=11957, data={name=mb_usb_hdmi_top}
+timestamp=[2024-10-22 23:55:00], mode=BUILD, duration=0:00:00.742, duration_ms=742, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-22 23:58:17], mode=BUILD, duration=0:00:02.852, duration_ms=2852, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-22 23:58:20], mode=BUILD, duration=0:00:00.416, duration_ms=416, data={name=mb_usb_system, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 00:03:17], mode=BUILD, duration=0:00:02.723, duration_ms=2723, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 00:16:39], mode=WORKBENCH_START, duration=0:00:12.821, duration_ms=12821, data={}
+timestamp=[2024-10-23 00:16:40], mode=WORKBENCH_UI_INIT, duration=0:00:01.262, duration_ms=1262, data={editors_count=11, platform_editors_count=3, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,mb_usb,mb_usb_hdmi_top,mb_usb_system}
+timestamp=[2024-10-23 00:16:41], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.111, duration_ms=111, data={}
+timestamp=[2024-10-23 00:17:00], mode=PLATFORM_GENERATION, duration=0:00:11.604, duration_ms=11604, data={name=mb_usb_hdmi_top}
+timestamp=[2024-10-23 00:17:01], mode=BUILD, duration=0:00:00.615, duration_ms=615, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 00:17:02], mode=BUILD, duration=0:00:00.507, duration_ms=507, data={name=mb_usb_system, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 00:19:45], mode=BUILD, duration=0:00:03.855, duration_ms=3855, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 00:24:59], mode=WORKBENCH_START, duration=0:00:12.865, duration_ms=12865, data={}
+timestamp=[2024-10-23 00:25:01], mode=WORKBENCH_UI_INIT, duration=0:00:01.583, duration_ms=1583, data={editors_count=11, platform_editors_count=3, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,mb_usb,mb_usb_hdmi_top,mb_usb_system}
+timestamp=[2024-10-23 00:25:01], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.111, duration_ms=111, data={}
+timestamp=[2024-10-23 00:25:23], mode=PLATFORM_GENERATION, duration=0:00:11.689, duration_ms=11689, data={name=mb_usb_hdmi_top}
+timestamp=[2024-10-23 00:25:24], mode=BUILD, duration=0:00:00.594, duration_ms=594, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 00:25:26], mode=BUILD, duration=0:00:00.498, duration_ms=498, data={name=mb_usb_system, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 00:37:35], mode=BUILD, duration=0:00:03.509, duration_ms=3509, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 00:37:37], mode=BUILD, duration=0:00:00.602, duration_ms=602, data={name=mb_usb_system, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 00:40:34], mode=BUILD, duration=0:00:03.331, duration_ms=3331, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 00:40:36], mode=BUILD, duration=0:00:00.498, duration_ms=498, data={name=mb_usb_system, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 00:43:24], mode=BUILD, duration=0:00:04.172, duration_ms=4172, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 00:43:26], mode=BUILD, duration=0:00:00.549, duration_ms=549, data={name=mb_usb_system, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 00:44:21], mode=BUILD, duration=0:00:02.978, duration_ms=2978, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 00:44:23], mode=BUILD, duration=0:00:00.575, duration_ms=575, data={name=mb_usb_system, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 00:45:32], mode=BUILD, duration=0:00:02.943, duration_ms=2943, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 00:49:27], mode=BUILD, duration=0:00:03.200, duration_ms=3200, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 00:50:09], mode=BUILD, duration=0:00:02.883, duration_ms=2883, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 01:06:33], mode=BUILD, duration=0:00:02.372, duration_ms=2372, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 01:06:34], mode=BUILD, duration=0:00:00.375, duration_ms=375, data={name=mb_usb_system, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 01:10:43], mode=BUILD, duration=0:00:03.000, duration_ms=3000, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 01:10:44], mode=BUILD, duration=0:00:00.457, duration_ms=457, data={name=mb_usb_system, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 01:13:07], mode=BUILD, duration=0:00:01.745, duration_ms=1745, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 01:13:47], mode=BUILD, duration=0:00:03.100, duration_ms=3100, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 01:13:49], mode=BUILD, duration=0:00:00.425, duration_ms=425, data={name=mb_usb_system, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 01:18:36], mode=BUILD, duration=0:00:03.136, duration_ms=3136, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 01:20:48], mode=BUILD, duration=0:00:04.033, duration_ms=4033, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 01:22:00], mode=BUILD, duration=0:00:03.245, duration_ms=3245, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 01:22:02], mode=BUILD, duration=0:00:00.451, duration_ms=451, data={name=mb_usb_system, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 02:04:24], mode=BUILD, duration=0:00:01.522, duration_ms=1522, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 02:05:04], mode=BUILD, duration=0:00:02.712, duration_ms=2712, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 02:05:06], mode=BUILD, duration=0:00:00.527, duration_ms=527, data={name=mb_usb_system, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 02:19:34], mode=BUILD, duration=0:00:02.702, duration_ms=2702, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 02:19:36], mode=BUILD, duration=0:00:00.649, duration_ms=649, data={name=mb_usb_system, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 11:00:44], mode=WORKBENCH_START, duration=0:00:14.288, duration_ms=14288, data={}
+timestamp=[2024-10-23 11:00:46], mode=WORKBENCH_UI_INIT, duration=0:00:01.383, duration_ms=1383, data={editors_count=12, platform_editors_count=4, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,mb_usb,mb_usb_hdmi_top,mb_usb_system}
+timestamp=[2024-10-23 11:00:46], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.128, duration_ms=128, data={}
+timestamp=[2024-10-23 11:07:32], mode=BUILD, duration=0:00:03.360, duration_ms=3360, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 11:07:33], mode=BUILD, duration=0:00:00.514, duration_ms=514, data={name=mb_usb_system, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 11:13:01], mode=BUILD, duration=0:00:02.872, duration_ms=2872, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 11:14:28], mode=BUILD, duration=0:00:02.670, duration_ms=2670, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 11:17:36], mode=BUILD, duration=0:00:00.760, duration_ms=760, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 11:17:37], mode=BUILD, duration=0:00:00.496, duration_ms=496, data={name=mb_usb_system, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 11:30:36], mode=BUILD, duration=0:00:02.570, duration_ms=2570, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 11:30:38], mode=BUILD, duration=0:00:00.580, duration_ms=580, data={name=mb_usb_system, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 14:57:50], mode=BUILD, duration=0:00:01.145, duration_ms=1145, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 14:58:09], mode=BUILD, duration=0:00:03.451, duration_ms=3451, data={name=mb_usb, configuration=Debug, clean_build=false}
