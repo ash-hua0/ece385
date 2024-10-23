@@ -1,6 +1,6 @@
 Nothing to build in platform 'mb_usb_hdmi_top'
 
-14:58:05 **** Incremental Build of configuration Debug for project mb_usb ****
+18:48:54 **** Incremental Build of configuration Debug for project mb_usb ****
 make all 
 'Building file: ../src/lw_usb/MAX3421E.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -28,20 +28,19 @@ C:/Users/Orion/Documents/GitHub/ece385/lab6/workspace2/mb_usb_hdmi_top/export/mb
 ../src/lw_usb/MAX3421E.c:32:6: note: declared here
    32 | void SPI_init() {
       |      ^~~~~~~~
+../src/lw_usb/MAX3421E.c: In function 'MAXbytes_wr':
+../src/lw_usb/MAX3421E.c:148:12: warning: unused variable 'ReadBuf' [-Wunused-variable]
+  148 |         u8 ReadBuf[nbytes+1];
+      |            ^~~~~~~
 ../src/lw_usb/MAX3421E.c: In function 'MAX3421E_Task':
-../src/lw_usb/MAX3421E.c:334:46: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
-  334 |         if (XGpio_DiscreteRead(&Gpio_int, 1) & 0x01 == 0) {
+../src/lw_usb/MAX3421E.c:335:46: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+  335 |         if (XGpio_DiscreteRead(&Gpio_int, 1) & 0x01 == 0) {
       |                                              ^
 ../src/lw_usb/MAX3421E.c: In function 'MaxGpxHandler':
-../src/lw_usb/MAX3421E.c:370:14: warning: variable 'GPINIRQ' set but not used [-Wunused-but-set-variable]
-  370 |         BYTE GPINIRQ;
+../src/lw_usb/MAX3421E.c:371:14: warning: variable 'GPINIRQ' set but not used [-Wunused-but-set-variable]
+  371 |         BYTE GPINIRQ;
       |              ^~~~~~~
 'Finished building: ../src/lw_usb/MAX3421E.c'
-' '
-'Building file: ../src/lw_usb_main.c'
-'Invoking: MicroBlaze gcc compiler'
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lw_usb_main.o" -IC:/Users/Orion/Documents/GitHub/ece385/lab6/workspace2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lw_usb_main.d" -MT"src/lw_usb_main.o" -o "src/lw_usb_main.o" "../src/lw_usb_main.c"
-'Finished building: ../src/lw_usb_main.c'
 ' '
 'Building target: mb_usb.elf'
 'Invoking: MicroBlaze gcc linker'
@@ -51,6 +50,9 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/Orion/Documents/GitHub/ece385/lab
 'Invoking: MicroBlaze Print Size'
 mb-size mb_usb.elf  |tee "mb_usb.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  23900	    488	   3676	  28064	   6da0	mb_usb.elf
+  24040	    488	   3672	  28200	   6e28	mb_usb.elf
 'Finished building: mb_usb.elf.size'
 ' '
+18:48:59 **** Incremental Build of configuration Debug for project mb_usb_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."

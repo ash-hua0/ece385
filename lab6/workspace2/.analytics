@@ -80,3 +80,12 @@ timestamp=[2024-10-23 11:30:36], mode=BUILD, duration=0:00:02.570, duration_ms=2
 timestamp=[2024-10-23 11:30:38], mode=BUILD, duration=0:00:00.580, duration_ms=580, data={name=mb_usb_system, configuration=Debug, clean_build=false}
 timestamp=[2024-10-23 14:57:50], mode=BUILD, duration=0:00:01.145, duration_ms=1145, data={name=mb_usb, configuration=Debug, clean_build=false}
 timestamp=[2024-10-23 14:58:09], mode=BUILD, duration=0:00:03.451, duration_ms=3451, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 18:33:21], mode=WORKBENCH_START, duration=0:00:14.143, duration_ms=14143, data={}
+timestamp=[2024-10-23 18:33:22], mode=WORKBENCH_UI_INIT, duration=0:00:01.588, duration_ms=1588, data={editors_count=13, platform_editors_count=4, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,mb_usb,mb_usb_hdmi_top,mb_usb_system}
+timestamp=[2024-10-23 18:33:22], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.157, duration_ms=157, data={}
+timestamp=[2024-10-23 18:38:17], mode=BUILD, duration=0:00:03.249, duration_ms=3249, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 18:38:19], mode=BUILD, duration=0:00:00.632, duration_ms=632, data={name=mb_usb_system, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 18:46:39], mode=BUILD, duration=0:00:03.482, duration_ms=3482, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 18:46:41], mode=BUILD, duration=0:00:00.800, duration_ms=800, data={name=mb_usb_system, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 18:48:57], mode=BUILD, duration=0:00:03.077, duration_ms=3077, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 18:48:59], mode=BUILD, duration=0:00:00.552, duration_ms=552, data={name=mb_usb_system, configuration=Debug, clean_build=false}

@@ -6,8 +6,15 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="XSpi_Transfer"/>
+		<item key="selection" value="USB task state"/>
 		<list key="findhistory">
+			<item value="usb task state"/>
+			<item value="usb task"/>
+			<item value="initializing"/>
+			<item value="holding usb in reset"/>
+			<item value="initializing spi"/>
+			<item value="initializing max"/>
+			<item value="&quot;USB task"/>
 			<item value="XSpi_Transfer"/>
 			<item value="SpiI"/>
 		</list>
