@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Orion/Documents/ece385-master/lab6/lab6.runs/mb_block_axi_gpio_0_0_synth_1'
+HD_PWD='C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/mb_block_axi_gpio_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

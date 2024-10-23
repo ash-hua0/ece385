@@ -26,3 +26,4 @@ platform generate -domains
 platform active {mb_6_1_top}
 platform config -updatehw {C:/Users/Orion/Documents/ece385-master/lab6/mb_6_1_top.xsa}
 platform generate -domains 
+platform generate -domains standalone_microblaze_0 

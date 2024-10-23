@@ -30,8 +30,8 @@ int main()
     uint32_t val = 0;
     uint32_t prev = *accumulate; // for edge detect
     while (1+1 != 3){
-    	*led_gpio_data = *sw_gpio_data;
-    	*hex_gpio_data = val;
+    	*led_gpio_data = val;
+    	*hex_gpio_data = val + 65536 * *sw_gpio_data;
     	if (*accumulate & ~prev){ //posedge accumulate (acc 1, prev 0)
     		if (val + *sw_gpio_data <= 65536){
 				val = val + *sw_gpio_data;

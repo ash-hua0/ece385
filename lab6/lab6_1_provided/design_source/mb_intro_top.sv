@@ -28,7 +28,7 @@ module mb_intro_top(
     logic [15:0] sw_S;
     logic [31:0] hex; // placeholder for programmed data
     
-  mb_block mb_block_i
+  mb_block mb_block
        (.clk_100MHz(clk),
         .gpio_rtl_0_tri_o(led[15:0]),
         .gpio_rtl_3_tri_o(hex[31:0]),  // hold accumulated val for hex
