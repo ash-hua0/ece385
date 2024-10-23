@@ -1,0 +1,6 @@
+1729645825487	Move 7 resources to 'lw_usb'
+1729645834864	Move 4 resources to 'lw_usb'
+1729645844477	Move 'lw_usb_main.c' to 'src'
+1729645864475	Move 'README' to 'lw_usb'
+1729645889679	Move 'project_config.h' to 'lw_usb'
+1729659978894	Move 'project_config.h' to 'src'

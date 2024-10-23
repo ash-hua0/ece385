@@ -236,3 +236,32 @@ reset_run synth_1
 launch_runs synth_1 -jobs 4
 wait_on_run synth_1
 open_bd_design {C:/Users/Shane/Documents/Classes/ECE_385/Lab_6/lab_6/lab_6.srcs/sources_1/bd/mb_usb/mb_usb.bd}
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/Shane/Documents/Classes/ECE_385/Lab_6/lab_6/mb_usb_hdmi_top.xsa
+open_bd_design {C:/Users/Shane/Documents/Classes/ECE_385/Lab_6/lab_6/lab_6.srcs/sources_1/bd/mb_usb/mb_usb.bd}
+startgroup
+set_property CONFIG.C_BAUDRATE {115200} [get_bd_cells axi_uartlite_0]
+endgroup
+startgroup
+endgroup
+save_bd_design
+startgroup
+endgroup
+startgroup
+endgroup
+reset_run mb_usb_axi_uartlite_0_0_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/Shane/Documents/Classes/ECE_385/Lab_6/lab_6/mb_usb_hdmi_top.xsa
+close_design
+startgroup
+endgroup
+startgroup
+endgroup
+startgroup
+endgroup

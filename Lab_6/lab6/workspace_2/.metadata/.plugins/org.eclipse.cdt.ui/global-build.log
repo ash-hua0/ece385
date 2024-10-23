@@ -1,0 +1,20 @@
+Nothing to build in platform 'mb_6_1_top'
+
+14:25:37 **** Incremental Build of configuration Debug for project lab6_shane ****
+make all 
+'Building file: ../src/mb_6_1.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mb_6_1.o" -IC:/Users/Shane/Documents/Classes/ECE_385/Lab_6/lab6/workspace_2/mb_6_1_top/export/mb_6_1_top/sw/mb_6_1_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/mb_6_1.d" -MT"src/mb_6_1.o" -o "src/mb_6_1.o" "../src/mb_6_1.c"
+'Finished building: ../src/mb_6_1.c'
+' '
+'Building target: lab6_shane.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/Shane/Documents/Classes/ECE_385/Lab_6/lab6/workspace_2/mb_6_1_top/export/mb_6_1_top/sw/mb_6_1_top/standalone_microblaze_0/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "lab6_shane.elf"  ./src/mb_6_1.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: lab6_shane.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size lab6_shane.elf  |tee "lab6_shane.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2212	    332	   2088	   4632	   1218	lab6_shane.elf
+'Finished building: lab6_shane.elf.size'
+' '

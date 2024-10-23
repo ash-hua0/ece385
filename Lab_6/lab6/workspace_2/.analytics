@@ -1,0 +1,66 @@
+timestamp=[2024-10-18 11:22:56], mode=WORKBENCH_START, duration=0:00:07.891, duration_ms=7891, data={}
+timestamp=[2024-10-18 11:22:56], mode=WORKBENCH_UI_INIT, duration=0:00:00.607, duration_ms=607, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2024-10-18 11:22:57], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.075, duration_ms=75, data={}
+timestamp=[2024-10-18 11:24:31], mode=APP_CREATION, duration=0:00:08.616, duration_ms=8616, data={name=lab6_shane, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=mb_6_1_top, application_type=application}
+timestamp=[2024-10-18 11:30:47], mode=PLATFORM_GENERATION, duration=0:00:11.530, duration_ms=11530, data={name=mb_6_1_top}
+timestamp=[2024-10-18 11:30:51], mode=BUILD, duration=0:00:03.674, duration_ms=3674, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 11:32:44], mode=BUILD, duration=0:00:00.521, duration_ms=521, data={name=lab6_shane, configuration=Debug, clean_build=true}
+timestamp=[2024-10-18 11:32:46], mode=BUILD, duration=0:00:02.260, duration_ms=2260, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 11:32:47], mode=BUILD, duration=0:00:00.249, duration_ms=249, data={name=lab6_shane_system, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 11:40:10], mode=BUILD, duration=0:00:03.268, duration_ms=3268, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 11:40:11], mode=BUILD, duration=0:00:00.265, duration_ms=265, data={name=lab6_shane_system, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 11:46:47], mode=BUILD, duration=0:00:01.150, duration_ms=1150, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 11:47:11], mode=BUILD, duration=0:00:00.622, duration_ms=622, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 11:47:53], mode=BUILD, duration=0:00:00.618, duration_ms=618, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 11:49:41], mode=BUILD, duration=0:00:00.588, duration_ms=588, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 11:49:56], mode=BUILD, duration=0:00:00.322, duration_ms=322, data={name=lab6_shane_system, configuration=Debug, clean_build=true}
+timestamp=[2024-10-18 11:50:04], mode=PLATFORM_GENERATION, duration=0:00:05.323, duration_ms=5323, data={name=mb_6_1_top}
+timestamp=[2024-10-18 11:50:05], mode=BUILD, duration=0:00:00.407, duration_ms=407, data={name=lab6_shane, configuration=Debug, clean_build=true}
+timestamp=[2024-10-18 11:50:20], mode=PLATFORM_GENERATION, duration=0:00:07.625, duration_ms=7625, data={name=mb_6_1_top}
+timestamp=[2024-10-18 11:50:22], mode=BUILD, duration=0:00:01.523, duration_ms=1523, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 11:50:56], mode=BUILD, duration=0:00:00.492, duration_ms=492, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 11:51:03], mode=BUILD, duration=0:00:00.738, duration_ms=738, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 11:52:25], mode=PLATFORM_GENERATION, duration=0:00:04.107, duration_ms=4107, data={name=mb_6_1_top}
+timestamp=[2024-10-18 11:52:25], mode=BUILD, duration=0:00:00.221, duration_ms=221, data={name=lab6_shane, configuration=Debug, clean_build=true}
+timestamp=[2024-10-18 11:52:55], mode=PLATFORM_GENERATION, duration=0:00:07.148, duration_ms=7148, data={name=mb_6_1_top}
+timestamp=[2024-10-18 11:52:56], mode=BUILD, duration=0:00:01.474, duration_ms=1474, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 11:55:25], mode=BUILD, duration=0:00:00.780, duration_ms=780, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 11:57:07], mode=BUILD, duration=0:00:00.847, duration_ms=847, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 11:58:48], mode=BUILD, duration=0:00:00.429, duration_ms=429, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 11:59:17], mode=BUILD, duration=0:00:00.905, duration_ms=905, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 12:00:34], mode=BUILD, duration=0:00:00.847, duration_ms=847, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 12:03:14], mode=BUILD, duration=0:00:00.304, duration_ms=304, data={name=lab6_shane, configuration=Debug, clean_build=true}
+timestamp=[2024-10-18 12:03:15], mode=BUILD, duration=0:00:01.355, duration_ms=1355, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 12:03:55], mode=BUILD, duration=0:00:01.527, duration_ms=1527, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 12:04:24], mode=BUILD, duration=0:00:00.171, duration_ms=171, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 12:06:45], mode=BUILD, duration=0:00:00.186, duration_ms=186, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 12:06:45], mode=BUILD, duration=0:00:00.220, duration_ms=220, data={name=lab6_shane_system, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 12:06:56], mode=BUILD, duration=0:00:01.339, duration_ms=1339, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 12:07:03], mode=BUILD, duration=0:00:00.223, duration_ms=223, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 12:07:07], mode=BUILD, duration=0:00:00.220, duration_ms=220, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 12:07:15], mode=BUILD, duration=0:00:00.915, duration_ms=915, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 12:07:37], mode=BUILD, duration=0:00:01.401, duration_ms=1401, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 12:07:54], mode=BUILD, duration=0:00:01.340, duration_ms=1340, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 12:14:08], mode=BUILD, duration=0:00:00.891, duration_ms=891, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 12:14:38], mode=BUILD, duration=0:00:00.923, duration_ms=923, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 12:14:53], mode=BUILD, duration=0:00:01.400, duration_ms=1400, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 12:15:35], mode=BUILD, duration=0:00:00.837, duration_ms=837, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 12:15:53], mode=BUILD, duration=0:00:00.862, duration_ms=862, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 12:16:29], mode=BUILD, duration=0:00:00.907, duration_ms=907, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 12:16:50], mode=BUILD, duration=0:00:01.532, duration_ms=1532, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 12:19:19], mode=BUILD, duration=0:00:03.665, duration_ms=3665, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 12:33:34], mode=BUILD, duration=0:00:01.777, duration_ms=1777, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 12:33:35], mode=BUILD, duration=0:00:00.202, duration_ms=202, data={name=lab6_shane_system, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 12:36:39], mode=BUILD, duration=0:00:01.211, duration_ms=1211, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 12:37:33], mode=BUILD, duration=0:00:01.203, duration_ms=1203, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 12:37:34], mode=BUILD, duration=0:00:00.247, duration_ms=247, data={name=lab6_shane_system, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 12:38:11], mode=BUILD, duration=0:00:01.222, duration_ms=1222, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 12:38:12], mode=BUILD, duration=0:00:00.279, duration_ms=279, data={name=lab6_shane_system, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 12:40:10], mode=BUILD, duration=0:00:00.779, duration_ms=779, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 12:40:35], mode=BUILD, duration=0:00:01.191, duration_ms=1191, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 12:42:42], mode=BUILD, duration=0:00:00.778, duration_ms=778, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 12:43:18], mode=BUILD, duration=0:00:00.848, duration_ms=848, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 12:43:30], mode=BUILD, duration=0:00:00.472, duration_ms=472, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 14:24:59], mode=BUILD, duration=0:00:01.982, duration_ms=1982, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 14:25:16], mode=BUILD, duration=0:00:00.779, duration_ms=779, data={name=lab6_shane, configuration=Debug, clean_build=false}
+timestamp=[2024-10-18 14:25:38], mode=BUILD, duration=0:00:01.204, duration_ms=1204, data={name=lab6_shane, configuration=Debug, clean_build=false}
