@@ -1,0 +1,699 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Oct 22 11:30:45 2024
+# Process ID: 27316
+# Current directory: C:/Users/Shane/Documents/Classes/ECE_385/Lab_6/lab_6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23320 C:\Users\Shane\Documents\Classes\ECE_385\Lab_6\lab_6\lab_6.xpr
+# Log file: C:/Users/Shane/Documents/Classes/ECE_385/Lab_6/lab_6/vivado.log
+# Journal file: C:/Users/Shane/Documents/Classes/ECE_385/Lab_6/lab_6\vivado.jou
+# Running On: HP, OS: Windows, CPU Frequency: 3418 MHz, CPU Physical cores: 4, Host memory: 16917 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Shane/Documents/Classes/ECE_385/Lab_6/lab_6/lab_6.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:ac701:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/ac701/1.4/board.xml as part xc7a200tfbg676-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.4/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.2/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.3/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.4/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kr260_som/1.0/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.1 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kr260_som/1.1/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.4/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc707:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc707/1.4/board.xml as part xc7vx485tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vc709:part0:1.8 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vc709/1.8/board.xml as part xc7vx690tffg1761-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc702:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc702/1.4/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu104:part0:1.1 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu104/1.1/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.4/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.5 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.5/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.6 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.6/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+open_project: Time (s): cpu = 00:01:06 ; elapsed = 00:00:30 . Memory (MB): peak = 1181.582 ; gain = 388.418
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/Shane/Documents/Classes/ECE_385/Lab_6/lab_6/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd}
+Reading block design file <C:/Users/Shane/Documents/Classes/ECE_385/Lab_6/lab_6/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd>...
+Adding component instance block -- xilinx.com:ip:microblaze:11.0 - microblaze_0
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - microblaze_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - microblaze_0_axi_intc
+Adding component instance block -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_0
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Successfully read diagram <mb_block> from block design file <C:/Users/Shane/Documents/Classes/ECE_385/Lab_6/lab_6/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd>
+delete_bd_objs [get_bd_intf_nets microblaze_0_axi_periph_M01_AXI] [get_bd_intf_nets axi_gpio_0_GPIO] [get_bd_cells axi_gpio_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+set_property location {5 1639 -304} [get_bd_cells axi_gpio_0]
+set_property name gpio_usb_rst [get_bd_cells axi_gpio_0]
+set_property -dict [list \
+  CONFIG.C_ALL_OUTPUTS {1} \
+  CONFIG.C_GPIO_WIDTH {1} \
+] [get_bd_cells gpio_usb_rst]
+set_property location {4 1638 -612} [get_bd_cells gpio_usb_rst]
+copy_bd_objs /  [get_bd_cells {gpio_usb_rst}]
+set_property location {4 1618 -471} [get_bd_cells gpio_usb_rst1]
+delete_bd_objs [get_bd_cells gpio_usb_rst1]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+set_property location {5 1631 -472} [get_bd_cells axi_gpio_0]
+set_property name gpio_usb_int [get_bd_cells axi_gpio_0]
+set_property -dict [list \
+  CONFIG.C_ALL_INPUTS {1} \
+  CONFIG.C_GPIO_WIDTH {1} \
+  CONFIG.C_INTERRUPT_PRESENT {1} \
+] [get_bd_cells gpio_usb_int]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+set_property location {3.5 1113 -394} [get_bd_cells axi_gpio_0]
+set_property location {5 1645 -301} [get_bd_cells axi_gpio_0]
+set_property location {4 1683 -437} [get_bd_cells gpio_usb_int]
+set_property location {4 1683 -574} [get_bd_cells gpio_usb_rst]
+set_property name gpio_usb_keycode [get_bd_cells axi_gpio_0]
+set_property -dict [list \
+  CONFIG.C_ALL_OUTPUTS {1} \
+  CONFIG.C_ALL_OUTPUTS_2 {1} \
+  CONFIG.C_IS_DUAL {1} \
+] [get_bd_cells gpio_usb_keycode]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_timer:2.0 axi_timer_0
+endgroup
+set_property location {2.5 704 -488} [get_bd_cells axi_timer_0]
+set_property CONFIG.enable_timer2 {0} [get_bd_cells axi_timer_0]
+set_property name timer_usb_axi [get_bd_cells axi_timer_0]
+set_property location {1 156 435} [get_bd_cells timer_usb_axi]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_quad_spi:3.2 axi_quad_spi_0
+WARNING: [BD 41-721] Attempt to set value '0' on disabled parameter 'C_S_AXI4_ID_WIDTH' of cell '/axi_quad_spi_0' is ignored
+endgroup
+set_property location {2.5 750 -409} [get_bd_cells axi_quad_spi_0]
+set_property name spi_usb [get_bd_cells axi_quad_spi_0]
+update_gui_for_PARAM_VALUE.C_XIP_MODE- xip_mode: 0 spi_mode: 0 xip_perf_mode: 1
+update_gui_for_PARAM_VALUE.C_XIP_PERF_MODE- xip_mode: 0 xip_perf_mode: 1 axi4_interface: 0
+set_property -dict [list \
+  CONFIG.C_SCK_RATIO {4} \
+  CONFIG.C_USE_STARTUP {0} \
+] [get_bd_cells spi_usb]
+set_property location {4 1355 -411} [get_bd_cells spi_usb]
+set_property location {3 1340 -112} [get_bd_cells spi_usb]
+set_property location {3 1417 -260} [get_bd_cells spi_usb]
+set_property location {3 1419 -131} [get_bd_cells spi_usb]
+set_property location {3 1428 -137} [get_bd_cells spi_usb]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins gpio_usb_int/GPIO]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 gpio_rtl_1
+INFO: [BoardRule 102-9] connect_bd_intf_net /gpio_rtl_1 /gpio_usb_int/GPIO
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/gpio_usb_int/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins gpio_usb_int/S_AXI]
+Slave segment '/gpio_usb_int/S_AXI/Reg' is being assigned into address space '/microblaze_0/Data' at <0x4000_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins gpio_usb_keycode/GPIO]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 gpio_rtl_2
+INFO: [BoardRule 102-9] connect_bd_intf_net /gpio_rtl_2 /gpio_usb_keycode/GPIO
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins gpio_usb_keycode/GPIO2]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 gpio_rtl_3
+INFO: [BoardRule 102-9] connect_bd_intf_net /gpio_rtl_3 /gpio_usb_keycode/GPIO2
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/gpio_usb_keycode/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins gpio_usb_keycode/S_AXI]
+Slave segment '/gpio_usb_keycode/S_AXI/Reg' is being assigned into address space '/microblaze_0/Data' at <0x4001_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins gpio_usb_rst/GPIO]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:gpio_rtl:1.0 gpio_rtl_4
+INFO: [BoardRule 102-9] connect_bd_intf_net /gpio_rtl_4 /gpio_usb_rst/GPIO
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/gpio_usb_rst/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins gpio_usb_rst/S_AXI]
+Slave segment '/gpio_usb_rst/S_AXI/Reg' is being assigned into address space '/microblaze_0/Data' at <0x4002_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/spi_usb/AXI_LITE} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins spi_usb/AXI_LITE]
+Slave segment '/spi_usb/AXI_LITE/Reg' is being assigned into address space '/microblaze_0/Data' at <0x44A0_0000 [ 64K ]>.
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins spi_usb/SPI_0]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:spi_rtl:1.0 spi_rtl_0
+INFO: [BoardRule 102-9] connect_bd_intf_net /spi_rtl_0 /spi_usb/SPI_0
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/timer_usb_axi/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins timer_usb_axi/S_AXI]
+Slave segment '/timer_usb_axi/S_AXI/Reg' is being assigned into address space '/microblaze_0/Data' at <0x41C0_0000 [ 64K ]>.
+endgroup
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/timer_usb_axi/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins timer_usb_axi/S_AXI]'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins spi_usb/SPI_0]'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/spi_usb/AXI_LITE} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins spi_usb/AXI_LITE]'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/gpio_usb_rst/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins gpio_usb_rst/S_AXI]'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins gpio_usb_rst/GPIO]'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/gpio_usb_keycode/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins gpio_usb_keycode/S_AXI]'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins gpio_usb_keycode/GPIO2]'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins gpio_usb_keycode/GPIO]'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/gpio_usb_int/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins gpio_usb_int/S_AXI]'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins gpio_usb_int/GPIO]'
+INFO: [Common 17-17] undo 'startgroup'
+undo: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1546.070 ; gain = 0.000
+redo
+INFO: [Common 17-16] redo 'startgroup'
+INFO: [Common 17-16] redo 'apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins gpio_usb_int/GPIO]'
+INFO: [Common 17-16] redo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/gpio_usb_int/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins gpio_usb_int/S_AXI]'
+INFO: [Common 17-16] redo 'apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins gpio_usb_keycode/GPIO]'
+INFO: [Common 17-16] redo 'apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins gpio_usb_keycode/GPIO2]'
+INFO: [Common 17-16] redo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/gpio_usb_keycode/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins gpio_usb_keycode/S_AXI]'
+INFO: [Common 17-16] redo 'apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins gpio_usb_rst/GPIO]'
+INFO: [Common 17-16] redo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/gpio_usb_rst/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins gpio_usb_rst/S_AXI]'
+INFO: [Common 17-16] redo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/spi_usb/AXI_LITE} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins spi_usb/AXI_LITE]'
+INFO: [Common 17-16] redo 'apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins spi_usb/SPI_0]'
+INFO: [Common 17-16] redo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/timer_usb_axi/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins timer_usb_axi/S_AXI]'
+INFO: [Common 17-16] redo 'endgroup'
+redo: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1546.070 ; gain = 0.000
+startgroup
+set_property location {4.5 1900 -572} [get_bd_cells gpio_usb_int]
+set_property location {5 1900 -572} [get_bd_cells microblaze_0_axi_intc]
+set_property location {5 1900 -572} [get_bd_cells gpio_usb_keycode]
+set_property location {5 1900 -572} [get_bd_cells axi_uartlite_0]
+set_property location {5 1900 -572} [get_bd_cells gpio_usb_rst]
+endgroup
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'set_property location {5 1900 -572} [get_bd_cells gpio_usb_rst]'
+INFO: [Common 17-17] undo 'set_property location {5 1900 -572} [get_bd_cells axi_uartlite_0]'
+INFO: [Common 17-17] undo 'set_property location {5 1900 -572} [get_bd_cells gpio_usb_keycode]'
+INFO: [Common 17-17] undo 'set_property location {5 1900 -572} [get_bd_cells microblaze_0_axi_intc]'
+INFO: [Common 17-17] undo 'set_property location {4.5 1900 -572} [get_bd_cells gpio_usb_int]'
+INFO: [Common 17-17] undo 'startgroup'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/timer_usb_axi/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins timer_usb_axi/S_AXI]'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins spi_usb/SPI_0]'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/spi_usb/AXI_LITE} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins spi_usb/AXI_LITE]'
+INFO: [Common 17-365] Interrupt caught but 'common::undo' cannot be canceled. Please wait for command to finish.
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/gpio_usb_rst/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins gpio_usb_rst/S_AXI]'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins gpio_usb_rst/GPIO]'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/gpio_usb_keycode/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins gpio_usb_keycode/S_AXI]'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins gpio_usb_keycode/GPIO2]'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins gpio_usb_keycode/GPIO]'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/gpio_usb_int/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins gpio_usb_int/S_AXI]'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins gpio_usb_int/GPIO]'
+INFO: [Common 17-17] undo 'startgroup'
+undo: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1546.070 ; gain = 0.000
+INFO: [Common 17-681] Processing pending cancel.
+redo
+INFO: [Common 17-16] redo 'startgroup'
+INFO: [Common 17-16] redo 'apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins gpio_usb_int/GPIO]'
+INFO: [Common 17-16] redo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/gpio_usb_int/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins gpio_usb_int/S_AXI]'
+INFO: [Common 17-16] redo 'apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins gpio_usb_keycode/GPIO]'
+INFO: [Common 17-16] redo 'apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins gpio_usb_keycode/GPIO2]'
+INFO: [Common 17-16] redo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/gpio_usb_keycode/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins gpio_usb_keycode/S_AXI]'
+INFO: [Common 17-16] redo 'apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins gpio_usb_rst/GPIO]'
+INFO: [Common 17-16] redo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/gpio_usb_rst/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins gpio_usb_rst/S_AXI]'
+INFO: [Common 17-16] redo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/spi_usb/AXI_LITE} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins spi_usb/AXI_LITE]'
+INFO: [Common 17-16] redo 'apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto}}  [get_bd_intf_pins spi_usb/SPI_0]'
+INFO: [Common 17-16] redo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_1/clk_out1 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_1/clk_out1 (100 MHz)} Master {/microblaze_0 (Periph)} Slave {/timer_usb_axi/S_AXI} ddr_seg {Auto} intc_ip {/microblaze_0_axi_periph} master_apm {0}}  [get_bd_intf_pins timer_usb_axi/S_AXI]'
+INFO: [Common 17-16] redo 'endgroup'
+redo: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1546.070 ; gain = 0.000
+startgroup
+set_property location {4.5 1787 -3} [get_bd_cells gpio_usb_int]
+set_property location {5 1787 -3} [get_bd_cells microblaze_0_axi_intc]
+set_property location {5 1787 -3} [get_bd_cells gpio_usb_keycode]
+set_property location {5 1787 -3} [get_bd_cells axi_uartlite_0]
+set_property location {5 1787 -3} [get_bd_cells gpio_usb_rst]
+endgroup
+startgroup
+set_property location {4 1734 -438} [get_bd_cells gpio_usb_int]
+set_property location {4 1734 2} [get_bd_cells gpio_usb_keycode]
+set_property location {4 1734 -278} [get_bd_cells gpio_usb_rst]
+set_property location {4 1734 -278} [get_bd_cells axi_uartlite_0]
+set_property location {4 1734 172} [get_bd_cells microblaze_0_axi_intc]
+endgroup
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'set_property location {4 1734 172} [get_bd_cells microblaze_0_axi_intc]'
+INFO: [Common 17-17] undo 'set_property location {4 1734 -278} [get_bd_cells axi_uartlite_0]'
+INFO: [Common 17-17] undo 'set_property location {4 1734 -278} [get_bd_cells gpio_usb_rst]'
+INFO: [Common 17-17] undo 'set_property location {4 1734 2} [get_bd_cells gpio_usb_keycode]'
+INFO: [Common 17-17] undo 'set_property location {4 1734 -438} [get_bd_cells gpio_usb_int]'
+INFO: [Common 17-17] undo 'startgroup'
+redo
+INFO: [Common 17-16] redo 'startgroup'
+INFO: [Common 17-16] redo 'set_property location {4 1734 -438} [get_bd_cells gpio_usb_int]'
+INFO: [Common 17-16] redo 'set_property location {4 1734 2} [get_bd_cells gpio_usb_keycode]'
+INFO: [Common 17-16] redo 'set_property location {4 1734 -278} [get_bd_cells gpio_usb_rst]'
+INFO: [Common 17-16] redo 'set_property location {4 1734 -278} [get_bd_cells axi_uartlite_0]'
+INFO: [Common 17-16] redo 'set_property location {4 1734 172} [get_bd_cells microblaze_0_axi_intc]'
+INFO: [Common 17-16] redo 'endgroup'
+startgroup
+set_property location {4 1793 -587} [get_bd_cells gpio_usb_int]
+set_property location {4 1793 163} [get_bd_cells microblaze_0_axi_intc]
+set_property location {4 1793 -17} [get_bd_cells gpio_usb_keycode]
+set_property location {4 1793 -427} [get_bd_cells gpio_usb_rst]
+set_property location {4 1793 -287} [get_bd_cells axi_uartlite_0]
+endgroup
+startgroup
+set_property location {3.5 1684 -288} [get_bd_cells gpio_usb_int]
+set_property location {4 1684 -288} [get_bd_cells microblaze_0_axi_intc]
+set_property location {4 1684 -288} [get_bd_cells gpio_usb_keycode]
+set_property location {4 1684 -288} [get_bd_cells gpio_usb_rst]
+set_property location {4 1684 -288} [get_bd_cells axi_uartlite_0]
+endgroup
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'set_property location {4 1684 -288} [get_bd_cells axi_uartlite_0]'
+INFO: [Common 17-17] undo 'set_property location {4 1684 -288} [get_bd_cells gpio_usb_rst]'
+INFO: [Common 17-17] undo 'set_property location {4 1684 -288} [get_bd_cells gpio_usb_keycode]'
+INFO: [Common 17-17] undo 'set_property location {4 1684 -288} [get_bd_cells microblaze_0_axi_intc]'
+INFO: [Common 17-17] undo 'set_property location {3.5 1684 -288} [get_bd_cells gpio_usb_int]'
+INFO: [Common 17-17] undo 'startgroup'
+redo
+INFO: [Common 17-16] redo 'startgroup'
+INFO: [Common 17-16] redo 'set_property location {3.5 1684 -288} [get_bd_cells gpio_usb_int]'
+INFO: [Common 17-16] redo 'set_property location {4 1684 -288} [get_bd_cells microblaze_0_axi_intc]'
+INFO: [Common 17-16] redo 'set_property location {4 1684 -288} [get_bd_cells gpio_usb_keycode]'
+INFO: [Common 17-16] redo 'set_property location {4 1684 -288} [get_bd_cells gpio_usb_rst]'
+INFO: [Common 17-16] redo 'set_property location {4 1684 -288} [get_bd_cells axi_uartlite_0]'
+INFO: [Common 17-16] redo 'endgroup'
+startgroup
+set_property location {4 1678 -16} [get_bd_cells microblaze_0_axi_intc]
+set_property location {4 1678 -226} [get_bd_cells gpio_usb_keycode]
+set_property location {4 1678 -546} [get_bd_cells gpio_usb_rst]
+set_property location {4 1678 -406} [get_bd_cells axi_uartlite_0]
+set_property location {4 1678 154} [get_bd_cells gpio_usb_int]
+endgroup
+set_property location {2166 148} [get_bd_intf_ports gpio_rtl_1]
+set_property location {2159 140} [get_bd_intf_ports gpio_rtl_1]
+set_property location {2175 -233} [get_bd_intf_ports gpio_rtl_4]
+set_property location {2182 -553} [get_bd_intf_ports gpio_rtl_4]
+set_property location {2162 -427} [get_bd_intf_ports uart_rtl_0]
+set_property location {2165 -419} [get_bd_intf_ports uart_rtl_0]
+set_property location {2158 -151} [get_bd_intf_ports spi_rtl_0]
+set_property location {2162 -22} [get_bd_intf_ports gpio_rtl_3]
+set_property location {2173 -204} [get_bd_intf_ports gpio_rtl_3]
+set_property location {2170 -213} [get_bd_intf_ports gpio_rtl_3]
+set_property location {2165 -227} [get_bd_intf_ports gpio_rtl_3]
+set_property location {2174 -253} [get_bd_intf_ports gpio_rtl_2]
+set_property location {2162 -253} [get_bd_intf_ports gpio_rtl_2]
+set_property location {2162 -210} [get_bd_intf_ports gpio_rtl_3]
+save_bd_design
+Wrote  : <C:\Users\Shane\Documents\Classes\ECE_385\Lab_6\lab_6\lab_6.srcs\sources_1\bd\mb_block\mb_block.bd> 
+Wrote  : <C:/Users/Shane/Documents/Classes/ECE_385/Lab_6/lab_6/lab_6.srcs/sources_1/bd/mb_block/ui/bd_d3042d03.ui> 
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconcat:2.1 xlconcat_0
+endgroup
+set_property location {3 1157 461} [get_bd_cells xlconcat_0]
+set_property location {4 1658 255} [get_bd_cells gpio_usb_int]
+set_property location {4 1723 137} [get_bd_cells xlconcat_0]
+set_property CONFIG.NUM_PORTS {4} [get_bd_cells xlconcat_0]
+connect_bd_net [get_bd_pins timer_usb_axi/interrupt] [get_bd_pins xlconcat_0/In0]
+connect_bd_net [get_bd_pins axi_uartlite_0/interrupt] [get_bd_pins xlconcat_0/In1]
+delete_bd_objs [get_bd_nets axi_uartlite_0_interrupt]
+connect_bd_net [get_bd_pins axi_uartlite_0/interrupt] [get_bd_pins xlconcat_0/In1]
+connect_bd_net [get_bd_pins spi_usb/ip2intc_irpt] [get_bd_pins xlconcat_0/In2]
+connect_bd_net [get_bd_pins gpio_usb_int/ip2intc_irpt] [get_bd_pins xlconcat_0/In3]
+connect_bd_net [get_bd_pins xlconcat_0/dout] [get_bd_pins microblaze_0_axi_intc/intr]
+undo
+INFO: [Common 17-17] undo 'connect_bd_net [get_bd_pins xlconcat_0/dout] [get_bd_pins microblaze_0_axi_intc/intr]'
+connect_bd_net [get_bd_pins xlconcat_0/dout] [get_bd_pins microblaze_0_axi_intc/intr]
+set_property location {4 1680 332} [get_bd_cells gpio_usb_int]
+set_property location {4 1680 201} [get_bd_cells xlconcat_0]
+set_property location {4 1681 372} [get_bd_cells gpio_usb_int]
+undo
+INFO: [Common 17-17] undo 'set_property location {4 1681 372} [get_bd_cells gpio_usb_int]'
+redo
+INFO: [Common 17-16] redo 'set_property location {4 1681 372} [get_bd_cells gpio_usb_int]'
+save_bd_design
+Wrote  : <C:\Users\Shane\Documents\Classes\ECE_385\Lab_6\lab_6\lab_6.srcs\sources_1\bd\mb_block\mb_block.bd> 
+Wrote  : <C:/Users/Shane/Documents/Classes/ECE_385/Lab_6/lab_6/lab_6.srcs/sources_1/bd/mb_block/ui/bd_d3042d03.ui> 
+set_property name gpio_usb_rst [get_bd_intf_ports gpio_rtl_4]
+set_property location {2169 346} [get_bd_intf_ports gpio_rtl_1]
+set_property location {2170 361} [get_bd_intf_ports gpio_rtl_1]
+set_property name gpio_usb_int [get_bd_intf_ports gpio_rtl_1]
+set_property name gpio_usb_keycode_0 [get_bd_intf_ports gpio_rtl_2]
+set_property name gpio_usb_keycode_1 [get_bd_intf_ports gpio_rtl_3]
+save_bd_design
+Wrote  : <C:\Users\Shane\Documents\Classes\ECE_385\Lab_6\lab_6\lab_6.srcs\sources_1\bd\mb_block\mb_block.bd> 
+Wrote  : <C:/Users/Shane/Documents/Classes/ECE_385/Lab_6/lab_6/lab_6.srcs/sources_1/bd/mb_block/ui/bd_d3042d03.ui> 
+delete_bd_objs [get_bd_intf_nets spi_usb_SPI_0] [get_bd_intf_ports spi_rtl_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:vio:3.0 vio_0
+endgroup
+delete_bd_objs [get_bd_cells vio_0]
+copy_bd_objs /  [get_bd_intf_ports {uart_rtl_0}]
+delete_bd_objs [get_bd_intf_ports uart_rtl_1]
+set_property location {1864 -644} [get_bd_intf_ports gpio_rtl_0]
+startgroup
+set_property location {4.5 1792 -547} [get_bd_cells gpio_usb_int]
+set_property location {5 1792 -547} [get_bd_cells xlconcat_0]
+set_property location {5 1792 -547} [get_bd_cells microblaze_0_axi_intc]
+set_property location {5 1792 -547} [get_bd_cells gpio_usb_keycode]
+set_property location {5 1792 -547} [get_bd_cells axi_uartlite_0]
+set_property location {5 1792 -547} [get_bd_cells gpio_usb_rst]
+endgroup
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'set_property location {5 1792 -547} [get_bd_cells gpio_usb_rst]'
+INFO: [Common 17-17] undo 'set_property location {5 1792 -547} [get_bd_cells axi_uartlite_0]'
+INFO: [Common 17-17] undo 'set_property location {5 1792 -547} [get_bd_cells gpio_usb_keycode]'
+INFO: [Common 17-17] undo 'set_property location {5 1792 -547} [get_bd_cells microblaze_0_axi_intc]'
+INFO: [Common 17-17] undo 'set_property location {5 1792 -547} [get_bd_cells xlconcat_0]'
+INFO: [Common 17-17] undo 'set_property location {4.5 1792 -547} [get_bd_cells gpio_usb_int]'
+INFO: [Common 17-17] undo 'startgroup'
+redo
+INFO: [Common 17-16] redo 'startgroup'
+INFO: [Common 17-16] redo 'set_property location {4.5 1792 -547} [get_bd_cells gpio_usb_int]'
+INFO: [Common 17-16] redo 'set_property location {5 1792 -547} [get_bd_cells xlconcat_0]'
+INFO: [Common 17-16] redo 'set_property location {5 1792 -547} [get_bd_cells microblaze_0_axi_intc]'
+INFO: [Common 17-16] redo 'set_property location {5 1792 -547} [get_bd_cells gpio_usb_keycode]'
+INFO: [Common 17-16] redo 'set_property location {5 1792 -547} [get_bd_cells axi_uartlite_0]'
+INFO: [Common 17-16] redo 'set_property location {5 1792 -547} [get_bd_cells gpio_usb_rst]'
+INFO: [Common 17-16] redo 'endgroup'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'set_property location {5 1792 -547} [get_bd_cells gpio_usb_rst]'
+INFO: [Common 17-17] undo 'set_property location {5 1792 -547} [get_bd_cells axi_uartlite_0]'
+INFO: [Common 17-17] undo 'set_property location {5 1792 -547} [get_bd_cells gpio_usb_keycode]'
+INFO: [Common 17-17] undo 'set_property location {5 1792 -547} [get_bd_cells microblaze_0_axi_intc]'
+INFO: [Common 17-17] undo 'set_property location {5 1792 -547} [get_bd_cells xlconcat_0]'
+INFO: [Common 17-17] undo 'set_property location {4.5 1792 -547} [get_bd_cells gpio_usb_int]'
+INFO: [Common 17-17] undo 'startgroup'
+startgroup
+set_property location {4.5 1446 -331} [get_bd_cells gpio_usb_int]
+set_property location {5 1446 -331} [get_bd_cells xlconcat_0]
+set_property location {5 1446 -331} [get_bd_cells microblaze_0_axi_intc]
+set_property location {5 1446 -331} [get_bd_cells gpio_usb_keycode]
+set_property location {5 1446 -331} [get_bd_cells axi_uartlite_0]
+set_property location {5 1446 -331} [get_bd_cells gpio_usb_rst]
+endgroup
+startgroup
+set_property location {4.5 1697 -15} [get_bd_cells gpio_usb_int]
+set_property location {5 1697 -15} [get_bd_cells xlconcat_0]
+set_property location {5 1697 -15} [get_bd_cells gpio_usb_keycode]
+set_property location {5 1697 -15} [get_bd_cells gpio_usb_rst]
+set_property location {5 1697 -15} [get_bd_cells axi_uartlite_0]
+set_property location {5 1697 -15} [get_bd_cells microblaze_0_axi_intc]
+endgroup
+startgroup
+set_property location {3.5 1043 -106} [get_bd_cells gpio_usb_int]
+set_property location {4 1043 -106} [get_bd_cells xlconcat_0]
+set_property location {4 1043 -106} [get_bd_cells gpio_usb_keycode]
+set_property location {4 1043 -106} [get_bd_cells gpio_usb_rst]
+set_property location {4 1043 -106} [get_bd_cells axi_uartlite_0]
+set_property location {4 1043 -106} [get_bd_cells microblaze_0_axi_intc]
+endgroup
+startgroup
+set_property location {4.5 1144 -128} [get_bd_cells gpio_usb_int]
+set_property location {5 1144 -128} [get_bd_cells xlconcat_0]
+set_property location {5 1144 -128} [get_bd_cells gpio_usb_keycode]
+set_property location {5 1144 -128} [get_bd_cells gpio_usb_rst]
+set_property location {5 1144 -128} [get_bd_cells axi_uartlite_0]
+set_property location {5 1144 -128} [get_bd_cells microblaze_0_axi_intc]
+endgroup
+startgroup
+set_property location {4 1120 -445} [get_bd_cells gpio_usb_int]
+set_property location {4 1120 -135} [get_bd_cells microblaze_0_axi_intc]
+set_property location {4 1120 -305} [get_bd_cells gpio_usb_keycode]
+set_property location {4 1120 175} [get_bd_cells gpio_usb_rst]
+set_property location {4 1120 25} [get_bd_cells axi_uartlite_0]
+set_property location {4 1120 325} [get_bd_cells xlconcat_0]
+endgroup
+startgroup
+set_property location {4 1143 -333} [get_bd_cells gpio_usb_int]
+set_property location {4 1143 107} [get_bd_cells microblaze_0_axi_intc]
+set_property location {4 1143 -63} [get_bd_cells gpio_usb_keycode]
+set_property location {4 1143 547} [get_bd_cells gpio_usb_rst]
+set_property location {4 1143 407} [get_bd_cells axi_uartlite_0]
+set_property location {4 1143 827} [get_bd_cells xlconcat_0]
+endgroup
+startgroup
+set_property location {4 1172 -481} [get_bd_cells gpio_usb_int]
+set_property location {4 1172 -41} [get_bd_cells microblaze_0_axi_intc]
+set_property location {4 1172 -361} [get_bd_cells gpio_usb_keycode]
+set_property location {4 1172 399} [get_bd_cells gpio_usb_rst]
+set_property location {4 1172 389} [get_bd_cells axi_uartlite_0]
+set_property location {4 1172 679} [get_bd_cells xlconcat_0]
+endgroup
+startgroup
+set_property location {4 1145 -833} [get_bd_cells gpio_usb_int]
+set_property location {4 1145 -373} [get_bd_cells microblaze_0_axi_intc]
+set_property location {4 1145 -533} [get_bd_cells gpio_usb_keycode]
+set_property location {4 1145 197} [get_bd_cells gpio_usb_rst]
+set_property location {4 1145 57} [get_bd_cells axi_uartlite_0]
+set_property location {4 1145 347} [get_bd_cells xlconcat_0]
+endgroup
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'set_property location {4 1145 347} [get_bd_cells xlconcat_0]'
+INFO: [Common 17-17] undo 'set_property location {4 1145 57} [get_bd_cells axi_uartlite_0]'
+INFO: [Common 17-17] undo 'set_property location {4 1145 197} [get_bd_cells gpio_usb_rst]'
+INFO: [Common 17-17] undo 'set_property location {4 1145 -533} [get_bd_cells gpio_usb_keycode]'
+INFO: [Common 17-17] undo 'set_property location {4 1145 -373} [get_bd_cells microblaze_0_axi_intc]'
+INFO: [Common 17-17] undo 'set_property location {4 1145 -833} [get_bd_cells gpio_usb_int]'
+INFO: [Common 17-17] undo 'startgroup'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'set_property location {4 1172 679} [get_bd_cells xlconcat_0]'
+INFO: [Common 17-17] undo 'set_property location {4 1172 389} [get_bd_cells axi_uartlite_0]'
+INFO: [Common 17-17] undo 'set_property location {4 1172 399} [get_bd_cells gpio_usb_rst]'
+INFO: [Common 17-17] undo 'set_property location {4 1172 -361} [get_bd_cells gpio_usb_keycode]'
+INFO: [Common 17-17] undo 'set_property location {4 1172 -41} [get_bd_cells microblaze_0_axi_intc]'
+INFO: [Common 17-17] undo 'set_property location {4 1172 -481} [get_bd_cells gpio_usb_int]'
+INFO: [Common 17-17] undo 'startgroup'
+startgroup
+set_property location {4 1145 -163} [get_bd_cells gpio_usb_int]
+set_property location {4 1145 517} [get_bd_cells xlconcat_0]
+set_property location {4 1145 -83} [get_bd_cells gpio_usb_keycode]
+set_property location {4 1145 357} [get_bd_cells gpio_usb_rst]
+set_property location {4 1145 187} [get_bd_cells axi_uartlite_0]
+set_property location {4 1145 -293} [get_bd_cells microblaze_0_axi_intc]
+endgroup
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'set_property location {4 1145 -293} [get_bd_cells microblaze_0_axi_intc]'
+INFO: [Common 17-17] undo 'set_property location {4 1145 187} [get_bd_cells axi_uartlite_0]'
+INFO: [Common 17-17] undo 'set_property location {4 1145 357} [get_bd_cells gpio_usb_rst]'
+INFO: [Common 17-17] undo 'set_property location {4 1145 -83} [get_bd_cells gpio_usb_keycode]'
+INFO: [Common 17-17] undo 'set_property location {4 1145 517} [get_bd_cells xlconcat_0]'
+INFO: [Common 17-17] undo 'set_property location {4 1145 -163} [get_bd_cells gpio_usb_int]'
+INFO: [Common 17-17] undo 'startgroup'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'set_property location {4 1143 827} [get_bd_cells xlconcat_0]'
+INFO: [Common 17-17] undo 'set_property location {4 1143 407} [get_bd_cells axi_uartlite_0]'
+INFO: [Common 17-17] undo 'set_property location {4 1143 547} [get_bd_cells gpio_usb_rst]'
+INFO: [Common 17-17] undo 'set_property location {4 1143 -63} [get_bd_cells gpio_usb_keycode]'
+INFO: [Common 17-17] undo 'set_property location {4 1143 107} [get_bd_cells microblaze_0_axi_intc]'
+INFO: [Common 17-17] undo 'set_property location {4 1143 -333} [get_bd_cells gpio_usb_int]'
+INFO: [Common 17-17] undo 'startgroup'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'set_property location {4 1120 325} [get_bd_cells xlconcat_0]'
+INFO: [Common 17-17] undo 'set_property location {4 1120 25} [get_bd_cells axi_uartlite_0]'
+INFO: [Common 17-17] undo 'set_property location {4 1120 175} [get_bd_cells gpio_usb_rst]'
+INFO: [Common 17-17] undo 'set_property location {4 1120 -305} [get_bd_cells gpio_usb_keycode]'
+INFO: [Common 17-17] undo 'set_property location {4 1120 -135} [get_bd_cells microblaze_0_axi_intc]'
+INFO: [Common 17-17] undo 'set_property location {4 1120 -445} [get_bd_cells gpio_usb_int]'
+INFO: [Common 17-17] undo 'startgroup'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'set_property location {5 1144 -128} [get_bd_cells microblaze_0_axi_intc]'
+INFO: [Common 17-17] undo 'set_property location {5 1144 -128} [get_bd_cells axi_uartlite_0]'
+INFO: [Common 17-17] undo 'set_property location {5 1144 -128} [get_bd_cells gpio_usb_rst]'
+INFO: [Common 17-17] undo 'set_property location {5 1144 -128} [get_bd_cells gpio_usb_keycode]'
+INFO: [Common 17-17] undo 'set_property location {5 1144 -128} [get_bd_cells xlconcat_0]'
+INFO: [Common 17-17] undo 'set_property location {4.5 1144 -128} [get_bd_cells gpio_usb_int]'
+INFO: [Common 17-17] undo 'startgroup'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'set_property location {4 1043 -106} [get_bd_cells microblaze_0_axi_intc]'
+INFO: [Common 17-17] undo 'set_property location {4 1043 -106} [get_bd_cells axi_uartlite_0]'
+INFO: [Common 17-17] undo 'set_property location {4 1043 -106} [get_bd_cells gpio_usb_rst]'
+INFO: [Common 17-17] undo 'set_property location {4 1043 -106} [get_bd_cells gpio_usb_keycode]'
+INFO: [Common 17-17] undo 'set_property location {4 1043 -106} [get_bd_cells xlconcat_0]'
+INFO: [Common 17-17] undo 'set_property location {3.5 1043 -106} [get_bd_cells gpio_usb_int]'
+INFO: [Common 17-17] undo 'startgroup'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'set_property location {5 1697 -15} [get_bd_cells microblaze_0_axi_intc]'
+INFO: [Common 17-17] undo 'set_property location {5 1697 -15} [get_bd_cells axi_uartlite_0]'
+INFO: [Common 17-17] undo 'set_property location {5 1697 -15} [get_bd_cells gpio_usb_rst]'
+INFO: [Common 17-17] undo 'set_property location {5 1697 -15} [get_bd_cells gpio_usb_keycode]'
+INFO: [Common 17-17] undo 'set_property location {5 1697 -15} [get_bd_cells xlconcat_0]'
+INFO: [Common 17-17] undo 'set_property location {4.5 1697 -15} [get_bd_cells gpio_usb_int]'
+INFO: [Common 17-17] undo 'startgroup'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'set_property location {5 1446 -331} [get_bd_cells gpio_usb_rst]'
+INFO: [Common 17-17] undo 'set_property location {5 1446 -331} [get_bd_cells axi_uartlite_0]'
+INFO: [Common 17-17] undo 'set_property location {5 1446 -331} [get_bd_cells gpio_usb_keycode]'
+INFO: [Common 17-17] undo 'set_property location {5 1446 -331} [get_bd_cells microblaze_0_axi_intc]'
+INFO: [Common 17-17] undo 'set_property location {5 1446 -331} [get_bd_cells xlconcat_0]'
+INFO: [Common 17-17] undo 'set_property location {4.5 1446 -331} [get_bd_cells gpio_usb_int]'
+INFO: [Common 17-17] undo 'startgroup'
+undo
+INFO: [Common 17-17] undo 'set_property location {1864 -644} [get_bd_intf_ports gpio_rtl_0]'
+undo
+INFO: [Common 17-17] undo 'delete_bd_objs [get_bd_intf_ports uart_rtl_1]'
+undo
+INFO: [Common 17-17] undo 'copy_bd_objs /  [get_bd_intf_ports {uart_rtl_0}]'
+redo
+INFO: [Common 17-16] redo 'copy_bd_objs /  [get_bd_intf_ports {uart_rtl_0}]'
+redo
+INFO: [Common 17-16] redo 'delete_bd_objs [get_bd_intf_ports uart_rtl_1]'
+redo
+INFO: [Common 17-16] redo 'set_property location {1864 -644} [get_bd_intf_ports gpio_rtl_0]'
+redo
+INFO: [Common 17-16] redo 'startgroup'
+INFO: [Common 17-16] redo 'set_property location {4.5 1446 -331} [get_bd_cells gpio_usb_int]'
+INFO: [Common 17-16] redo 'set_property location {5 1446 -331} [get_bd_cells xlconcat_0]'
+INFO: [Common 17-16] redo 'set_property location {5 1446 -331} [get_bd_cells microblaze_0_axi_intc]'
+INFO: [Common 17-16] redo 'set_property location {5 1446 -331} [get_bd_cells gpio_usb_keycode]'
+INFO: [Common 17-16] redo 'set_property location {5 1446 -331} [get_bd_cells axi_uartlite_0]'
+INFO: [Common 17-16] redo 'set_property location {5 1446 -331} [get_bd_cells gpio_usb_rst]'
+INFO: [Common 17-16] redo 'endgroup'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'set_property location {5 1446 -331} [get_bd_cells gpio_usb_rst]'
+INFO: [Common 17-17] undo 'set_property location {5 1446 -331} [get_bd_cells axi_uartlite_0]'
+INFO: [Common 17-17] undo 'set_property location {5 1446 -331} [get_bd_cells gpio_usb_keycode]'
+INFO: [Common 17-17] undo 'set_property location {5 1446 -331} [get_bd_cells microblaze_0_axi_intc]'
+INFO: [Common 17-17] undo 'set_property location {5 1446 -331} [get_bd_cells xlconcat_0]'
+INFO: [Common 17-17] undo 'set_property location {4.5 1446 -331} [get_bd_cells gpio_usb_int]'
+INFO: [Common 17-17] undo 'startgroup'
+startgroup
+set_property location {4 1172 436} [get_bd_cells xlconcat_0]
+set_property location {4 1172 286} [get_bd_cells microblaze_0_axi_intc]
+set_property location {4 1172 256} [get_bd_cells gpio_usb_keycode]
+set_property location {4 1172 -44} [get_bd_cells gpio_usb_rst]
+set_property location {4 1172 256} [get_bd_cells axi_uartlite_0]
+set_property location {4 1172 606} [get_bd_cells gpio_usb_int]
+endgroup
+set_property location {1781 232} [get_bd_intf_ports gpio_usb_keycode_1]
+undo
+INFO: [Common 17-17] undo 'set_property location {1781 232} [get_bd_intf_ports gpio_usb_keycode_1]'
+INFO: [Common 17-14] Message 'Common 17-17' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+set_property location {1781 -208} [get_bd_intf_ports gpio_usb_keycode_1]
+startgroup
+set_property location {2032 970} [get_bd_intf_ports gpio_usb_int]
+set_property location {2032 -270} [get_bd_intf_ports gpio_rtl_0]
+set_property location {2032 -180} [get_bd_intf_ports gpio_usb_rst]
+set_property location {2032 160} [get_bd_intf_ports gpio_usb_keycode_1]
+set_property location {2032 480} [get_bd_intf_ports gpio_usb_keycode_0]
+set_property location {2032 -50} [get_bd_intf_ports uart_rtl_0]
+endgroup
+undo
+set_property location {2034 423} [get_bd_intf_ports gpio_usb_keycode_1]
+set_property location {2053 31} [get_bd_intf_ports gpio_usb_keycode_1]
+set_property location {2013 128} [get_bd_intf_ports gpio_usb_keycode_1]
+set_property location {2013 133} [get_bd_intf_ports gpio_usb_keycode_1]
+set_property location {2015 140} [get_bd_intf_ports gpio_usb_keycode_1]
+save_bd_design
+Wrote  : <C:\Users\Shane\Documents\Classes\ECE_385\Lab_6\lab_6\lab_6.srcs\sources_1\bd\mb_block\mb_block.bd> 
+Wrote  : <C:/Users/Shane/Documents/Classes/ECE_385/Lab_6/lab_6/lab_6.srcs/sources_1/bd/mb_block/ui/bd_d3042d03.ui> 
+set_property name usb_spi_mosi [get_bd_intf_ports gpio_rtl_0]
+copy_bd_objs /  [get_bd_intf_ports {usb_spi_mosi}]
+set_property name sclk [get_bd_intf_ports usb_spi_mosi1]
+copy_bd_objs /  [get_bd_ports {reset_rtl_0}]
+set_property name usb_spi_mosi [get_bd_ports reset_rtl_1]
+set_property name usb_spi_miso [get_bd_ports usb_spi_mosi]
+connect_bd_net [get_bd_ports usb_spi_miso] [get_bd_pins spi_usb/io1_i]
+WARNING: [BD 41-1306] The connection to interface pin </spi_usb/io1_i> is being overridden by the user with net <usb_spi_miso_1>. This pin will not be connected as a part of interface connection <SPI_0>.
+set_property location {-667 -347} [get_bd_ports usb_spi_miso]
+create_bd_port -dir O sclk
+delete_bd_objs [get_bd_intf_ports sclk]
+set_property location {1869 -247} [get_bd_ports sclk]
+connect_bd_net [get_bd_ports sclk] [get_bd_pins spi_usb/sck_o]
+WARNING: [BD 41-1306] The connection to interface pin </spi_usb/sck_o> is being overridden by the user with net <spi_usb_sck_o>. This pin will not be connected as a part of interface connection <SPI_0>.
+delete_bd_objs [get_bd_intf_ports usb_spi_mosi]
+create_bd_port -dir I usb_spi_mosi
+undo
+INFO: [Common 17-17] undo 'create_bd_port -dir I usb_spi_mosi'
+create_bd_port -dir O usb_spi_mosi
+set_property name usb_spi_sclk [get_bd_ports sclk]
+connect_bd_net [get_bd_ports usb_spi_mosi] [get_bd_pins spi_usb/io0_o]
+WARNING: [BD 41-1306] The connection to interface pin </spi_usb/io0_o> is being overridden by the user with net <spi_usb_io0_o>. This pin will not be connected as a part of interface connection <SPI_0>.
+set_property location {2042 -352} [get_bd_ports usb_spi_sclk]
+save_bd_design
+Wrote  : <C:\Users\Shane\Documents\Classes\ECE_385\Lab_6\lab_6\lab_6.srcs\sources_1\bd\mb_block\mb_block.bd> 
+Wrote  : <C:/Users/Shane/Documents/Classes/ECE_385/Lab_6/lab_6/lab_6.srcs/sources_1/bd/mb_block/ui/bd_d3042d03.ui> 
+create_bd_port -dir O -from 0 -to 0 usb_spi_ss
+connect_bd_net [get_bd_ports usb_spi_ss] [get_bd_pins spi_usb/ss_o]
+WARNING: [BD 41-1306] The connection to interface pin </spi_usb/ss_o> is being overridden by the user with net <spi_usb_ss_o>. This pin will not be connected as a part of interface connection <SPI_0>.
+set_property location {2023 -312} [get_bd_ports usb_spi_ss]
+set_property location {2018 -327} [get_bd_ports usb_spi_ss]
+save_bd_design
+Wrote  : <C:\Users\Shane\Documents\Classes\ECE_385\Lab_6\lab_6\lab_6.srcs\sources_1\bd\mb_block\mb_block.bd> 
+Wrote  : <C:/Users/Shane/Documents/Classes/ECE_385/Lab_6/lab_6/lab_6.srcs/sources_1/bd/mb_block/ui/bd_d3042d03.ui> 
+connect_bd_net [get_bd_pins spi_usb/ext_spi_clk] [get_bd_pins clk_wiz_1/clk_out1]
+validate_bd_design
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /spi_usb 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_intc:4.1-1] /microblaze_0_axi_intc: The AXI INTC core has been configured to operate with synchronous clocks.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate
+set_property name microblaze_0_xlconcat [get_bd_cells xlconcat_0]
+save_bd_design
+Wrote  : <C:\Users\Shane\Documents\Classes\ECE_385\Lab_6\lab_6\lab_6.srcs\sources_1\bd\mb_block\mb_block.bd> 
+Wrote  : <C:/Users/Shane/Documents/Classes/ECE_385/Lab_6/lab_6/lab_6.srcs/sources_1/bd/mb_block/ui/bd_d3042d03.ui> 
+open_bd_design {C:/Users/Shane/Documents/Classes/ECE_385/Lab_6/lab_6/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd}
+open_bd_design {C:/Users/Shane/Documents/Classes/ECE_385/Lab_6/lab_6/lab_6.srcs/sources_1/bd/mb_block/mb_block.bd}
+save_bd_design_as mb_usb -freeze_boundary
+ERROR: [BD 5-903] Design <mb_block> has not been validated yet. The design needs to be in a validated state to use the -freeze_boundary option. Please validate your design.
+ERROR: [Common 17-39] 'save_bd_design_as' failed due to earlier errors.
+save_bd_design_as mb_usb -freeze_boundary
+ERROR: [BD 5-903] Design <mb_block> has not been validated yet. The design needs to be in a validated state to use the -freeze_boundary option. Please validate your design.
+ERROR: [Common 17-39] 'save_bd_design_as' failed due to earlier errors.
+save_bd_design_as mb_usb -dir {C:/Users/Shane/Documents/Classes/ECE_385/Lab_6/lab_6/lab_6.srcs/sources_1/bd} -freeze_boundary
+ERROR: [BD 5-903] Design <mb_block> has not been validated yet. The design needs to be in a validated state to use the -freeze_boundary option. Please validate your design.
+ERROR: [Common 17-39] 'save_bd_design_as' failed due to earlier errors.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 22 12:31:00 2024...

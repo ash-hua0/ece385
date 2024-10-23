@@ -1,0 +1,52 @@
+04:06:53 DEBUG : Logs will be stored at 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_6/lab_6/workspace/IDE.log'.
+04:07:09 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\Shane\Documents\Classes\ECE_385\Lab_6\lab_6\workspace\temp_xsdb_launch_script.tcl
+04:07:09 INFO  : Platform repository initialization has completed.
+04:07:10 INFO  : Registering command handlers for Vitis TCF services
+04:07:16 INFO  : XSCT server has started successfully.
+04:07:16 INFO  : Successfully done setting XSCT server connection channel  
+04:07:26 INFO  : plnx-install-location is set to ''
+04:07:26 INFO  : Successfully done setting workspace for the tool. 
+04:07:26 INFO  : Successfully done query RDI_DATADIR 
+04:13:18 INFO  : Result from executing command 'getProjects': mb_intro_top
+04:13:18 INFO  : Result from executing command 'getPlatforms': 
+04:13:18 WARN  : An unexpected exception occurred in the module 'platform project logging'
+04:13:18 INFO  : Platform 'mb_intro_top' is added to custom repositories.
+04:13:23 INFO  : Platform 'mb_intro_top' is added to custom repositories.
+04:21:23 INFO  : Result from executing command 'getProjects': mb_intro_top
+04:21:23 INFO  : Result from executing command 'getPlatforms': mb_intro_top|C:/Users/Shane/Documents/Classes/ECE_385/Lab_6/lab_6/workspace/mb_intro_top/export/mb_intro_top/mb_intro_top.xpfm
+04:21:23 INFO  : Checking for BSP changes to sync application flags for project 'mb_blink'...
+04:29:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:29:53 INFO  : Jtag cable 'RealDigital Boo 887100000006A' is selected.
+04:29:53 INFO  : 'jtag frequency' command is executed.
+04:29:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+04:29:54 INFO  : Device configured successfully with "C:/Users/Shane/Documents/Classes/ECE_385/Lab_6/lab_6/workspace/mb_blink/_ide/bitstream/mb_intro_top.bit"
+04:29:54 INFO  : Context for processor 'microblaze_0' is selected.
+04:29:54 INFO  : Hardware design and registers information is loaded from 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_6/lab_6/workspace/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa'.
+04:29:54 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+04:29:54 INFO  : Context for processor 'microblaze_0' is selected.
+04:29:54 INFO  : System reset is completed.
+04:29:57 INFO  : 'after 3000' command is executed.
+04:29:58 INFO  : Context for processor 'microblaze_0' is selected.
+04:29:58 INFO  : The application 'C:/Users/Shane/Documents/Classes/ECE_385/Lab_6/lab_6/workspace/mb_blink/Debug/mb_blink.elf' is downloaded to processor 'microblaze_0'.
+04:29:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 887100000006A" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/Shane/Documents/Classes/ECE_385/Lab_6/lab_6/workspace/mb_blink/_ide/bitstream/mb_intro_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/Shane/Documents/Classes/ECE_385/Lab_6/lab_6/workspace/mb_intro_top/export/mb_intro_top/hw/mb_intro_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/Shane/Documents/Classes/ECE_385/Lab_6/lab_6/workspace/mb_blink/Debug/mb_blink.elf
+----------------End of Script----------------
+
+04:29:58 INFO  : Context for processor 'microblaze_0' is selected.
+04:29:58 INFO  : 'con' command is executed.
+04:29:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+04:29:58 INFO  : Disconnected from the channel tcfchan#2.
