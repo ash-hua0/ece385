@@ -89,3 +89,13 @@ timestamp=[2024-10-23 18:46:39], mode=BUILD, duration=0:00:03.482, duration_ms=3
 timestamp=[2024-10-23 18:46:41], mode=BUILD, duration=0:00:00.800, duration_ms=800, data={name=mb_usb_system, configuration=Debug, clean_build=false}
 timestamp=[2024-10-23 18:48:57], mode=BUILD, duration=0:00:03.077, duration_ms=3077, data={name=mb_usb, configuration=Debug, clean_build=false}
 timestamp=[2024-10-23 18:48:59], mode=BUILD, duration=0:00:00.552, duration_ms=552, data={name=mb_usb_system, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 18:57:25], mode=WORKBENCH_START, duration=0:00:14.506, duration_ms=14506, data={}
+timestamp=[2024-10-23 18:57:27], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.075, duration_ms=75, data={}
+timestamp=[2024-10-23 18:57:27], mode=WORKBENCH_UI_INIT, duration=0:00:01.680, duration_ms=1680, data={editors_count=9, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,mb_usb,mb_usb_hdmi_top,mb_usb_system}
+timestamp=[2024-10-23 18:59:54], mode=PLATFORM_GENERATION, duration=0:00:19.036, duration_ms=19036, data={name=mb_usb_hdmi_top}
+timestamp=[2024-10-23 19:00:02], mode=BUILD, duration=0:00:07.099, duration_ms=7099, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 19:00:04], mode=BUILD, duration=0:00:00.522, duration_ms=522, data={name=mb_usb_system, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 19:00:10], mode=BUILD, duration=0:00:00.749, duration_ms=749, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 19:00:12], mode=BUILD, duration=0:00:00.606, duration_ms=606, data={name=mb_usb_system, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 19:14:20], mode=BUILD, duration=0:00:03.085, duration_ms=3085, data={name=mb_usb, configuration=Debug, clean_build=false}
+timestamp=[2024-10-23 19:14:21], mode=BUILD, duration=0:00:00.526, duration_ms=526, data={name=mb_usb_system, configuration=Debug, clean_build=false}

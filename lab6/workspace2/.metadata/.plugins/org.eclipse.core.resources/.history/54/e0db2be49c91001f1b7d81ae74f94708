@@ -178,7 +178,7 @@ BYTE MAXreg_rd(BYTE reg) {
 BYTE* MAXbytes_rd(BYTE reg, BYTE nbytes, BYTE* data) {
 	XSpi_SetSlaveSelect(&SpiInstance, 1);
 	u8 ReadBuf[nbytes+1]; // first bite d/c, second byte is readdata
-	u8 WriteBuf[nbytes+1];  // first byte is command, rest d/c
+	u8 WriteBuf[nbytes+1];  // first byte is command, second d/c
 	ReadBuf[0] = 0;
 	WriteBuf[0] = reg; //write reg via SPI
 	Status = XSpi_Transfer(&SpiInstance, WriteBuf, ReadBuf, nbytes+1);

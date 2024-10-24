@@ -1,4 +1,4 @@
-18:48:54 **** Incremental Build of configuration Debug for project mb_usb ****
+19:14:16 **** Incremental Build of configuration Debug for project mb_usb ****
 make all 
 'Building file: ../src/lw_usb/MAX3421E.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -26,17 +26,13 @@ C:/Users/Orion/Documents/GitHub/ece385/lab6/workspace2/mb_usb_hdmi_top/export/mb
 ../src/lw_usb/MAX3421E.c:32:6: note: declared here
    32 | void SPI_init() {
       |      ^~~~~~~~
-../src/lw_usb/MAX3421E.c: In function 'MAXbytes_wr':
-../src/lw_usb/MAX3421E.c:148:12: warning: unused variable 'ReadBuf' [-Wunused-variable]
-  148 |         u8 ReadBuf[nbytes+1];
-      |            ^~~~~~~
 ../src/lw_usb/MAX3421E.c: In function 'MAX3421E_Task':
-../src/lw_usb/MAX3421E.c:335:46: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
-  335 |         if (XGpio_DiscreteRead(&Gpio_int, 1) & 0x01 == 0) {
+../src/lw_usb/MAX3421E.c:333:46: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+  333 |         if (XGpio_DiscreteRead(&Gpio_int, 1) & 0x01 == 0) {
       |                                              ^
 ../src/lw_usb/MAX3421E.c: In function 'MaxGpxHandler':
-../src/lw_usb/MAX3421E.c:371:14: warning: variable 'GPINIRQ' set but not used [-Wunused-but-set-variable]
-  371 |         BYTE GPINIRQ;
+../src/lw_usb/MAX3421E.c:369:14: warning: variable 'GPINIRQ' set but not used [-Wunused-but-set-variable]
+  369 |         BYTE GPINIRQ;
       |              ^~~~~~~
 'Finished building: ../src/lw_usb/MAX3421E.c'
 ' '
@@ -48,9 +44,9 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/Orion/Documents/GitHub/ece385/lab
 'Invoking: MicroBlaze Print Size'
 mb-size mb_usb.elf  |tee "mb_usb.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  24040	    488	   3672	  28200	   6e28	mb_usb.elf
+  23868	    488	   3676	  28032	   6d80	mb_usb.elf
 'Finished building: mb_usb.elf.size'
 ' '
 
-18:48:57 Build Finished (took 3s.48ms)
+19:14:19 Build Finished (took 3s.58ms)
 
