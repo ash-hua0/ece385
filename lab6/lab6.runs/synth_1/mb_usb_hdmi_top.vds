@@ -2,8 +2,8 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Tue Oct 22 00:35:39 2024
-# Process ID: 9012
+# Start of session at: Wed Oct 23 21:35:31 2024
+# Process ID: 21920
 # Current directory: C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1
 # Command line: vivado.exe -log mb_usb_hdmi_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source mb_usb_hdmi_top.tcl
 # Log file: C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/mb_usb_hdmi_top.vds
@@ -11,7 +11,7 @@
 # Running On: DESKTOP-SK26SJD, OS: Windows, CPU Frequency: 2096 MHz, CPU Physical cores: 12, Host memory: 16473 MB
 #-----------------------------------------------------------
 source mb_usb_hdmi_top.tcl -notrace
-create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 380.879 ; gain = 66.496
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 381.438 ; gain = 56.992
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Orion/Documents/GitHub/ece385/lab6/RD_hdmi_ip2020/hdmi_tx_1.0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
@@ -23,12 +23,14 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7s50'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7s50'
 INFO: [Device 21-403] Loading part xc7s50csga324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 21388
+INFO: [Synth 8-7075] Helper process launched with PID 27048
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1224.426 ; gain = 407.043
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1226.316 ; gain = 409.078
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'mb_usb_hdmi_top' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6_2_provided/design_source/mb_usb_hdmi_top.sv:14]
 INFO: [Synth 8-6157] synthesizing module 'hex_driver' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6_2_provided/design_source/hex_driver.sv:1]
@@ -42,22 +44,22 @@ INFO: [Synth 8-6157] synthesizing module 'nibble_to_hex' [C:/Users/Orion/Documen
 INFO: [Synth 8-6155] done synthesizing module 'nibble_to_hex' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6_2_provided/design_source/hex_driver.sv:11]
 INFO: [Synth 8-6155] done synthesizing module 'hex_driver' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6_2_provided/design_source/hex_driver.sv:1]
 INFO: [Synth 8-6157] synthesizing module 'mb_block' [c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:936]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_uartlite_0_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/mb_block_axi_uartlite_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_uartlite_0_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/mb_block_axi_uartlite_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_clk_wiz_1_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/mb_block_clk_wiz_1_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_clk_wiz_1_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/mb_block_clk_wiz_1_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_gpio_2_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/mb_block_axi_gpio_2_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_gpio_2_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/mb_block_axi_gpio_2_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_gpio_0_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/mb_block_axi_gpio_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_gpio_0_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/mb_block_axi_gpio_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_gpio_3_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/mb_block_axi_gpio_3_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_gpio_3_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/mb_block_axi_gpio_3_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_mdm_1_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/mb_block_mdm_1_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_mdm_1_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/mb_block_mdm_1_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_microblaze_0_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/mb_block_microblaze_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_microblaze_0_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/mb_block_microblaze_0_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_microblaze_0_axi_intc_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/mb_block_microblaze_0_axi_intc_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_microblaze_0_axi_intc_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/mb_block_microblaze_0_axi_intc_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_uartlite_0_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_uartlite_0_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_axi_uartlite_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_clk_wiz_1_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_clk_wiz_1_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_clk_wiz_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_gpio_2_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_axi_gpio_2_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_gpio_2_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_axi_gpio_2_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_gpio_0_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_axi_gpio_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_gpio_0_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_axi_gpio_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_gpio_3_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_axi_gpio_3_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_gpio_3_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_axi_gpio_3_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_mdm_1_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_mdm_1_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_mdm_1_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_mdm_1_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_microblaze_0_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_microblaze_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_microblaze_0_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_microblaze_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_microblaze_0_axi_intc_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_microblaze_0_axi_intc_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_microblaze_0_axi_intc_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_microblaze_0_axi_intc_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'mb_block_microblaze_0_axi_periph_0' [c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:1602]
 INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1TK4492' [c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:12]
 INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1TK4492' (0#1) [c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:12]
@@ -75,46 +77,46 @@ INFO: [Synth 8-6157] synthesizing module 'm06_couplers_imp_1QRRYF7' [c:/Users/Or
 INFO: [Synth 8-6155] done synthesizing module 'm06_couplers_imp_1QRRYF7' (0#1) [c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:804]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_5YIJ0K' [c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:2926]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_5YIJ0K' (0#1) [c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:2926]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_xbar_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/mb_block_xbar_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_xbar_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/mb_block_xbar_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_xbar_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_xbar_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_xbar_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_xbar_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'm_axi_awprot' of module 'mb_block_xbar_0' is unconnected for instance 'xbar' [c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:2651]
 WARNING: [Synth 8-7071] port 'm_axi_arprot' of module 'mb_block_xbar_0' is unconnected for instance 'xbar' [c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:2651]
 WARNING: [Synth 8-7023] instance 'xbar' of module 'mb_block_xbar_0' has 40 connections declared, but only 38 given [c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:2651]
 INFO: [Synth 8-6155] done synthesizing module 'mb_block_microblaze_0_axi_periph_0' (0#1) [c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:1602]
 INFO: [Synth 8-6157] synthesizing module 'microblaze_0_local_memory_imp_G5BFEQ' [c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:2692]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_dlmb_bram_if_cntlr_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/mb_block_dlmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_dlmb_bram_if_cntlr_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/mb_block_dlmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_dlmb_v10_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/mb_block_dlmb_v10_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_dlmb_v10_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/mb_block_dlmb_v10_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_dlmb_bram_if_cntlr_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_dlmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_dlmb_bram_if_cntlr_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_dlmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_dlmb_v10_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_dlmb_v10_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_dlmb_v10_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_dlmb_v10_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'mb_block_dlmb_v10_0' is unconnected for instance 'dlmb_v10' [c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:2838]
 WARNING: [Synth 8-7023] instance 'dlmb_v10' of module 'mb_block_dlmb_v10_0' has 25 connections declared, but only 24 given [c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:2838]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_ilmb_bram_if_cntlr_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/mb_block_ilmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_ilmb_bram_if_cntlr_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/mb_block_ilmb_bram_if_cntlr_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_ilmb_v10_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/mb_block_ilmb_v10_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_ilmb_v10_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/mb_block_ilmb_v10_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_ilmb_bram_if_cntlr_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_ilmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_ilmb_bram_if_cntlr_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_ilmb_bram_if_cntlr_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_ilmb_v10_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_ilmb_v10_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_ilmb_v10_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_ilmb_v10_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'LMB_Rst' of module 'mb_block_ilmb_v10_0' is unconnected for instance 'ilmb_v10' [c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:2884]
 WARNING: [Synth 8-7023] instance 'ilmb_v10' of module 'mb_block_ilmb_v10_0' has 25 connections declared, but only 24 given [c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:2884]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_lmb_bram_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/mb_block_lmb_bram_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_lmb_bram_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/mb_block_lmb_bram_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_lmb_bram_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_lmb_bram_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_lmb_bram_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_lmb_bram_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'rsta_busy' of module 'mb_block_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:2909]
 WARNING: [Synth 8-7071] port 'rstb_busy' of module 'mb_block_lmb_bram_0' is unconnected for instance 'lmb_bram' [c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:2909]
 WARNING: [Synth 8-7023] instance 'lmb_bram' of module 'mb_block_lmb_bram_0' has 16 connections declared, but only 14 given [c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:2909]
 INFO: [Synth 8-6155] done synthesizing module 'microblaze_0_local_memory_imp_G5BFEQ' (0#1) [c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:2692]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_rst_clk_wiz_1_100M_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/mb_block_rst_clk_wiz_1_100M_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_rst_clk_wiz_1_100M_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/mb_block_rst_clk_wiz_1_100M_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_rst_clk_wiz_1_100M_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_rst_clk_wiz_1_100M_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_rst_clk_wiz_1_100M_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_rst_clk_wiz_1_100M_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'mb_block_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:1532]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'mb_block_rst_clk_wiz_1_100M_0' is unconnected for instance 'rst_clk_wiz_1_100M' [c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:1532]
 WARNING: [Synth 8-7023] instance 'rst_clk_wiz_1_100M' of module 'mb_block_rst_clk_wiz_1_100M_0' has 10 connections declared, but only 8 given [c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:1532]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_quad_spi_0_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/mb_block_axi_quad_spi_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_quad_spi_0_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/mb_block_axi_quad_spi_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_quad_spi_0_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_axi_quad_spi_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_quad_spi_0_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_axi_quad_spi_0_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'io0_t' of module 'mb_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:1541]
 WARNING: [Synth 8-7071] port 'io1_o' of module 'mb_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:1541]
 WARNING: [Synth 8-7071] port 'io1_t' of module 'mb_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:1541]
 WARNING: [Synth 8-7071] port 'sck_t' of module 'mb_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:1541]
 WARNING: [Synth 8-7071] port 'ss_t' of module 'mb_block_axi_quad_spi_0_0' is unconnected for instance 'spi_usb' [c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:1541]
 WARNING: [Synth 8-7023] instance 'spi_usb' of module 'mb_block_axi_quad_spi_0_0' has 33 connections declared, but only 28 given [c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:1541]
-INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_timer_0_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/mb_block_axi_timer_0_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_timer_0_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/mb_block_axi_timer_0_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mb_block_axi_timer_0_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_axi_timer_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'mb_block_axi_timer_0_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_axi_timer_0_0_stub.v:5]
 WARNING: [Synth 8-7071] port 'generateout0' of module 'mb_block_axi_timer_0_0' is unconnected for instance 'timer_usb_axi' [c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:1570]
 WARNING: [Synth 8-7071] port 'generateout1' of module 'mb_block_axi_timer_0_0' is unconnected for instance 'timer_usb_axi' [c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:1570]
 WARNING: [Synth 8-7071] port 'pwm0' of module 'mb_block_axi_timer_0_0' is unconnected for instance 'timer_usb_axi' [c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:1570]
@@ -124,14 +126,14 @@ INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [c:/Users/Or
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'mb_block_xlconcat_0_0' (0#1) [c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/ip/mb_block_xlconcat_0_0/synth/mb_block_xlconcat_0_0.v:53]
 INFO: [Synth 8-6155] done synthesizing module 'mb_block' (0#1) [c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.v:936]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/clk_wiz_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6_2_provided/design_source/VGA_controller.sv:26]
 INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6_2_provided/design_source/VGA_controller.sv:26]
 WARNING: [Synth 8-7071] port 'sync' of module 'vga_controller' is unconnected for instance 'vga' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6_2_provided/design_source/mb_usb_hdmi_top.sv:97]
 WARNING: [Synth 8-7023] instance 'vga' of module 'vga_controller' has 8 connections declared, but only 7 given [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6_2_provided/design_source/mb_usb_hdmi_top.sv:97]
-INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/hdmi_tx_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'hdmi_tx_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-9012-DESKTOP-SK26SJD/realtime/hdmi_tx_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_tx_0' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/hdmi_tx_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_tx_0' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/hdmi_tx_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'ball' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6_2_provided/design_source/ball.sv:18]
 INFO: [Synth 8-6155] done synthesizing module 'ball' (0#1) [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6_2_provided/design_source/ball.sv:18]
 INFO: [Synth 8-6157] synthesizing module 'color_mapper' [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6_2_provided/design_source/Color_Mapper.sv:17]
@@ -239,18 +241,18 @@ WARNING: [Synth 8-7129] Port In102[0] in module xlconcat_v2_1_4_xlconcat is eith
 WARNING: [Synth 8-7129] Port In103[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1329.168 ; gain = 511.785
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1331.098 ; gain = 513.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1329.168 ; gain = 511.785
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1331.098 ; gain = 513.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1329.168 ; gain = 511.785
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1331.098 ; gain = 513.859
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 1329.168 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1331.098 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -306,23 +308,25 @@ Parsing XDC File [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/
 Finished Parsing XDC File [C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1386.125 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1444.223 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1386.125 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1444.223 ; gain = 0.000
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mb_block_i/spi_usb' at clock pin 'ext_spi_clk' is different from the actual clock period '10.000', this can lead to different synthesis results.
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mb_block_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:23 . Memory (MB): peak = 1387.004 ; gain = 569.621
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1444.969 ; gain = 627.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7s50csga324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:23 . Memory (MB): peak = 1387.004 ; gain = 569.621
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1444.969 ; gain = 627.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -368,31 +372,11 @@ Applied set_property KEEP_HIERARCHY = SOFT for mb_block_i/xlconcat_0. (constrain
 Applied set_property KEEP_HIERARCHY = SOFT for vga_to_hdmi. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for clk_wiz. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:23 . Memory (MB): peak = 1387.004 ; gain = 569.621
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1444.969 ; gain = 627.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Start Preparing Guide Design
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1444.969 ; gain = 627.730
 ---------------------------------------------------------------------------------
-CRITICAL WARNING: [Synth 8-6895] The reference checkpoint C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.srcs/utils_1/imports/synth_1/mb_intro_top.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
----------------------------------------------------------------------------------
-Finished Doing Graph Differ : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1387.004 ; gain = 569.621
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Preparing Guide Design : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1387.004 ; gain = 569.621
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:24 . Memory (MB): peak = 1387.004 ; gain = 569.621
----------------------------------------------------------------------------------
-
-
-Incremental Synthesis Report Summary:
-
-1. Incremental synthesis run: no
-
-   Reason for not running incremental synthesis : 
-
-
-INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -401,14 +385,15 @@ Detailed RTL Component Info :
 	   3 Input   32 Bit       Adders := 2     
 	   2 Input   32 Bit       Adders := 1     
 	   2 Input   11 Bit       Adders := 2     
-	   2 Input   10 Bit       Adders := 6     
+	   2 Input   10 Bit       Adders := 8     
 +---Registers : 
 	               10 Bit    Registers := 6     
 	                1 Bit    Registers := 2     
 +---Multipliers : 
 	              32x32  Multipliers := 2     
 +---Muxes : 
-	   2 Input   10 Bit        Muxes := 5     
+	   2 Input   10 Bit        Muxes := 10    
+	   5 Input   10 Bit        Muxes := 3     
 	   4 Input    8 Bit        Muxes := 2     
 	   2 Input    8 Bit        Muxes := 2     
 	   5 Input    4 Bit        Muxes := 2     
@@ -456,7 +441,7 @@ DSP Report: operator color_instance/Red3 is absorbed into DSP color_instance/Red
 WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segA[7] driven by constant 1
 WARNING: [Synth 8-3917] design mb_usb_hdmi_top has port hex_segB[7] driven by constant 1
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 1387.004 ; gain = 569.621
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1444.969 ; gain = 627.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -485,19 +470,19 @@ Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-565] redefining clock 'Clk'
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:41 . Memory (MB): peak = 1387.004 ; gain = 569.621
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 1444.969 ; gain = 627.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:43 . Memory (MB): peak = 1405.438 ; gain = 588.055
+Finished Timing Optimization : Time (s): cpu = 00:00:47 ; elapsed = 00:00:51 . Memory (MB): peak = 1444.969 ; gain = 627.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:43 . Memory (MB): peak = 1405.438 ; gain = 588.055
+Finished Technology Mapping : Time (s): cpu = 00:00:48 ; elapsed = 00:00:52 . Memory (MB): peak = 1444.969 ; gain = 627.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -515,37 +500,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:50 . Memory (MB): peak = 1405.438 ; gain = 588.055
+Finished IO Insertion : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1444.969 ; gain = 627.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:50 . Memory (MB): peak = 1405.438 ; gain = 588.055
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1444.969 ; gain = 627.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:51 . Memory (MB): peak = 1405.438 ; gain = 588.055
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1444.969 ; gain = 627.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:51 . Memory (MB): peak = 1405.438 ; gain = 588.055
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1444.969 ; gain = 627.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:51 . Memory (MB): peak = 1405.438 ; gain = 588.055
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1444.969 ; gain = 627.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:51 . Memory (MB): peak = 1405.438 ; gain = 588.055
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1444.969 ; gain = 627.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -612,42 +597,44 @@ Report Cell Usage:
 |17    |mb_block_microblaze_0_axi_intc |     1|
 |18    |mb_block_rst_clk_wiz_1_100M    |     1|
 |19    |mb_block_xbar                  |     1|
-|20    |CARRY4                         |    31|
-|21    |DSP48E1                        |     6|
-|22    |LUT1                           |    17|
-|23    |LUT2                           |    92|
-|24    |LUT3                           |    11|
-|25    |LUT4                           |    19|
-|26    |LUT5                           |    57|
-|27    |LUT6                           |    18|
-|28    |FDCE                           |    22|
-|29    |FDRE                           |    17|
-|30    |IBUF                           |     4|
-|31    |OBUF                           |    29|
+|20    |BUFG                           |     1|
+|21    |CARRY4                         |    37|
+|22    |DSP48E1                        |     6|
+|23    |LUT1                           |     3|
+|24    |LUT2                           |   111|
+|25    |LUT3                           |    10|
+|26    |LUT4                           |    37|
+|27    |LUT5                           |    46|
+|28    |LUT6                           |    82|
+|29    |FDCE                           |    22|
+|30    |FDRE                           |    50|
+|31    |FDSE                           |     7|
+|32    |IBUF                           |     4|
+|33    |OBUF                           |    29|
 +------+-------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:51 . Memory (MB): peak = 1405.438 ; gain = 588.055
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1444.969 ; gain = 627.730
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 1 critical warnings and 20 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:47 . Memory (MB): peak = 1405.438 ; gain = 530.219
-Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 1405.438 ; gain = 588.055
+Synthesis finished with 0 errors, 0 critical warnings and 20 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:36 ; elapsed = 00:00:47 . Memory (MB): peak = 1444.969 ; gain = 513.859
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1444.969 ; gain = 627.730
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1414.891 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 37 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1444.969 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 43 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1418.562 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1444.969 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: 5fa9da2b
+Synth Design complete, checksum: 7aa0be0f
 INFO: [Common 17-83] Releasing license: Synthesis
-107 Infos, 132 Warnings, 2 Critical Warnings and 0 Errors encountered.
+110 Infos, 132 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:01:00 . Memory (MB): peak = 1418.562 ; gain = 978.020
+synth_design: Time (s): cpu = 00:01:04 ; elapsed = 00:01:13 . Memory (MB): peak = 1444.969 ; gain = 1003.516
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/mb_usb_hdmi_top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file mb_usb_hdmi_top_utilization_synth.rpt -pb mb_usb_hdmi_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Oct 22 00:36:55 2024...
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 23 21:36:56 2024...

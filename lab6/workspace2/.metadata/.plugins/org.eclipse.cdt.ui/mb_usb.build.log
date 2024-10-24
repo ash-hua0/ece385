@@ -1,4 +1,4 @@
-19:14:16 **** Incremental Build of configuration Debug for project mb_usb ****
+21:45:27 **** Incremental Build of configuration Debug for project mb_usb ****
 make all 
 'Building file: ../src/lw_usb/MAX3421E.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -36,6 +36,32 @@ C:/Users/Orion/Documents/GitHub/ece385/lab6/workspace2/mb_usb_hdmi_top/export/mb
       |              ^~~~~~~
 'Finished building: ../src/lw_usb/MAX3421E.c'
 ' '
+'Building file: ../src/lw_usb/transfer.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lw_usb/transfer.o" -IC:/Users/Orion/Documents/GitHub/ece385/lab6/workspace2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lw_usb/transfer.d" -MT"src/lw_usb/transfer.o" -o "src/lw_usb/transfer.o" "../src/lw_usb/transfer.c"
+../src/lw_usb/transfer.c:13:1: warning: braces around scalar initializer
+   13 | EP_RECORD dev0ep = {{ 0 }};         //Endpoint data structure for uninitialized device during enumeration
+      | ^~~~~~~~~
+../src/lw_usb/transfer.c:13:1: note: (near initialization for 'dev0ep.epAddr')
+../src/lw_usb/transfer.c: In function 'XferInTransfer':
+../src/lw_usb/transfer.c:199:7: warning: unused variable 'tmpbyte' [-Wunused-variable]
+  199 |  BYTE tmpbyte;
+      |       ^~~~~~~
+../src/lw_usb/transfer.c:198:7: warning: unused variable 'i' [-Wunused-variable]
+  198 |  BYTE i;
+      |       ^
+'Finished building: ../src/lw_usb/transfer.c'
+' '
+'Building file: ../src/lw_usb_main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lw_usb_main.o" -IC:/Users/Orion/Documents/GitHub/ece385/lab6/workspace2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/lw_usb_main.d" -MT"src/lw_usb_main.o" -o "src/lw_usb_main.o" "../src/lw_usb_main.c"
+'Finished building: ../src/lw_usb_main.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IC:/Users/Orion/Documents/GitHub/ece385/lab6/workspace2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
 'Building target: mb_usb.elf'
 'Invoking: MicroBlaze gcc linker'
 mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/Orion/Documents/GitHub/ece385/lab6/workspace2/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bsplib/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "mb_usb.elf"  ./src/lw_usb/HID.o ./src/lw_usb/MAX3421E.o ./src/lw_usb/transfer.o  ./src/lw_usb_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
@@ -48,5 +74,5 @@ mb-size mb_usb.elf  |tee "mb_usb.elf.size"
 'Finished building: mb_usb.elf.size'
 ' '
 
-19:14:19 Build Finished (took 3s.58ms)
+21:45:31 Build Finished (took 4s.6ms)
 

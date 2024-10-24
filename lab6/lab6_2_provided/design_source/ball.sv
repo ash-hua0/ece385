@@ -23,11 +23,9 @@ module  ball
 
     output logic [9:0]  BallX, 
     output logic [9:0]  BallY, 
-    output logic [9:0]  BallS 
+    output logic [9:0]  BallS
 );
     
-
-	 
     parameter [9:0] Ball_X_Center=320;  // Center position on the X axis
     parameter [9:0] Ball_Y_Center=240;  // Center position on the Y axis
     parameter [9:0] Ball_X_Min=0;       // Leftmost point on the X axis
@@ -50,9 +48,26 @@ module  ball
         Ball_X_Motion_next = Ball_X_Motion;
 
         //modify to control ball motion with the keycode
-        if (keycode == 8'h1A)
+        if (keycode == 8'h1A) // w
+        begin
             Ball_Y_Motion_next = -10'd1;
-
+            Ball_X_Motion_next = 10'd0;
+        end
+        if (keycode == 8'h16) // s
+        begin
+            Ball_Y_Motion_next = 10'd1;
+            Ball_X_Motion_next = 10'd0;
+        end
+        if (keycode == 8'h04) // a
+        begin
+            Ball_X_Motion_next = -10'd1;
+            Ball_Y_Motion_next = 10'd0;
+        end
+        if (keycode == 8'h07) // d
+        begin
+            Ball_X_Motion_next = 10'd1;
+            Ball_Y_Motion_next = 10'd0;
+        end
 
         if ( (BallY + BallS) >= Ball_Y_Max )  // Ball is at the bottom edge, BOUNCE!
         begin
@@ -61,7 +76,15 @@ module  ball
         else if ( (BallY - BallS) <= Ball_Y_Min )  // Ball is at the top edge, BOUNCE!
         begin
             Ball_Y_Motion_next = Ball_Y_Step;
-        end  
+        end
+        else if ( (BallX + BallS) >= Ball_X_Max ) // at right edge, bounce
+        begin
+            Ball_X_Motion_next = (~ (Ball_X_Step) + 1'b1); // -1 by two's comp
+        end
+        else if ( (BallX - BallS) <= Ball_X_Min ) // at left edge, bounce
+        begin
+            Ball_X_Motion_next = Ball_X_Step;
+        end
        //fill in the rest of the motion equations here to bounce left and right
 
     end
@@ -73,7 +96,7 @@ module  ball
     always_ff @(posedge frame_clk) //make sure the frame clock is instantiated correctly
     begin: Move_Ball
         if (Reset)
-        begin 
+        begin // ball starts moving right
             Ball_Y_Motion <= 10'd0; //Ball_Y_Step;
 			Ball_X_Motion <= 10'd1; //Ball_X_Step;
             
