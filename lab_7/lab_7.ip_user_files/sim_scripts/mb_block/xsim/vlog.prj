@@ -1,0 +1,17 @@
+verilog xil_defaultlib --include "../../../../lab_7.gen/sources_1/bd/mb_block_i/ipshared/ec67/hdl" --include "../../../../lab_7.gen/sources_1/bd/mb_block_i/ipshared/7698" \
+"../../../../lab_7.gen/sources_1/bd/mb_block_i/ip/mb_block_i_lmb_bram_0/sim/mb_block_i_lmb_bram_0.v" \
+"../../../../lab_7.gen/sources_1/bd/mb_block_i/ip/mb_block_i_xbar_0/sim/mb_block_i_xbar_0.v" \
+"../../../../lab_7.gen/sources_1/bd/mb_block_i/ip/mb_block_i_clk_wiz_1_0/mb_block_i_clk_wiz_1_0_clk_wiz.v" \
+"../../../../lab_7.gen/sources_1/bd/mb_block_i/ip/mb_block_i_clk_wiz_1_0/mb_block_i_clk_wiz_1_0.v" \
+
+sv xil_defaultlib --include "../../../../lab_7.gen/sources_1/bd/mb_block_i/ipshared/ec67/hdl" --include "../../../../lab_7.gen/sources_1/bd/mb_block_i/ipshared/7698" \
+"../../../../lab_7.gen/sources_1/bd/mb_block/ipshared/96b3/src/hdmi_text_controller_v1_0_AXI.sv" \
+"../../../../lab_7.gen/sources_1/bd/mb_block/ipshared/96b3/src/hdmi_text_controller_v1_0.sv" \
+"../../../../lab_7.gen/sources_1/bd/mb_block_i/ip/mb_block_i_hdmi_text_controller_0_0/sim/mb_block_i_hdmi_text_controller_0_0.sv" \
+
+verilog xil_defaultlib --include "../../../../lab_7.gen/sources_1/bd/mb_block_i/ipshared/ec67/hdl" --include "../../../../lab_7.gen/sources_1/bd/mb_block_i/ipshared/7698" \
+"../../../../lab_7.gen/sources_1/bd/mb_block_i/sim/mb_block_i.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

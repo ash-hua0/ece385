@@ -34,7 +34,7 @@ module hdmi_text_controller_v1_0_AXI #
     // Width of S_AXI data bus
     parameter integer C_S_AXI_DATA_WIDTH	= 32,
     // Width of S_AXI address bus
-    parameter integer C_S_AXI_ADDR_WIDTH	= 4
+    parameter integer C_S_AXI_ADDR_WIDTH	= 10
 )
 (
     // Users to add ports here
@@ -121,7 +121,7 @@ logic  	axi_rvalid;
 // ADDR_LSB = 2 for 32 bits (n downto 2)
 // ADDR_LSB = 3 for 64 bits (n downto 3)
 localparam integer ADDR_LSB = (C_S_AXI_DATA_WIDTH/32) + 1;
-localparam integer OPT_MEM_ADDR_BITS = 1;
+localparam integer OPT_MEM_ADDR_BITS = 9; // number of mem bits (0-9)
 //----------------------------------------------
 //-- Signals for user logic register space example
 //------------------------------------------------
@@ -134,7 +134,7 @@ localparam integer OPT_MEM_ADDR_BITS = 1;
 //Note: the provided Verilog template had the registered declared as above, but in order to give 
 //students a hint we have replaced the 4 individual registers with an unpacked array of packed logic. 
 //Note that you as the student will still need to extend this to the full register set needed for the lab.
-logic [C_S_AXI_DATA_WIDTH-1:0] slv_regs[4];
+logic [C_S_AXI_DATA_WIDTH-1:0] slv_regs[601];
 logic	 slv_reg_rden;
 logic	 slv_reg_wren;
 logic [C_S_AXI_DATA_WIDTH-1:0]	 reg_data_out;
@@ -246,15 +246,15 @@ assign slv_reg_wren = axi_wready && S_AXI_WVALID && axi_awready && S_AXI_AWVALID
 always_ff @( posedge S_AXI_ACLK )
 begin
   if ( S_AXI_ARESETN == 1'b0 )
-    begin
+    begin // clear slave regs
         for (integer i = 0; i < 2**C_S_AXI_ADDR_WIDTH; i++)
         begin
-           slv_regs[i] <= 0;
+           slv_regs[i] <= 0; // eventually accesses index that doesnt exist??
         end
     end
   else begin
     if (slv_reg_wren)
-      begin
+      begin // write regs with write strobe hi
         for ( byte_index = 0; byte_index <= (C_S_AXI_DATA_WIDTH/8)-1; byte_index = byte_index+1 )
           if ( S_AXI_WSTRB[byte_index] == 1 ) begin
             // Respective byte enables are asserted as per write strobes, note the use of the index part select operator

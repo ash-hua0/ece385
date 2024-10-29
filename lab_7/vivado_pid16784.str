@@ -703,3 +703,1146 @@ selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 150, 186); // b
 // Elapsed time: 27 seconds
 selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mb_usb_hdmi_top.sv", 0); // o
 // WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1244 ms. Increasing delay to 3000 ms.
+// Elapsed time: 107 seconds
+selectCodeEditor("mb_usb_hdmi_top.sv", 562, 249); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 2,130 MB. GUI used memory: 121 MB. Current time: 10/28/24, 11:30:57 PM CDT
+// WARNING: HEventQueue.dispatchEvent() is taking  483586 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 483894 ms. Increasing delay to 1451682 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1882 ms. Increasing delay to 4000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,150 MB. GUI used memory: 121 MB. Current time: 10/28/24, 11:42:29 PM CDT
+// Elapsed time: 984 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_tb.sv", 2); // o
+// Elapsed time: 836 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 274, 361); // ac
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 39 ms. Decreasing delay to 2039 ms.
+// Elapsed time: 141 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitled 1", 1); // o
+floatFrame(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 1"); // R
+// RDIResource.RDIViews_WAVEFORM_VIEWER: Untitled 1: float view
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 135 MB. Current time: 10/29/24, 12:03:42 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+maximizeFrame(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 1"); // R
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 143 MB. Current time: 10/29/24, 12:03:44 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 122 MB. Current time: 10/29/24, 12:03:45 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 121 MB. Current time: 10/29/24, 12:03:47 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 121 MB. Current time: 10/29/24, 12:03:48 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B
+// Elapsed time: 21 seconds
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, write_addr[31:0]]", 2, true); // m - Node
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, -438, -149); // b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, -436, 346); // b
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 121 MB. Current time: 10/29/24, 12:04:17 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 121 MB. Current time: 10/29/24, 12:04:17 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 121 MB. Current time: 10/29/24, 12:04:18 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 121 MB. Current time: 10/29/24, 12:04:18 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 122 MB. Current time: 10/29/24, 12:04:18 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 122 MB. Current time: 10/29/24, 12:04:19 AM CDT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, -399, 335); // b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 123 MB. Current time: 10/29/24, 12:04:21 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 123 MB. Current time: 10/29/24, 12:04:22 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 123 MB. Current time: 10/29/24, 12:04:23 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 123 MB. Current time: 10/29/24, 12:04:23 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 123 MB. Current time: 10/29/24, 12:04:24 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 123 MB. Current time: 10/29/24, 12:04:24 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, -428, 391); // b
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 123 MB. Current time: 10/29/24, 12:04:28 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 123 MB. Current time: 10/29/24, 12:04:28 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 136 MB. Current time: 10/29/24, 12:04:29 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 122 MB. Current time: 10/29/24, 12:04:46 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 122 MB. Current time: 10/29/24, 12:04:51 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 30 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, -282, 38); // b
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// Elapsed time: 32 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, -330, 348); // b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 123 MB. Current time: 10/29/24, 12:05:30 AM CDT
+// Elapsed time: 43 seconds
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, write_data[31:0]]", 6); // m
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+collapseTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, write_data[31:0]]", 6); // m
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 21 seconds
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, read_addr[31:0]]", 13, true); // m - Node
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 131 MB. Current time: 10/29/24, 12:06:36 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Elapsed time: 13 seconds
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, write_addr_valid]", 4, false); // m
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, -292, 149); // b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, -301, 150); // b
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 116 MB. Current time: 10/29/24, 12:06:54 AM CDT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, -319, 156); // b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, -343, 155); // b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 116 MB. Current time: 10/29/24, 12:06:57 AM CDT
+// Elapsed time: 37 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, -322, 195); // b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// Elapsed time: 16 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, -273, 578); // b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, -279, 578); // b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 116 MB. Current time: 10/29/24, 12:07:52 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 115 MB. Current time: 10/29/24, 12:08:48 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 115 MB. Current time: 10/29/24, 12:08:49 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 115 MB. Current time: 10/29/24, 12:08:50 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 115 MB. Current time: 10/29/24, 12:08:55 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 115 MB. Current time: 10/29/24, 12:08:56 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 115 MB. Current time: 10/29/24, 12:08:56 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 115 MB. Current time: 10/29/24, 12:08:57 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 115 MB. Current time: 10/29/24, 12:08:58 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 115 MB. Current time: 10/29/24, 12:09:02 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 115 MB. Current time: 10/29/24, 12:09:03 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 115 MB. Current time: 10/29/24, 12:09:03 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 115 MB. Current time: 10/29/24, 12:09:04 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 115 MB. Current time: 10/29/24, 12:09:06 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 116 MB. Current time: 10/29/24, 12:09:07 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 115 MB. Current time: 10/29/24, 12:09:07 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 116 MB. Current time: 10/29/24, 12:09:08 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 115 MB. Current time: 10/29/24, 12:09:08 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 115 MB. Current time: 10/29/24, 12:09:09 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 116 MB. Current time: 10/29/24, 12:09:09 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 115 MB. Current time: 10/29/24, 12:09:09 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 115 MB. Current time: 10/29/24, 12:09:10 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 128 MB. Current time: 10/29/24, 12:09:10 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: -505 MB. Current time: 10/29/24, 12:09:10 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 134 MB. Current time: 10/29/24, 12:09:11 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 115 MB. Current time: 10/29/24, 12:09:11 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 115 MB. Current time: 10/29/24, 12:09:11 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 116 MB. Current time: 10/29/24, 12:09:12 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 115 MB. Current time: 10/29/24, 12:09:12 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 116 MB. Current time: 10/29/24, 12:09:13 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 116 MB. Current time: 10/29/24, 12:09:13 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 115 MB. Current time: 10/29/24, 12:09:13 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 115 MB. Current time: 10/29/24, 12:09:14 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 115 MB. Current time: 10/29/24, 12:09:14 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 115 MB. Current time: 10/29/24, 12:09:15 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 115 MB. Current time: 10/29/24, 12:09:15 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 113 MB. Current time: 10/29/24, 12:15:52 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 113 MB. Current time: 10/29/24, 12:15:56 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 113 MB. Current time: 10/29/24, 12:15:59 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 117 MB. Current time: 10/29/24, 12:16:00 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 116 MB. Current time: 10/29/24, 12:16:00 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 113 MB. Current time: 10/29/24, 12:16:04 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 113 MB. Current time: 10/29/24, 12:16:06 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 113 MB. Current time: 10/29/24, 12:16:07 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 113 MB. Current time: 10/29/24, 12:16:23 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 531 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, -372, 486); // b
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 114 MB. Current time: 10/29/24, 12:16:43 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 114 MB. Current time: 10/29/24, 12:16:51 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 114 MB. Current time: 10/29/24, 12:16:51 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// WARNING: HEventQueue.dispatchEvent() is taking  1361 ms.
+// Elapsed time: 72 seconds
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, write_data[31:0]]", 6); // m
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 124 MB. Current time: 10/29/24, 12:17:56 AM CDT
+collapseTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, write_data[31:0]]", 6); // m
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, write_strb[3:0]]", 7); // m
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+collapseTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, write_strb[3:0]]", 7); // m
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 167 MB. Current time: 10/29/24, 12:18:01 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, write_prot[2:0]]", 3); // m
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+collapseTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, write_prot[2:0]]", 3); // m
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+expandTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, write_addr[31:0]]", 2); // m
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 121 MB. Current time: 10/29/24, 12:18:06 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+collapseTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, write_addr[31:0]]", 2); // m
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, -300, -22); // b
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, -337, 33); // b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:18:16 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 111 MB. Current time: 10/29/24, 12:20:26 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 111 MB. Current time: 10/29/24, 12:20:28 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 111 MB. Current time: 10/29/24, 12:20:29 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 111 MB. Current time: 10/29/24, 12:20:31 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 111 MB. Current time: 10/29/24, 12:20:35 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:20:37 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 167 MB. Current time: 10/29/24, 12:21:32 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 111 MB. Current time: 10/29/24, 12:21:32 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 111 MB. Current time: 10/29/24, 12:21:34 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 213 seconds
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, write_addr_valid]", 4, false); // m
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:21:50 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// WARNING: HEventQueue.dispatchEvent() is taking  1319 ms.
+// Elapsed time: 15 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 640, 338); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 901, 255); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 960, 321); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 536, 337); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 607, 334); // ac
+// Elapsed time: 76 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 447, 247); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 596, 357); // ac
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, write_data_valid]", 8, false); // m
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, write_addr_valid]", 4, false); // m
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Elapsed time: 17 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 517, 334); // ac
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:24:07 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:24:09 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking 838 ms to process. Increasing delay to 2000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2185 ms. Increasing delay to 5000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3998 ms. Increasing delay to 6000 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1384 ms. Increasing delay to 4152 ms.
+// Elapsed time: 1141 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 363, 207); // ac
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 109 MB. Current time: 10/29/24, 12:44:41 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 101 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 810, 398); // b
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:44:47 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:44:47 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:44:47 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:44:48 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:44:48 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:44:48 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:44:49 AM CDT
+selectButton(RDIResource.GraphicalView_ZOOM_FIT, "Waveform Viewer_zoom_fit"); // B
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, -421, 231); // b
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 111 MB. Current time: 10/29/24, 12:44:53 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 111 MB. Current time: 10/29/24, 12:44:53 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 111 MB. Current time: 10/29/24, 12:44:53 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:44:54 AM CDT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, -403, 437); // b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 113 MB. Current time: 10/29/24, 12:44:58 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 113 MB. Current time: 10/29/24, 12:44:58 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 113 MB. Current time: 10/29/24, 12:44:59 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 113 MB. Current time: 10/29/24, 12:44:59 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:44:59 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, -315, 296); // b
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, -315, 296, false, false, false, false, true); // b - Double Click
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:45:20 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 84 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 190, 254); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 183, 330); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 173, 405); // ac
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 111 MB. Current time: 10/29/24, 12:46:48 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 111 MB. Current time: 10/29/24, 12:46:48 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 111 MB. Current time: 10/29/24, 12:46:48 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:47:14 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:47:14 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 111 MB. Current time: 10/29/24, 12:47:15 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 111 MB. Current time: 10/29/24, 12:47:15 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 111 MB. Current time: 10/29/24, 12:47:15 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 115 MB. Current time: 10/29/24, 12:47:16 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 111 MB. Current time: 10/29/24, 12:47:21 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:48:07 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 111 MB. Current time: 10/29/24, 12:48:14 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 111 MB. Current time: 10/29/24, 12:48:16 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 111 MB. Current time: 10/29/24, 12:48:22 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 181 seconds
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 180, 729); // b
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:49:39 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:49:39 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:50:06 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Elapsed time: 43 seconds
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, read_data[31:0]]", 4, true); // m - Node
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 111 MB. Current time: 10/29/24, 12:50:18 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:50:21 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:50:22 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:50:23 AM CDT
+selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 289, 238); // b
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_SELECTED_WAVE_OBJECT_NAMES
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_MOVE_CURSOR
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:50:39 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:50:39 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 111 MB. Current time: 10/29/24, 12:50:39 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:50:40 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:50:40 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:50:41 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:50:41 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 111 MB. Current time: 10/29/24, 12:50:41 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 136 MB. Current time: 10/29/24, 12:50:41 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:50:42 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 111 MB. Current time: 10/29/24, 12:50:42 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:50:42 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 128 MB. Current time: 10/29/24, 12:50:42 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 138 MB. Current time: 10/29/24, 12:50:42 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 117 MB. Current time: 10/29/24, 12:50:42 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 123 MB. Current time: 10/29/24, 12:50:42 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 111 MB. Current time: 10/29/24, 12:50:43 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 117 MB. Current time: 10/29/24, 12:50:44 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 128 MB. Current time: 10/29/24, 12:50:44 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 111 MB. Current time: 10/29/24, 12:50:44 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 111 MB. Current time: 10/29/24, 12:50:44 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 111 MB. Current time: 10/29/24, 12:50:45 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 111 MB. Current time: 10/29/24, 12:50:45 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:50:45 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:50:45 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:50:46 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 111 MB. Current time: 10/29/24, 12:50:46 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 136 MB. Current time: 10/29/24, 12:50:46 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:50:47 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:50:47 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:50:47 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 111 MB. Current time: 10/29/24, 12:50:47 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 111 MB. Current time: 10/29/24, 12:50:47 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 111 MB. Current time: 10/29/24, 12:50:48 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:50:54 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:50:54 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:50:54 AM CDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 112 MB. Current time: 10/29/24, 12:50:54 AM CDT
+// Elapsed time: 31 seconds
+unMaximizeFrame(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 1"); // R
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 1171, 212); // ac
+// Elapsed time: 42 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // R
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// Elapsed time: 13 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 45, 141); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 17, 138); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 2, 135); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 13, 160); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 358, 370, false, true, false, false, false); // ac - Control Key
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 316, 388, false, true, false, false, false); // ac - Control Key
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 6, 310, true, false, false, false, false); // ac - Shift Key
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 6, 313, true, false, false, false, false); // ac - Shift Key
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0_tb.sv", 'c'); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 184, 265); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 137, 286); // ac
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0_tb.sv", 'v'); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 508, 325); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 628, 283); // ac
+// Elapsed time: 15 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 195, 281); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 195, 281, false, false, false, false, true); // ac - Double Click
+// Elapsed time: 14 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 226, 293); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 208, 291); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 219, 291); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 162, 290, true, false, false, false, false); // ac - Shift Key
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 501, 287); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 501, 287, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 132, 312); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 158, 336); // ac
+// Elapsed time: 21 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 229, 445); // ac
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0_tb.sv", 'c'); // ac
+// Elapsed time: 10 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 134, 180); // ac
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0_tb.sv", 'v'); // ac
+// Elapsed time: 21 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 219, 522); // ac
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0_tb.sv", 'c'); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 135, 218); // ac
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0_tb.sv", 'v'); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 699, 161); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 724, 207); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 714, 219); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 28 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 231, 418); // ac
+// Elapsed time: 13 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 230, 393); // ac
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0_tb.sv", 'c'); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 133, 241); // ac
+typeControlKey((HResource) null, "hdmi_text_controller_v1_0_tb.sv", 'v'); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 721, 234); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 721, 234, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 560, 242); // ac
+// Elapsed time: 61 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 129, 336, false, false, false, true, false); // ac - Popup Trigger
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 41, 297, false, false, false, true, false); // ac - Popup Trigger
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 137, 261); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 129, 343); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 133, 412); // ac
+// Elapsed time: 14 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 226, 397); // ac
+// Elapsed time: 12 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 228, 419); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Run Command: RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION
+// Elapsed time: 22 seconds
+dismissFileChooser();
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 657, 427); // ac
+// Run Command: RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION
+dismissFileChooser();
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 395, 275); // ac
+// Run Command: RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION
+dismissFileChooser();
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 109 MB. Current time: 10/29/24, 12:57:42 AM CDT
+maximizeFrame(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 1"); // R
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 425, 314); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 129, 467); // ac
+// Elapsed time: 21 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 363, 119); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 333, 144); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 281, 159); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 400, 192); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 396, 218); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 442, 246); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 437, 310); // ac
+// Elapsed time: 121 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 153, 192); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 71 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), hdmi_text_controller_v1_0_AXI_inst : hdmi_text_controller_v1_0_AXI (hdmi_text_controller_v1_0_AXI.sv)]", 11, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), hdmi_text_controller_v1_0_AXI_inst : hdmi_text_controller_v1_0_AXI (hdmi_text_controller_v1_0_AXI.sv)]", 11, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mb_usb_hdmi_top (mb_usb_hdmi_top.sv)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mb_usb_hdmi_top (mb_usb_hdmi_top.sv)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_tb.sv", 2); // o
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 421, 478); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 155, 342); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 152, 258); // ac
+// Elapsed time: 10 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 207, 261); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 207, 261, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 441, 268); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 420, 282); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 342, 263); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 405, 382); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 221, 346); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 20 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 261, 291); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 273, 340); // ac
+// Elapsed time: 49 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 216, 265); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 320 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 328, 289); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 404, 341); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 264, 340); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 262, 364); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 261, 440); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 303, 415); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 226, 398); // ac
+// Elapsed time: 12 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 323, 423); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 28 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 195, 347); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 185, 360); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 86 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 275, 362); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 254, 285); // ac
+// Elapsed time: 21 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 96, 314); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 116, 347); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 213, 442); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 363, 424); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 17 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 318, 197); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 484, 262); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 30 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 100, 120); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 374 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 96, 320); // ac
+// Elapsed time: 20 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 503, 521); // ac
+// Elapsed time: 14 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 328, 207); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 102, 207); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 92, 207); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 288, 288); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 388, 340); // ac
+// Elapsed time: 10 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 180, 217); // ac
+// Elapsed time: 14 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 206, 182); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 298, 282); // ac
+// Elapsed time: 13 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 395, 291); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 169, 297); // ac
+// Elapsed time: 15 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 330, 320); // ac
+// Elapsed time: 38 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 352, 389); // ac
+// Elapsed time: 32 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 399, 157); // ac
+// Elapsed time: 11 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 408, 342); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 621, 414); // ac
+// Elapsed time: 13 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 357, 465); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 349, 438); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 349, 346); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 132, 454); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 143, 496); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,158 MB. GUI used memory: 113 MB. Current time: 10/29/24, 1:27:46 AM CDT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 249 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 149, 362); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 413, 236, true, false, false, false, false); // ac - Shift Key
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 458, 167, true, false, false, false, false); // ac - Shift Key
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 521, 304); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 665, 290); // ac
+// Elapsed time: 10 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 790, 358); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 221, 381); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 420, 388); // ac
+// Elapsed time: 25 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 198, 344); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 151, 366); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 310, 371); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 522, 419); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 29 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 381, 417); // ac
+// Elapsed time: 40 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, vga_controller (VGA_controller.sv)]", 16, false); // D
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 406, 425); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 396, 417); // ac
+// Elapsed time: 91 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 418, 227); // ac
+// Elapsed time: 11 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 644, 337); // ac
+// Elapsed time: 57 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 444, 303); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 351, 259); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 407, 195); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 28 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 292, 262); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 425, 306); // ac
+// Elapsed time: 18 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 297, 322); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_tb.sv", 597, 314); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 41 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 1); // o
+// Elapsed time: 105 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_tb.sv", 2); // o
+// Elapsed time: 45 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mb_usb_hdmi_top.sv", 0); // o
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_tb.sv", 2); // o
+// Elapsed time: 73 seconds
+unMinimizeFrame(PAResourceOtoP.PAViews_MESSAGES, "Messages"); // R
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'axi_awaddr' [C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sim_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_tb.sv:74]. ]", 572, true); // u.d - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Orion\Documents\GitHub\ece385\lab_7\lab_7.srcs\sim_1\imports\lab_7_1_provided_fa24\hdmi_text_controller_v1_0_tb.sv;-;;-;16;-;line;-;74;-;;-;16;-;"); // u.d
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 1); // o
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mb_usb_hdmi_top.sv", 0); // o
+selectCodeEditor("mb_usb_hdmi_top.sv", 43, 163); // ac
+selectCodeEditor("mb_usb_hdmi_top.sv", 326, 284); // ac
+selectCodeEditor("mb_usb_hdmi_top.sv", 540, 375); // ac
+// Elapsed time: 12 seconds
+selectCodeEditor("mb_usb_hdmi_top.sv", 389, 166); // ac
+selectCodeEditor("mb_usb_hdmi_top.sv", 557, 401); // ac
+selectCodeEditor("mb_usb_hdmi_top.sv", 42, 242); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mb_usb_hdmi_top.sv", 92, 470); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Run Command: RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION
+dismissFileChooser();
+selectCodeEditor("mb_usb_hdmi_top.sv", 379, 366); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mb_usb_hdmi_top.sv", 79, 467); // ac
+selectRadioButton(PAResourceEtoH.FloatingTopDialog_IGNORE_AND_CONTINUE_WITH_INVALID_TOP, "Ignore and continue with invalid top module"); // a
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: SRC_MGMT_MODE_CHANGE
+// Tcl Message: set_property source_mgmt_mode DisplayOnly [current_project] 
+dismissDialog("Invalid Top Module"); // s
+selectCodeEditor("mb_usb_hdmi_top.sv", 293, 411); // ac
+// Run Command: RDIResourceCommand.RDICommands_WAVEFORM_SAVE_CONFIGURATION
+dismissFileChooser();
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, mb_usb_hdmi_top.sv]", 2, false); // D
+selectCodeEditor("mb_usb_hdmi_top.sv", 425, 320); // ac
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 15 seconds
+selectCodeEditor("mb_usb_hdmi_top.sv", 85, 216); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mb_block_i_wrapper (mb_block_i_wrapper.v)]", 5, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mb_block_i_wrapper (mb_block_i_wrapper.v)]", 5, true, false, false, false, false, true); // D - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 1); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_tb.sv", 2); // o
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 1); // o
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 200, 399, false, false, false, true, false); // ac - Popup Trigger
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 101, 165); // ac
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mb_usb_hdmi_top.sv", 0); // o
+selectCodeEditor("mb_usb_hdmi_top.sv", 107, 314); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mb_usb_hdmi_top.sv", 587, 405); // ac
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mb_block_i_wrapper (mb_block_i_wrapper.v), mb_block_i_i : mb_block_i (mb_block_i.bd), mb_block_i (mb_block_i.v)]", 7); // D
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, clk_wiz_0 (clk_wiz_0.xci)]", 18, false); // D
+selectCodeEditor("mb_usb_hdmi_top.sv", 117, 389); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, vga_controller (VGA_controller.sv)]", 20, false); // D
+// Elapsed time: 17 seconds
+selectCodeEditor("mb_usb_hdmi_top.sv", 84, 367); // ac
+selectCodeEditor("mb_usb_hdmi_top.sv", 96, 451); // ac
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mb_usb_hdmi_top (mb_usb_hdmi_top.sv)]", 1); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mb_usb_hdmi_top (mb_usb_hdmi_top.sv), clk_wiz : clk_wiz_0 (clk_wiz_0.xci)]", 2); // D
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Show IP Hierarchy"); // u
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mb_usb_hdmi_top (mb_usb_hdmi_top.sv), vga_to_hdmi : xil_defaultlib.hdmi_tx_0]", 5, false); // D
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("CANCEL", "Cancel"); // JButton
+dismissDialog("Add Sources"); // c
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mb_usb_hdmi_top (mb_usb_hdmi_top.sv), vga_to_hdmi : xil_defaultlib.hdmi_tx_0]", 5, false, false, false, false, true, false); // D - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // al
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), hdmi_text_controller_v1_0_AXI_inst : hdmi_text_controller_v1_0_AXI (hdmi_text_controller_v1_0_AXI.sv)]", 9, false); // D
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // f
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 1, "User Repository", 0, true); // z - Node
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 1); // z
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "UserIP ;  ;  ;  ; ", 2); // z
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "HDMI/DVI Encoder ;  ; Production ; Included ; realdigital.org:realdigital:hdmi_tx:1.0", 3, "HDMI/DVI Encoder", 0, false); // z
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "HDMI/DVI Encoder ;  ; Production ; Included ; realdigital.org:realdigital:hdmi_tx:1.0", 3); // z
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "HDMI/DVI Encoder ;  ; Production ; Included ; realdigital.org:realdigital:hdmi_tx:1.0", 3, "HDMI/DVI Encoder", 0, false, false, false, false, false, true); // z - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Customize IP"); // m
+// TclEventType: CREATE_IP_CORE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_ip -name hdmi_tx -vendor realdigital.org -library realdigital -version 1.0 -module_name hdmi_tx_0 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files c:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'hdmi_tx_0'... 
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_DELETE
+// TclEventType: FILE_SET_DELETE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  c:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'hdmi_tx_0'... INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'hdmi_tx_0'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all hdmi_tx_0] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: hdmi_tx_0 
+// Tcl Message: export_ip_user_files -of_objects [get_files c:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_NEW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_ADD
+// Tcl Message: create_ip_run [get_files -of_objects [get_fileset sources_1] c:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0.xci] 
+// Tcl Message: launch_runs hdmi_tx_0_synth_1 -jobs 6 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: hdmi_tx_0 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Tue Oct 29 01:43:13 2024] Launched hdmi_tx_0_synth_1... Run output will be captured here: C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.runs/hdmi_tx_0_synth_1/runme.log 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
