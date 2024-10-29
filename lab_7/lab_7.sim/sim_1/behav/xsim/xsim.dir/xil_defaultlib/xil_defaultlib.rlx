@@ -1,0 +1,8 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.sim/sim_1/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sim_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_tb.sv,1730108436,systemVerilog,,,,hdmi_text_controller_tb,,uvm,../../../../lab_7.gen/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7_1_provided_fa24/hdmi_text_controller_v1_0.sv,1730108436,systemVerilog,,C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_AXI.sv,,hdmi_text_controller_v1_0,,uvm,../../../../lab_7.gen/sources_1/ip/clk_wiz_0,,,,,
+C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_AXI.sv,1730108436,systemVerilog,,C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sim_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_tb.sv,,hdmi_text_controller_v1_0_AXI,,uvm,../../../../lab_7.gen/sources_1/ip/clk_wiz_0,,,,,
