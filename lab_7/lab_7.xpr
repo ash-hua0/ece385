@@ -60,7 +60,7 @@
     <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
     <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
-    <Option Name="WTXSimLaunchSim" Val="7"/>
+    <Option Name="WTXSimLaunchSim" Val="12"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -175,25 +175,31 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/lab_7_1_provided_fa24/font_rom.sv">
+      <File Path="$PSRCDIR/sources_1/imports/lab_7_1_provided_fa24/font_rom.sv">
         <FileInfo>
           <Attr Name="Library" Val="xil_defaultlib"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/lab_7_1_provided_fa24/font_rom.sv"/>
+          <Attr Name="ImportTime" Val="1730108436"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/lab_7_1_provided_fa24/hdmi_text_controller_v1_0.sv">
+      <File Path="$PSRCDIR/sources_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0.sv">
         <FileInfo>
           <Attr Name="Library" Val="xil_defaultlib"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/lab_7_1_provided_fa24/hdmi_text_controller_v1_0.sv"/>
+          <Attr Name="ImportTime" Val="1730213793"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_AXI.sv">
+      <File Path="$PSRCDIR/sources_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_AXI.sv">
         <FileInfo>
           <Attr Name="Library" Val="xil_defaultlib"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_AXI.sv"/>
+          <Attr Name="ImportTime" Val="1730189794"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -209,9 +215,11 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/lab_7_1_provided_fa24/mb_usb_hdmi_top.sv">
+      <File Path="$PSRCDIR/sources_1/imports/lab_7_1_provided_fa24/mb_usb_hdmi_top.sv">
         <FileInfo>
           <Attr Name="Library" Val="xil_defaultlib"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/lab_7_1_provided_fa24/mb_usb_hdmi_top.sv"/>
+          <Attr Name="ImportTime" Val="1730192231"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
