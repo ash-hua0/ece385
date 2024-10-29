@@ -5504,3 +5504,875 @@ Run output will be captured here: C:/Users/Orion/Documents/GitHub/ece385/lab_7/l
 export_simulation -of_objects [get_files C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0.xci] -directory C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.ip_user_files -ipstatic_source_dir C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.cache/compile_simlib/modelsim} {questa=C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.cache/compile_simlib/questa} {riviera=C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.cache/compile_simlib/riviera} {activehdl=C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
 export_ip_user_files -of_objects  [get_files C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7_1_provided_fa24/VGA_controller.sv] -no_script -reset -force -quiet
 remove_files  C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7_1_provided_fa24/VGA_controller.sv
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'hdmi_text_controller_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+Generating merged BMM file for the design top 'hdmi_text_controller_tb'...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+Generating merged BMM file for the design top 'hdmi_text_controller_tb'...
+Generating merged BMM file for the design top 'hdmi_text_controller_tb'...
+INFO: [SIM-utils-54] Inspecting design source files for 'hdmi_text_controller_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj hdmi_text_controller_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/hdmi_tx_0_1/hdl/encode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encode
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/hdmi_tx_0_1/hdl/serdes_10_to_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serdes_10_to_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/hdmi_tx_0_1/hdl/srldelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module srldelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/hdmi_tx_0_1/hdl/hdmi_tx_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_tx_v1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/hdmi_tx_0_1/sim/hdmi_tx_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_tx_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/imports/design_source/Color_Mapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module color_mapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/imports/design_source/ball.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ball
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7_1_provided_fa24/font_rom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module font_rom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7_1_provided_fa24/hdmi_text_controller_v1_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_text_controller_v1_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_AXI.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_text_controller_v1_0_AXI
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/imports/design_source/hex_driver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hex_driver
+INFO: [VRFC 10-311] analyzing module nibble_to_hex
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7_1_provided_fa24/mb_usb_hdmi_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mb_usb_hdmi_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sim_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_text_controller_tb
+"xvhdl --incr --relax -prj hdmi_text_controller_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L microblaze_v11_0_10 -L lmb_v10_v3_0_12 -L lmb_bram_if_cntlr_v4_0_21 -L blk_mem_gen_v8_4_5 -L generic_baseblocks_v2_1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_27 -L fifo_generator_v13_2_7 -L axi_data_fifo_v2_1_26 -L axi_crossbar_v2_1_28 -L axi_lite_ipif_v3_0_4 -L axi_intc_v4_1_17 -L mdm_v3_2_23 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L lib_pkg_v1_0_2 -L lib_srl_fifo_v1_0_2 -L axi_uartlite_v2_0_31 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot hdmi_text_controller_tb_behav xil_defaultlib.hdmi_text_controller_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L microblaze_v11_0_10 -L lmb_v10_v3_0_12 -L lmb_bram_if_cntlr_v4_0_21 -L blk_mem_gen_v8_4_5 -L generic_baseblocks_v2_1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_27 -L fifo_generator_v13_2_7 -L axi_data_fifo_v2_1_26 -L axi_crossbar_v2_1_28 -L axi_lite_ipif_v3_0_4 -L axi_intc_v4_1_17 -L mdm_v3_2_23 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L lib_pkg_v1_0_2 -L lib_srl_fifo_v1_0_2 -L axi_uartlite_v2_0_31 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot hdmi_text_controller_tb_behav xil_defaultlib.hdmi_text_controller_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'axi_awaddr' [C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sim_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_tb.sv:74]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'axi_araddr' [C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sim_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_tb.sv:88]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7_1_provided_fa24/VGA_controller.sv" Line 26. Module vga_controller doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/imports/design_source/Color_Mapper.sv" Line 17. Module color_mapper doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7_1_provided_fa24/VGA_controller.sv" Line 26. Module vga_controller doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/imports/design_source/Color_Mapper.sv" Line 17. Module color_mapper doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hdmi_text_controller_v1_0_AXI(C_...
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.vga_controller
+Compiling module unisims_ver.SRL16E_default
+Compiling module xil_defaultlib.srldelay(WIDTH=40,TAPS=4'b1010)
+Compiling module xil_defaultlib.encode_default
+Compiling module xil_defaultlib.encode(CHANNEL="GREEN")
+Compiling module xil_defaultlib.encode(CHANNEL="RED")
+Compiling module unisims_ver.OSERDESE2(DATA_RATE_TQ="SDR",DAT...
+Compiling module unisims_ver.OSERDESE2(DATA_RATE_TQ="SDR",DAT...
+Compiling module xil_defaultlib.serdes_10_to_1
+Compiling module unisims_ver.OBUFDS(IOSTANDARD="TMDS_33")
+Compiling module xil_defaultlib.hdmi_tx_v1_0(C_RED_WIDTH=4,C_GRE...
+Compiling module xil_defaultlib.hdmi_tx_0
+Compiling module xil_defaultlib.color_mapper
+Compiling module xil_defaultlib.hdmi_text_controller_v1_0(C_AXI_...
+Compiling module xil_defaultlib.hdmi_text_controller_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot hdmi_text_controller_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 1894.238 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "hdmi_text_controller_tb_behav -key {Behavioral:sim_1:Functional:hdmi_text_controller_tb} -tclbatch {hdmi_text_controller_tb.tcl} -protoinst "protoinst_files/mb_block_i.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/mb_block_i.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/mb_block_i.protoinst for the following reason(s):
+There are no instances of module "mb_block_i" in the design.
+
+Time resolution is 1 ps
+source hdmi_text_controller_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/hdmi_text_controller_tb/bitmap" to the wave window because it has 10080000 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run all
+Info: Read back of control register: 001f6000
+Time: 192360 ns  Iteration: 0  Process: /hdmi_text_controller_tb/Initial258_901  Scope: hdmi_text_controller_tb.TEST_VECTORS  File: C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sim_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_tb.sv Line: 284
+$finish called at time : 192360 ns : File "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sim_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_tb.sv" Line 293
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'hdmi_text_controller_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for all
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:23 . Memory (MB): peak = 1894.238 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'hdmi_text_controller_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+Generating merged BMM file for the design top 'hdmi_text_controller_tb'...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+Generating merged BMM file for the design top 'hdmi_text_controller_tb'...
+Generating merged BMM file for the design top 'hdmi_text_controller_tb'...
+INFO: [SIM-utils-54] Inspecting design source files for 'hdmi_text_controller_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj hdmi_text_controller_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/hdmi_tx_0_1/hdl/encode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encode
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/hdmi_tx_0_1/hdl/serdes_10_to_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serdes_10_to_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/hdmi_tx_0_1/hdl/srldelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module srldelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/hdmi_tx_0_1/hdl/hdmi_tx_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_tx_v1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/hdmi_tx_0_1/sim/hdmi_tx_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_tx_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/imports/design_source/Color_Mapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module color_mapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/imports/design_source/ball.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ball
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7_1_provided_fa24/font_rom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module font_rom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7_1_provided_fa24/hdmi_text_controller_v1_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_text_controller_v1_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_AXI.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_text_controller_v1_0_AXI
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/imports/design_source/hex_driver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hex_driver
+INFO: [VRFC 10-311] analyzing module nibble_to_hex
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7_1_provided_fa24/mb_usb_hdmi_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mb_usb_hdmi_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sim_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_text_controller_tb
+"xvhdl --incr --relax -prj hdmi_text_controller_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L microblaze_v11_0_10 -L lmb_v10_v3_0_12 -L lmb_bram_if_cntlr_v4_0_21 -L blk_mem_gen_v8_4_5 -L generic_baseblocks_v2_1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_27 -L fifo_generator_v13_2_7 -L axi_data_fifo_v2_1_26 -L axi_crossbar_v2_1_28 -L axi_lite_ipif_v3_0_4 -L axi_intc_v4_1_17 -L mdm_v3_2_23 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L lib_pkg_v1_0_2 -L lib_srl_fifo_v1_0_2 -L axi_uartlite_v2_0_31 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot hdmi_text_controller_tb_behav xil_defaultlib.hdmi_text_controller_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L microblaze_v11_0_10 -L lmb_v10_v3_0_12 -L lmb_bram_if_cntlr_v4_0_21 -L blk_mem_gen_v8_4_5 -L generic_baseblocks_v2_1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_27 -L fifo_generator_v13_2_7 -L axi_data_fifo_v2_1_26 -L axi_crossbar_v2_1_28 -L axi_lite_ipif_v3_0_4 -L axi_intc_v4_1_17 -L mdm_v3_2_23 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L lib_pkg_v1_0_2 -L lib_srl_fifo_v1_0_2 -L axi_uartlite_v2_0_31 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot hdmi_text_controller_tb_behav xil_defaultlib.hdmi_text_controller_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'axi_awaddr' [C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sim_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_tb.sv:74]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'axi_araddr' [C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sim_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_tb.sv:88]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7_1_provided_fa24/VGA_controller.sv" Line 26. Module vga_controller doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/imports/design_source/Color_Mapper.sv" Line 17. Module color_mapper doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7_1_provided_fa24/VGA_controller.sv" Line 26. Module vga_controller doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/imports/design_source/Color_Mapper.sv" Line 17. Module color_mapper doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hdmi_text_controller_v1_0_AXI(C_...
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.vga_controller
+Compiling module unisims_ver.SRL16E_default
+Compiling module xil_defaultlib.srldelay(WIDTH=40,TAPS=4'b1010)
+Compiling module xil_defaultlib.encode_default
+Compiling module xil_defaultlib.encode(CHANNEL="GREEN")
+Compiling module xil_defaultlib.encode(CHANNEL="RED")
+Compiling module unisims_ver.OSERDESE2(DATA_RATE_TQ="SDR",DAT...
+Compiling module unisims_ver.OSERDESE2(DATA_RATE_TQ="SDR",DAT...
+Compiling module xil_defaultlib.serdes_10_to_1
+Compiling module unisims_ver.OBUFDS(IOSTANDARD="TMDS_33")
+Compiling module xil_defaultlib.hdmi_tx_v1_0(C_RED_WIDTH=4,C_GRE...
+Compiling module xil_defaultlib.hdmi_tx_0
+Compiling module xil_defaultlib.color_mapper
+Compiling module xil_defaultlib.hdmi_text_controller_v1_0(C_AXI_...
+Compiling module xil_defaultlib.hdmi_text_controller_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot hdmi_text_controller_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1894.238 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "hdmi_text_controller_tb_behav -key {Behavioral:sim_1:Functional:hdmi_text_controller_tb} -tclbatch {hdmi_text_controller_tb.tcl} -protoinst "protoinst_files/mb_block_i.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/mb_block_i.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/mb_block_i.protoinst for the following reason(s):
+There are no instances of module "mb_block_i" in the design.
+
+Time resolution is 1 ps
+source hdmi_text_controller_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/hdmi_text_controller_tb/bitmap" to the wave window because it has 10080000 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run all
+Info: Read back of control register: 001f6000
+Time: 192360 ns  Iteration: 0  Process: /hdmi_text_controller_tb/Initial258_901  Scope: hdmi_text_controller_tb.TEST_VECTORS  File: C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sim_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_tb.sv Line: 284
+$finish called at time : 192360 ns : File "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sim_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_tb.sv" Line 293
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'hdmi_text_controller_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for all
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:22 . Memory (MB): peak = 1894.238 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property display_limit 10080000 [current_wave_config]
+ERROR: [Common 17-161] Invalid option value '' specified for 'objects'.
+set_property display_limit
+ERROR: [Common 17-163] Missing value for option 'value', please type 'set_property -help' for usage info.
+set_property display_limit -help
+set_property
+
+Description: 
+Set property on object(s)
+
+Syntax: 
+set_property  [-quiet] [-verbose] <name> <value> <objects>...
+
+Usage: 
+  Name        Description
+  -----------------------
+  [-quiet]    Ignore command errors
+  [-verbose]  Suspend message limits during command execution
+  <name>      Name of property to set
+  <value>     Value of property to set
+  <objects>   Objects to set properties on
+
+Categories: 
+Object, PropertyAndParameter, XDC
+
+Description:
+
+  Assigns the defined property <name> and <value> to the specified <objects>.
+
+  This command can be used to define any property on an object in the design.
+  Each object has a set of predefined properties that have expected values,
+  or a range of values. The set_property command can be used to define the
+  values for these properties. To determine the defined set of properties on
+  an object, use report_property, list_property, or list_property_values.
+
+  You can also define custom properties for an object, by specifying a unique
+  <name> and <value> pair for the object. If an object has custom properties,
+  these will also be reported by the report_property and list_property
+  commands.
+
+  This command returns nothing if successful, and an error if it fails.
+
+  Note: You can use the get_property command to validate any properties that
+  have been set on an object.
+
+Arguments:
+
+  -dict - (Optional) Use this option to specify a dictionary of multiple
+  properties (<name> <value> pairs) on an object with a single set_property
+  command. Multiple <name> <value> pairs must be enclosed in quotes, "", or
+  braces, {}.
+
+    -dict "name1 value1 name2 value2 ... nameN valueN"
+
+  Note: When writing the constraints for a design using either
+  save_constraints, save_constraints_as, or write_xdc, the properties
+  specified using the -dict option will be written as separate set_property
+  commands for each name/value pair. If you don`t want the XDC constraints to
+  be expanded in this manner, you can either use the Tcl script driven
+  approach in a non-project design, or use a Tcl script as a design source in
+  your constraint set. Refer to Vivado Design Suite User Guide: Design Flows
+  Overview (UG892) for more information on non-project based design, or refer
+  to Vivado Design Suite User Guide: Using Constraints (UG903) for more
+  information on using Tcl scripts in constraint sets.
+
+  -quiet - (Optional) Execute the command quietly, returning no messages from
+  the command. The command also returns TCL_OK regardless of any errors
+  encountered during execution.
+
+  Note: Any errors encountered on the command-line, while launching the
+  command, will be returned. Only errors occurring inside the command will be
+  trapped.
+
+  -verbose - (Optional) Temporarily override any message limits and return
+  all messages from this command.
+
+  Note: Message limits can be defined with the set_msg_config command.
+
+  <name> - (Required) Specifies the name of the property to be assigned to
+  the object or objects. The <name> argument is case sensitive and should be
+  specified appropriately.
+
+  <value> - (Required) Specifies the value to assign to the <name> on the
+  specified object or objects. The value is checked against the property type
+  to ensure that the value is valid. If the value is not appropriate for the
+  property an error will be returned.
+
+  Note: In some cases the value of a property may include special characters,
+  such as the dash character (`-`), which can cause the tool to interpret the
+  value as a new argument to the command. In this case, you must use the
+  explicit arguments (-name, -value, -objects) instead of the implied
+  positional arguments (name, value, objects) as described here. This is
+  shown in the Examples section below.
+
+  <objects> - (Required) One or more objects to assign the property to.
+
+Examples:
+
+  Create a user-defined boolean property, TRUTH, for cell objects, and set
+  the property on a cell:
+
+    create_property -type bool truth cell  
+    set_property truth false [lindex [get_cells] 1]
+
+  Use the -dict option to specify multiple properties at one time on the
+  current design:
+
+    set_property -dict "POST_CRC enable POST_CRC_ACTION correct_and_continue" \  
+    [current_design]
+
+  The following example sets the TOP property of the current fileset to
+  define the top module of the project:
+
+    set_property top fftTop [current_fileset]  
+    set_property top_file {C:/Data/sources/fftTop.v} [current_fileset]
+
+  Note: Defining the top module requires the TOP property to be set to the
+  desired hierarchical block in the source fileset of the current project. In
+  the preceding example TOP is the property name, fftTop is the value, and
+  current_fileset is the object. In addition, the TOP_FILE property should be
+  defined to point to the data source for the top module.
+
+  This example shows how to set a property value that includes the dash
+  character, `-`. The dash can cause the tool to interpret the value as a new
+  command argument, rather than part of the value being specified, and will
+  cause an error as shown. In this case, you must use the explicit form of
+  the positional arguments in the set_property command:
+
+    set_property {XELAB.MORE_OPTIONS} {-pulse_e_style ondetect} \  
+       [get_filesets sim_1]  
+    ERROR: [Common 17-170] Unknown option `-pulse_e_style ondetect`,   
+     please type `set_property -help` for usage info. 
+    set_property -name {XELAB.MORE_OPTIONS} -value {-pulse_e_style ondetect}\  
+       -objects [get_filesets sim_1]
+
+  The following example sets the internal VREF property value for the
+  specified IO Bank:
+
+    set_property internal_vref {0.75} [get_iobanks 0]
+
+  The following example defines a DCI Cascade by setting the DCI_CASCADE
+  property for the specified IO Bank:
+
+    set_property DCI_CASCADE {14} [get_iobanks 0 ]
+
+  The following example configures the synth_1 run, setting options for
+  Vivado Synthesis 2013, and then launches the synthesis run:
+
+    set_property flow {Vivado Synthesis 2016} \  
+       [get_runs synth_1]   
+    set_property STEPS.SYNTH_DESIGN.ARGS.GATED_CLOCK_CONVERSION on \  
+       [get_runs synth_1]  
+    set_property STEPS.SYNTH_DESIGN.ARGS.FSM_EXTRACTION one_hot \  
+       [get_runs synth_1]  
+    launch_runs synth_1
+
+  This example is the same as the prior example, except that it uses the
+  -dict option to set all the properties on the synthesis run in a single
+  set_property command:
+
+    set_property -dict [ list flow {Vivado Synthesis 2016} \  
+       STEPS.SYNTH_DESIGN.ARGS.GATED_CLOCK_CONVERSION on \  
+       STEPS.SYNTH_DESIGN.ARGS.FSM_EXTRACTION \  
+       one_hot ] [get_runs synth_1]  
+    launch_runs synth_1
+
+See Also:
+
+   *  current_fileset
+   *  create_property
+   *  create_run
+   *  get_cells
+   *  get_property
+   *  get_runs
+   *  launch_runs
+   *  list_property
+   *  list_property_value
+   *  report_property
+   *  reset_property
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'hdmi_text_controller_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+Generating merged BMM file for the design top 'hdmi_text_controller_tb'...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+Generating merged BMM file for the design top 'hdmi_text_controller_tb'...
+Generating merged BMM file for the design top 'hdmi_text_controller_tb'...
+INFO: [SIM-utils-54] Inspecting design source files for 'hdmi_text_controller_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj hdmi_text_controller_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/hdmi_tx_0_1/hdl/encode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encode
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/hdmi_tx_0_1/hdl/serdes_10_to_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serdes_10_to_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/hdmi_tx_0_1/hdl/srldelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module srldelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/hdmi_tx_0_1/hdl/hdmi_tx_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_tx_v1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/hdmi_tx_0_1/sim/hdmi_tx_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_tx_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/imports/design_source/Color_Mapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module color_mapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/imports/design_source/ball.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ball
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7_1_provided_fa24/font_rom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module font_rom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7_1_provided_fa24/hdmi_text_controller_v1_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_text_controller_v1_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_AXI.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_text_controller_v1_0_AXI
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/imports/design_source/hex_driver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hex_driver
+INFO: [VRFC 10-311] analyzing module nibble_to_hex
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7_1_provided_fa24/mb_usb_hdmi_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mb_usb_hdmi_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sim_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_text_controller_tb
+"xvhdl --incr --relax -prj hdmi_text_controller_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L microblaze_v11_0_10 -L lmb_v10_v3_0_12 -L lmb_bram_if_cntlr_v4_0_21 -L blk_mem_gen_v8_4_5 -L generic_baseblocks_v2_1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_27 -L fifo_generator_v13_2_7 -L axi_data_fifo_v2_1_26 -L axi_crossbar_v2_1_28 -L axi_lite_ipif_v3_0_4 -L axi_intc_v4_1_17 -L mdm_v3_2_23 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L lib_pkg_v1_0_2 -L lib_srl_fifo_v1_0_2 -L axi_uartlite_v2_0_31 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot hdmi_text_controller_tb_behav xil_defaultlib.hdmi_text_controller_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L microblaze_v11_0_10 -L lmb_v10_v3_0_12 -L lmb_bram_if_cntlr_v4_0_21 -L blk_mem_gen_v8_4_5 -L generic_baseblocks_v2_1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_27 -L fifo_generator_v13_2_7 -L axi_data_fifo_v2_1_26 -L axi_crossbar_v2_1_28 -L axi_lite_ipif_v3_0_4 -L axi_intc_v4_1_17 -L mdm_v3_2_23 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L lib_pkg_v1_0_2 -L lib_srl_fifo_v1_0_2 -L axi_uartlite_v2_0_31 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot hdmi_text_controller_tb_behav xil_defaultlib.hdmi_text_controller_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'axi_awaddr' [C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sim_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_tb.sv:74]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'axi_araddr' [C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sim_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_tb.sv:88]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7_1_provided_fa24/VGA_controller.sv" Line 26. Module vga_controller doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/imports/design_source/Color_Mapper.sv" Line 17. Module color_mapper doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7_1_provided_fa24/VGA_controller.sv" Line 26. Module vga_controller doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/imports/design_source/Color_Mapper.sv" Line 17. Module color_mapper doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hdmi_text_controller_v1_0_AXI(C_...
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.vga_controller
+Compiling module unisims_ver.SRL16E_default
+Compiling module xil_defaultlib.srldelay(WIDTH=40,TAPS=4'b1010)
+Compiling module xil_defaultlib.encode_default
+Compiling module xil_defaultlib.encode(CHANNEL="GREEN")
+Compiling module xil_defaultlib.encode(CHANNEL="RED")
+Compiling module unisims_ver.OSERDESE2(DATA_RATE_TQ="SDR",DAT...
+Compiling module unisims_ver.OSERDESE2(DATA_RATE_TQ="SDR",DAT...
+Compiling module xil_defaultlib.serdes_10_to_1
+Compiling module unisims_ver.OBUFDS(IOSTANDARD="TMDS_33")
+Compiling module xil_defaultlib.hdmi_tx_v1_0(C_RED_WIDTH=4,C_GRE...
+Compiling module xil_defaultlib.hdmi_tx_0
+Compiling module xil_defaultlib.color_mapper
+Compiling module xil_defaultlib.hdmi_text_controller_v1_0(C_AXI_...
+Compiling module xil_defaultlib.hdmi_text_controller_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot hdmi_text_controller_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1894.238 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "hdmi_text_controller_tb_behav -key {Behavioral:sim_1:Functional:hdmi_text_controller_tb} -tclbatch {hdmi_text_controller_tb.tcl} -protoinst "protoinst_files/mb_block_i.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/mb_block_i.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/mb_block_i.protoinst for the following reason(s):
+There are no instances of module "mb_block_i" in the design.
+
+Time resolution is 1 ps
+source hdmi_text_controller_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/hdmi_text_controller_tb/bitmap" to the wave window because it has 10080000 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run all
+Info: Read back of control register: 001f6000
+Time: 192360 ns  Iteration: 0  Process: /hdmi_text_controller_tb/Initial258_901  Scope: hdmi_text_controller_tb.TEST_VECTORS  File: C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sim_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_tb.sv Line: 284
+$finish called at time : 192360 ns : File "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sim_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_tb.sv" Line 293
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1894.238 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'hdmi_text_controller_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for all
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:23 . Memory (MB): peak = 1894.238 ; gain = 0.000
+set_property display_limit 10080000 [current_wave_config]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1894.238 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'hdmi_text_controller_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+Generating merged BMM file for the design top 'hdmi_text_controller_tb'...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+Generating merged BMM file for the design top 'hdmi_text_controller_tb'...
+Generating merged BMM file for the design top 'hdmi_text_controller_tb'...
+INFO: [SIM-utils-54] Inspecting design source files for 'hdmi_text_controller_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj hdmi_text_controller_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/hdmi_tx_0_1/hdl/encode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encode
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/hdmi_tx_0_1/hdl/serdes_10_to_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serdes_10_to_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/hdmi_tx_0_1/hdl/srldelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module srldelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/hdmi_tx_0_1/hdl/hdmi_tx_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_tx_v1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/hdmi_tx_0_1/sim/hdmi_tx_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_tx_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/imports/design_source/Color_Mapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module color_mapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/imports/design_source/ball.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ball
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7_1_provided_fa24/font_rom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module font_rom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7_1_provided_fa24/hdmi_text_controller_v1_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_text_controller_v1_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_AXI.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_text_controller_v1_0_AXI
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/imports/design_source/hex_driver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hex_driver
+INFO: [VRFC 10-311] analyzing module nibble_to_hex
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7_1_provided_fa24/mb_usb_hdmi_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mb_usb_hdmi_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sim_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_text_controller_tb
+"xvhdl --incr --relax -prj hdmi_text_controller_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L microblaze_v11_0_10 -L lmb_v10_v3_0_12 -L lmb_bram_if_cntlr_v4_0_21 -L blk_mem_gen_v8_4_5 -L generic_baseblocks_v2_1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_27 -L fifo_generator_v13_2_7 -L axi_data_fifo_v2_1_26 -L axi_crossbar_v2_1_28 -L axi_lite_ipif_v3_0_4 -L axi_intc_v4_1_17 -L mdm_v3_2_23 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L lib_pkg_v1_0_2 -L lib_srl_fifo_v1_0_2 -L axi_uartlite_v2_0_31 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot hdmi_text_controller_tb_behav xil_defaultlib.hdmi_text_controller_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L microblaze_v11_0_10 -L lmb_v10_v3_0_12 -L lmb_bram_if_cntlr_v4_0_21 -L blk_mem_gen_v8_4_5 -L generic_baseblocks_v2_1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_27 -L fifo_generator_v13_2_7 -L axi_data_fifo_v2_1_26 -L axi_crossbar_v2_1_28 -L axi_lite_ipif_v3_0_4 -L axi_intc_v4_1_17 -L mdm_v3_2_23 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L lib_pkg_v1_0_2 -L lib_srl_fifo_v1_0_2 -L axi_uartlite_v2_0_31 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot hdmi_text_controller_tb_behav xil_defaultlib.hdmi_text_controller_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'axi_awaddr' [C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sim_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_tb.sv:74]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'axi_araddr' [C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sim_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_tb.sv:88]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7_1_provided_fa24/VGA_controller.sv" Line 26. Module vga_controller doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/imports/design_source/Color_Mapper.sv" Line 17. Module color_mapper doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7_1_provided_fa24/VGA_controller.sv" Line 26. Module vga_controller doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/imports/design_source/Color_Mapper.sv" Line 17. Module color_mapper doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hdmi_text_controller_v1_0_AXI(C_...
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.vga_controller
+Compiling module unisims_ver.SRL16E_default
+Compiling module xil_defaultlib.srldelay(WIDTH=40,TAPS=4'b1010)
+Compiling module xil_defaultlib.encode_default
+Compiling module xil_defaultlib.encode(CHANNEL="GREEN")
+Compiling module xil_defaultlib.encode(CHANNEL="RED")
+Compiling module unisims_ver.OSERDESE2(DATA_RATE_TQ="SDR",DAT...
+Compiling module unisims_ver.OSERDESE2(DATA_RATE_TQ="SDR",DAT...
+Compiling module xil_defaultlib.serdes_10_to_1
+Compiling module unisims_ver.OBUFDS(IOSTANDARD="TMDS_33")
+Compiling module xil_defaultlib.hdmi_tx_v1_0(C_RED_WIDTH=4,C_GRE...
+Compiling module xil_defaultlib.hdmi_tx_0
+Compiling module xil_defaultlib.color_mapper
+Compiling module xil_defaultlib.hdmi_text_controller_v1_0(C_AXI_...
+Compiling module xil_defaultlib.hdmi_text_controller_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot hdmi_text_controller_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:22 . Memory (MB): peak = 1894.238 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '22' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "hdmi_text_controller_tb_behav -key {Behavioral:sim_1:Functional:hdmi_text_controller_tb} -tclbatch {hdmi_text_controller_tb.tcl} -protoinst "protoinst_files/mb_block_i.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/mb_block_i.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/mb_block_i.protoinst for the following reason(s):
+There are no instances of module "mb_block_i" in the design.
+
+Time resolution is 1 ps
+source hdmi_text_controller_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/hdmi_text_controller_tb/bitmap" to the wave window because it has 10080000 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run all
+Info: Read back of control register: 001f6000
+Time: 192360 ns  Iteration: 0  Process: /hdmi_text_controller_tb/Initial258_901  Scope: hdmi_text_controller_tb.TEST_VECTORS  File: C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sim_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_tb.sv Line: 284
+$finish called at time : 192360 ns : File "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sim_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_tb.sv" Line 293
+xsim: Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1894.238 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'hdmi_text_controller_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for all
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:42 . Memory (MB): peak = 1894.238 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'hdmi_text_controller_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+Generating merged BMM file for the design top 'hdmi_text_controller_tb'...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-13660] Precompiled IP simulation library mode is enabled (default). The design IP libraries will be referenced from the compiled library path. Please note that if the precompiled version of the library is not found from the path or the IP is in locked state, then the library source files for these IPs will be compiled locally as part of the compile order.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-50] Design contains embedded sources, generating MEM files for simulation...
+Generating merged BMM file for the design top 'hdmi_text_controller_tb'...
+Generating merged BMM file for the design top 'hdmi_text_controller_tb'...
+INFO: [SIM-utils-54] Inspecting design source files for 'hdmi_text_controller_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj hdmi_text_controller_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/hdmi_tx_0_1/hdl/encode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module encode
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/hdmi_tx_0_1/hdl/serdes_10_to_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module serdes_10_to_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/hdmi_tx_0_1/hdl/srldelay.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module srldelay
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/hdmi_tx_0_1/hdl/hdmi_tx_v1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_tx_v1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/hdmi_tx_0_1/sim/hdmi_tx_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_tx_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/imports/design_source/Color_Mapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module color_mapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/imports/design_source/ball.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ball
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7_1_provided_fa24/font_rom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module font_rom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7_1_provided_fa24/hdmi_text_controller_v1_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_text_controller_v1_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_AXI.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_text_controller_v1_0_AXI
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/imports/design_source/hex_driver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hex_driver
+INFO: [VRFC 10-311] analyzing module nibble_to_hex
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7_1_provided_fa24/mb_usb_hdmi_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mb_usb_hdmi_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sim_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_text_controller_tb
+"xvhdl --incr --relax -prj hdmi_text_controller_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L microblaze_v11_0_10 -L lmb_v10_v3_0_12 -L lmb_bram_if_cntlr_v4_0_21 -L blk_mem_gen_v8_4_5 -L generic_baseblocks_v2_1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_27 -L fifo_generator_v13_2_7 -L axi_data_fifo_v2_1_26 -L axi_crossbar_v2_1_28 -L axi_lite_ipif_v3_0_4 -L axi_intc_v4_1_17 -L mdm_v3_2_23 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L lib_pkg_v1_0_2 -L lib_srl_fifo_v1_0_2 -L axi_uartlite_v2_0_31 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot hdmi_text_controller_tb_behav xil_defaultlib.hdmi_text_controller_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L microblaze_v11_0_10 -L lmb_v10_v3_0_12 -L lmb_bram_if_cntlr_v4_0_21 -L blk_mem_gen_v8_4_5 -L generic_baseblocks_v2_1_0 -L axi_infrastructure_v1_1_0 -L axi_register_slice_v2_1_27 -L fifo_generator_v13_2_7 -L axi_data_fifo_v2_1_26 -L axi_crossbar_v2_1_28 -L axi_lite_ipif_v3_0_4 -L axi_intc_v4_1_17 -L mdm_v3_2_23 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L lib_pkg_v1_0_2 -L lib_srl_fifo_v1_0_2 -L axi_uartlite_v2_0_31 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot hdmi_text_controller_tb_behav xil_defaultlib.hdmi_text_controller_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'axi_awaddr' [C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sim_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_tb.sv:74]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'axi_araddr' [C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sim_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_tb.sv:88]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7_1_provided_fa24/VGA_controller.sv" Line 26. Module vga_controller doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/imports/design_source/Color_Mapper.sv" Line 17. Module color_mapper doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7_1_provided_fa24/VGA_controller.sv" Line 26. Module vga_controller doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/imports/design_source/Color_Mapper.sv" Line 17. Module color_mapper doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hdmi_text_controller_v1_0_AXI(C_...
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.vga_controller
+Compiling module unisims_ver.SRL16E_default
+Compiling module xil_defaultlib.srldelay(WIDTH=40,TAPS=4'b1010)
+Compiling module xil_defaultlib.encode_default
+Compiling module xil_defaultlib.encode(CHANNEL="GREEN")
+Compiling module xil_defaultlib.encode(CHANNEL="RED")
+Compiling module unisims_ver.OSERDESE2(DATA_RATE_TQ="SDR",DAT...
+Compiling module unisims_ver.OSERDESE2(DATA_RATE_TQ="SDR",DAT...
+Compiling module xil_defaultlib.serdes_10_to_1
+Compiling module unisims_ver.OBUFDS(IOSTANDARD="TMDS_33")
+Compiling module xil_defaultlib.hdmi_tx_v1_0(C_RED_WIDTH=4,C_GRE...
+Compiling module xil_defaultlib.hdmi_tx_0
+Compiling module xil_defaultlib.color_mapper
+Compiling module xil_defaultlib.hdmi_text_controller_v1_0(C_AXI_...
+Compiling module xil_defaultlib.hdmi_text_controller_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot hdmi_text_controller_tb_behav
+run_program: Time (s): cpu = 00:00:05 ; elapsed = 00:00:21 . Memory (MB): peak = 1894.238 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '20' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "hdmi_text_controller_tb_behav -key {Behavioral:sim_1:Functional:hdmi_text_controller_tb} -tclbatch {hdmi_text_controller_tb.tcl} -protoinst "protoinst_files/mb_block_i.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/mb_block_i.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/mb_block_i.protoinst for the following reason(s):
+There are no instances of module "mb_block_i" in the design.
+
+Time resolution is 1 ps
+source hdmi_text_controller_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/hdmi_text_controller_tb/bitmap" to the wave window because it has 10080000 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run all
+Info: Read back of control register: 001f6000
+Time: 192360 ns  Iteration: 0  Process: /hdmi_text_controller_tb/Initial258_901  Scope: hdmi_text_controller_tb.TEST_VECTORS  File: C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sim_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_tb.sv Line: 284
+$finish called at time : 192360 ns : File "C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sim_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_tb.sv" Line 293
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1894.238 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'hdmi_text_controller_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for all
+launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:00:36 . Memory (MB): peak = 1894.238 ; gain = 0.000
+open_bd_design {C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/bd/mb_block/mb_block_i.bd}
+Reading block design file <C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/bd/mb_block/mb_block_i.bd>...
+Adding component instance block -- xilinx.com:ip:microblaze:11.0 - microblaze_0
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - microblaze_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - microblaze_0_axi_intc
+Adding component instance block -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:user:hdmi_text_controller:1.0 - hdmi_text_controller_0
+Successfully read diagram <mb_block_i> from block design file <C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/bd/mb_block/mb_block_i.bd>
+import_files
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'clk_wiz_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'clk_wiz_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'hdmi_tx_0'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'hdmi_tx_0'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'utils_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'utils_1'
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 29 12:15:49 2024...

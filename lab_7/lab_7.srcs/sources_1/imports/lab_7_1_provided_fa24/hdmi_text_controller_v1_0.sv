@@ -59,7 +59,7 @@ module hdmi_text_controller_v1_0 #
     logic reset_ah;
     logic locked;
     
-    assign reset_ah = axi_aresetn;
+    assign reset_ah = ~axi_aresetn;
     
 // Instantiation of Axi Bus Interface AXI
 hdmi_text_controller_v1_0_AXI # ( 
@@ -94,7 +94,7 @@ hdmi_text_controller_v1_0_AXI # (
 //top-level from the previous lab. You should get the IP to generate a valid HDMI signal (e.g. blue screen or gradient)
 //prior to working on the text drawing.
 
-//    //clock wizard configured with a 1x and 5x clock for HDMI
+    //clock wizard configured with a 1x and 5x clock for HDMI
     clk_wiz_0 clk_wiz (
         .clk_out1(clk_25MHz),  // out
         .clk_out2(clk_125MHz), // out
@@ -102,7 +102,7 @@ hdmi_text_controller_v1_0_AXI # (
         .locked(locked),
         .clk_in1(axi_aclk)
     );
-    
+      
     //VGA Sync signal generator
     vga_controller vga (
         .pixel_clk(clk_25MHz),
