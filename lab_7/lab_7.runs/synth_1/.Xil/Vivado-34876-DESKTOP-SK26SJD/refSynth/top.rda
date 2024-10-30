@@ -1,0 +1,171 @@
+Data_For_RDAFlowver5.0
+	top level˛T
+mb_usb_hdmi_topŒ
+LinkDesign_BlackboxesD
+-mb_block_i/microblaze_0_local_memory/lmb_brammb_block_lmb_bram_0D
+ mb_block_i/microblaze_0_axi_intc mb_block_microblaze_0_axi_intc_0,
+mb_block_i/clk_wiz_1mb_block_clk_wiz_1_06
+mb_block_i/axi_uartlite_0mb_block_axi_uartlite_0_0D
+-mb_block_i/microblaze_0_local_memory/dlmb_v10mb_block_dlmb_v10_0D
+-mb_block_i/microblaze_0_local_memory/ilmb_v10mb_block_ilmb_v10_04
+mb_block_i/gpio_usb_keycodemb_block_axi_gpio_0_0X
+7mb_block_i/microblaze_0_local_memory/ilmb_bram_if_cntlrmb_block_ilmb_bram_if_cntlr_0>
+mb_block_i/rst_clk_wiz_1_100Mmb_block_rst_clk_wiz_1_100M_0
+vga_to_hdmi	hdmi_tx_0:
+'mb_block_i/microblaze_0_axi_periph/xbarmb_block_xbar_00
+mb_block_i/gpio_usb_rstmb_block_axi_gpio_3_0X
+7mb_block_i/microblaze_0_local_memory/dlmb_bram_if_cntlrmb_block_dlmb_bram_if_cntlr_0$
+mb_block_i/mdm_1mb_block_mdm_1_0/
+mb_block_i/spi_usbmb_block_axi_quad_spi_0_00
+mb_block_i/gpio_usb_intmb_block_axi_gpio_2_02
+mb_block_i/timer_usb_aximb_block_axi_timer_0_0
+clk_wiz	clk_wiz_02
+mb_block_i/microblaze_0mb_block_microblaze_0_0ú7
+synthFileNamesJ
+10DC:/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/BRAM_SINGLE_MACRO.vhdG
+11AC:/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/BRAM_TDP_MACRO.vhdK
+12EC:/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/COUNTER_LOAD_MACRO.vhdI
+13CC:/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/COUNTER_TC_MACRO.vhdI
+14CC:/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/EQ_COMPARE_MACRO.vhdF
+20@C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/ADDSUB_MACRO.vM
+15GC:/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/FIFO_DUALCLOCK_MACRO.vhdH
+21BC:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SDP_MACRO.vH
+16BC:/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/FIFO_SYNC_MACRO.vhdK
+22EC:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.vC
+17=C:/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/MACC_MACRO.vhdC
+18=C:/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/MULT_MACRO.vhdH
+23BC:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_TDP_MACRO.vG
+19AC:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/ADDMACC_MACRO.vL
+24FC:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/COUNTER_LOAD_MACRO.vJ
+25DC:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/COUNTER_TC_MACRO.vD
+30>C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/MULT_MACRO.v
+NumFileNames74J
+26DC:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/EQ_COMPARE_MACRO.vJ
+31DC:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/retarget/MULT18X18.vhd=
+18C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_VCOMP.vhdN
+27HC:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/FIFO_DUALCLOCK_MACRO.vK
+32EC:/Xilinx/Vivado/2022.2/data/vhdl/src/unisims/retarget/MULT18X18S.vhd<
+27C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_VPKG.vhdI
+28CC:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/FIFO_SYNC_MACRO.v@
+33:C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:
+35C:/Xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.vD
+29>C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/MACC_MACRO.vB
+34<C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv=
+48C:/Xilinx/Vivado/2022.2/scripts/rt/data/internal_cells.vF
+35@C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.svb
+40\C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6_2_provided/design_source/mb_usb_hdmi_top.sv3
+5.C:/Xilinx/Vivado/2022.2/scripts/rt/data/BUFT.v_
+36YC:/Users/Orion/Documents/GitHub/ece385/lab6/lab6_2_provided/design_source/Color_Mapper.své
+41áC:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_microblaze_0_0_stub.vF
+6AC:/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/unimacro_VCOMP.vhda
+37[C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6_2_provided/design_source/VGA_controller.svä
+42ÉC:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_dlmb_v10_0_stub.vE
+7@C:/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/ADDMACC_MACRO.vhdW
+38QC:/Users/Orion/Documents/GitHub/ece385/lab6/lab6_2_provided/design_source/ball.svä
+43ÉC:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_ilmb_v10_0_stub.vD
+8?C:/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/ADDSUB_MACRO.vhd]
+39WC:/Users/Orion/Documents/GitHub/ece385/lab6/lab6_2_provided/design_source/hex_driver.svî
+44çC:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_dlmb_bram_if_cntlr_0_stub.vã
+50ÑC:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_clk_wiz_1_0_stub.vF
+9AC:/Xilinx/Vivado/2022.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhdî
+45çC:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_ilmb_bram_if_cntlr_0_stub.vî
+51çC:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_rst_clk_wiz_1_100M_0_stub.vä
+46ÉC:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_lmb_bram_0_stub.vå
+52ÖC:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_axi_gpio_0_0_stub.vÖ
+47C:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_xbar_0_stub.vê
+53âC:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_axi_uartlite_0_0_stub.vó
+48êC:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_microblaze_0_axi_intc_0_stub.vå
+54ÖC:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_axi_gpio_2_0_stub.vá
+49ÄC:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_mdm_1_0_stub.va
+60[c:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/synth/mb_block.vå
+55ÖC:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_axi_gpio_3_0_stub.vy
+61sc:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.vç
+56ÜC:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_axi_timer_0_0_stub.và
+62Åc:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.gen/sources_1/bd/mb_block/ip/mb_block_xlconcat_0_0/synth/mb_block_xlconcat_0_0.vê
+57âC:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/mb_block_axi_quad_spi_0_0_stub.v7
+631C:/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_VCOMP.vhd
+58yC:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/hdmi_tx_0_stub.vY
+64SC:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/1993/src/std_1164.vhd
+59yC:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/.Xil/Vivado-21920-DESKTOP-SK26SJD/realtime/clk_wiz_0_stub.vY
+70SC:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/1993/src/prmtvs_p.vhdY
+65SC:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/1993/src/standard.vhdY
+71SC:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/1993/src/prmtvs_b.vhd\
+66VC:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/1993/src/numeric_std.vhdY
+72SC:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/1993/src/syn_arit.vhdW
+67QC:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/1993/src/textio.vhdY
+73SC:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/1993/src/syn_unsi.vhdY
+68SC:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/1993/src/timing_p.vhdY
+69SC:/Users/Orion/Documents/GitHub/ece385/lab6/lab6.runs/synth_1/1993/src/timing_b.vhdº
+
+synthStatsV
+dspWideMultUnderpipelined
+L43
+Mnullname
+F36
+Ocolor_instance/Red3V
+dspWideMultUnderpipelined
+L43
+Mnullname
+F36
+Ocolor_instance/Red3Ê
+ElaboratedNamesForRQSÃ
+DSP_RAM)
+380951 {ball_instance/Ball_X_next_i} 
+339990 {vga/hs3_i} 
+286742 {vga/hc0_i} 1
+344087' {ball_instance/Ball_X_Motion_next2_i} 
+249878 {vga/vc_i__0} 4
+311319* {ball_instance/Ball_Y_Motion_next2_i__0} #
+233496 {color_instance/Red0_i} 1
+294935' {ball_instance/Ball_Y_Motion_next2_i} $
+151576 {color_instance/DistX_i} q
+176152g {color_instance/Red2_i} {color_instance/Red2_i__0} {color_instance/Red3_i} {color_instance/Red3_i__0} )
+385047 {ball_instance/Ball_Y_next_i} $
+155672 {color_instance/DistY_i} 
+274454 {vga/vc0_i} 
+393238 {vga/vs3_i} /
+225281% {HexA/counter0_i} {HexB/counter0_i} Ñ
+65537{ {HexA/hex_i} {HexA/hex_i__0} {HexA/hex_i__1} {HexA/hex_i__2} {HexB/hex_i} {HexB/hex_i__0} {HexB/hex_i__1} {HexB/hex_i__2} 4
+327703* {ball_instance/Ball_X_Motion_next2_i__0} ≈
+blackBoxInfoD
+-mb_block_i/microblaze_0_local_memory/lmb_brammb_block_lmb_bram_0D
+ mb_block_i/microblaze_0_axi_intc mb_block_microblaze_0_axi_intc_0,
+mb_block_i/clk_wiz_1mb_block_clk_wiz_1_06
+mb_block_i/axi_uartlite_0mb_block_axi_uartlite_0_0D
+-mb_block_i/microblaze_0_local_memory/dlmb_v10mb_block_dlmb_v10_0D
+-mb_block_i/microblaze_0_local_memory/ilmb_v10mb_block_ilmb_v10_04
+mb_block_i/gpio_usb_keycodemb_block_axi_gpio_0_0X
+7mb_block_i/microblaze_0_local_memory/ilmb_bram_if_cntlrmb_block_ilmb_bram_if_cntlr_0>
+mb_block_i/rst_clk_wiz_1_100Mmb_block_rst_clk_wiz_1_100M_0
+vga_to_hdmi	hdmi_tx_0:
+'mb_block_i/microblaze_0_axi_periph/xbarmb_block_xbar_00
+mb_block_i/gpio_usb_rstmb_block_axi_gpio_3_0X
+7mb_block_i/microblaze_0_local_memory/dlmb_bram_if_cntlrmb_block_dlmb_bram_if_cntlr_0$
+mb_block_i/mdm_1mb_block_mdm_1_0/
+mb_block_i/spi_usbmb_block_axi_quad_spi_0_00
+mb_block_i/gpio_usb_intmb_block_axi_gpio_2_02
+mb_block_i/timer_usb_aximb_block_axi_timer_0_0
+clk_wiz	clk_wiz_02
+mb_block_i/microblaze_0mb_block_microblaze_0_0ä
+synth_design
+isIncremental0
+Runtime1
+Threads used2^
+argsV-verilog_define default::[not_specified] -top  mb_usb_hdmi_top -part  xc7s50csga324-1 
+resynthPerc0.00
+Cputime1
+blackBoxPercinf
+	directive ù
+synth_design_metrics$
+mismatchedAddSubOperatorWidths-1
+lowMaxFanout-1
+NumUnregisteredPorts0
+caseNotFullNoDefault-1
+	smallSrls-1
+srlsWithResetLogic-1
+shallowRAMWithAttribute-1
+hierMFO0
+bigRAMs-1
+NetsWithMixedFanouts-1
+DSPsWithKeep0
+RQS_Results
