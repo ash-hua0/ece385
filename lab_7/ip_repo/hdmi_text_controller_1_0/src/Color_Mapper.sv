@@ -15,8 +15,74 @@
 
 
 module  color_mapper ( input  logic [9:0] DrawX, DrawY,
-                       output logic [3:0]  Red, Green, Blue );
+                       input logic [31:0] word, // from hdmi_text_controller_v1_0_AXI
+                       output logic [3:0]  Red, Green, Blue,
+                       output logic [11:0] addr // to hdmi_text_controller_v1_0_AXI
+                       );
+    integer byte_index; // byte index in word
+    integer byte_num; // byte number
+    logic [7:0] dat_row;
+    logic dat_pixel;
+    logic [8:0] chardat; // character
+    logic [7:0] code; // character code
     
+
+// OVERVIEW
+// each character is 8 bit wide 16 bit tall
+// vram has 600 entries (regs)
+// each address (4 bytes) stores 4 chars
+// vram stores characters + the invert flag (character code is 7 bits), this is total 80x30 chars for screen
+// total 20 words for the first row, and 30 rows of words
+ 
+// INDEX OF CHARS
+// the drawx and drawy raster scans are going bit by bit - we need to know what character
+// figure out character by doing division x/8, y/16.
+    // creates a grid of chars on the display (8x16 blocks) to tell what to print.
+// from char grid on display, get byte number (0-600)
+
+// DRAW CHAR
+// divide byte number by 4 to get address in vram
+// get word byte index by byte number %4
+// get char from byte index in word
+    // this is done in the axi controller (where vram is instantiated)
+ 
+// use font_rom to determine pixel out
+// parameter [row] [col] in rom.sv. each character occupies 16 rows in the rom.
+// get character by addr = 16*charcode + drawX[3:0]
+    // charcode sets which char (X16 for num of rows)
+    // drawY[3:0] tells which row in char
+// set pixel by row index DrawX[2:0]
+// char inverted by chardat[7]
+
+    always_comb
+    begin
+        dat_pixel = dat_row[DrawX[2:0]] ^ chardat[7];
+        //assign byte_index = 0;
+        byte_num = 80*DrawY[9:4] + DrawX[9:3];
+        addr = 12'(byte_num / 4);
+        byte_index = byte_num % 4;
+        chardat = word[((byte_index+1)*8)-1 +: 8];
+        code = chardat[7:0];
+    end
+    
+    font_rom font_rom(
+        .addr({code, DrawY[3:0]}),
+        .data(dat_row)
+    );
+    
+    always_comb
+    begin:RGB_Display
+//        if ((ball_on == 1'b1)) begin 
+//            Red = 4'hf;
+//            Green = 4'h7;
+//            Blue = 4'h0;
+//        end       
+        //else begin 
+            Red = 4'b0000; 
+            Green = {dat_pixel, dat_pixel, dat_pixel, dat_pixel};
+            Blue = 4'b0000;
+        //end      
+    end 
 //    logic ball_on;
 	 
  /* Old Ball: Generated square box by checking if the current pixel is within a square of length
@@ -45,19 +111,5 @@ module  color_mapper ( input  logic [9:0] DrawX, DrawY,
 //        else 
 //            ball_on = 1'b0;
 //     end 
-       
-    always_comb
-    begin:RGB_Display
-//        if ((ball_on == 1'b1)) begin 
-//            Red = 4'hf;
-//            Green = 4'h7;
-//            Blue = 4'h0;
-//        end       
-        //else begin 
-            Red = 4'hf - DrawX[9:6]; 
-            Green = 4'hf - DrawX[9:6];
-            Blue = 4'hf - DrawX[9:6];
-        //end      
-    end 
-    
+           
 endmodule

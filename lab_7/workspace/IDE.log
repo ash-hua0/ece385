@@ -1,0 +1,17 @@
+04:47:35 DEBUG : Logs will be stored at 'C:/Users/Orion/Documents/GitHub/ece385/lab_7/workspace/IDE.log'.
+04:47:39 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\Orion\Documents\GitHub\ece385\lab_7\workspace\temp_xsdb_launch_script.tcl
+04:47:39 INFO  : Registering command handlers for Vitis TCF services
+04:47:39 INFO  : Platform repository initialization has completed.
+04:47:42 INFO  : XSCT server has started successfully.
+04:47:42 INFO  : Successfully done setting XSCT server connection channel  
+04:47:42 INFO  : plnx-install-location is set to ''
+04:47:42 INFO  : Successfully done query RDI_DATADIR 
+04:47:42 INFO  : Successfully done setting workspace for the tool. 
+04:48:17 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+04:48:17 INFO  : Result from executing command 'getPlatforms': 
+04:48:17 WARN  : An unexpected exception occurred in the module 'platform project logging'
+04:48:18 INFO  : Platform 'mb_usb_hdmi_top' is added to custom repositories.
+04:48:21 INFO  : Platform 'mb_usb_hdmi_top' is added to custom repositories.
+04:54:03 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+04:54:03 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/Orion/Documents/GitHub/ece385/lab_7/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+04:54:03 INFO  : Checking for BSP changes to sync application flags for project 'lab7'...

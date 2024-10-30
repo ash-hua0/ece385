@@ -1657,3 +1657,12 @@ con
 ----------------End of Script----------------
 
 13:34:02 INFO  : Disconnected from the channel tcfchan#1.
+04:35:52 DEBUG : Logs will be stored at 'C:/Users/Orion/Documents/GitHub/ece385/lab6/workspace2/IDE.log'.
+04:35:53 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\Orion\Documents\GitHub\ece385\lab6\workspace2\temp_xsdb_launch_script.tcl
+04:35:59 INFO  : XSCT server has started successfully.
+04:35:59 INFO  : Successfully done setting XSCT server connection channel  
+04:35:59 INFO  : plnx-install-location is set to ''
+04:35:59 INFO  : Successfully done setting workspace for the tool. 
+04:36:03 INFO  : Platform repository initialization has completed.
+04:36:03 INFO  : Registering command handlers for Vitis TCF services
+04:36:04 INFO  : Successfully done query RDI_DATADIR 

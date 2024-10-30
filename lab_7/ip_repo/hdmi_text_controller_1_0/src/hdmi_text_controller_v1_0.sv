@@ -58,6 +58,8 @@ module hdmi_text_controller_v1_0 #
     logic [3:0] red, green, blue;
     logic reset_ah;
     logic locked;
+    logic [31:0] word;
+    logic [11:0] addr;
     
     assign reset_ah = ~axi_aresetn;
     
@@ -66,6 +68,8 @@ hdmi_text_controller_v1_0_AXI # (
     .C_S_AXI_DATA_WIDTH(C_AXI_DATA_WIDTH),
     .C_S_AXI_ADDR_WIDTH(C_AXI_ADDR_WIDTH)
 ) hdmi_text_controller_v1_0_AXI_inst (
+    .addr(addr),
+    .word(word),
     .S_AXI_ACLK(axi_aclk),
     .S_AXI_ARESETN(axi_aresetn),
     .S_AXI_AWADDR(axi_awaddr),
@@ -145,6 +149,8 @@ hdmi_text_controller_v1_0_AXI # (
     
     //Color Mapper Module   
     color_mapper color_instance(
+        .addr(addr),
+        .word(word),
         .DrawX(drawX),
         .DrawY(drawY),
         .Red(red),

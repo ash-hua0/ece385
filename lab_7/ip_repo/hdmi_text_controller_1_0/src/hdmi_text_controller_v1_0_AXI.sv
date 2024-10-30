@@ -38,7 +38,8 @@ module hdmi_text_controller_v1_0_AXI #
 )
 (
     // Users to add ports here
-
+    input logic [11:0] addr,
+    output logic [31:0] word,
     // User ports ends
 
     // Global Clock Signal
@@ -142,7 +143,6 @@ integer	 byte_index;
 logic	 aw_en;
 
 // I/O Connections assignments
-
 assign S_AXI_AWREADY	= axi_awready;
 assign S_AXI_WREADY	= axi_wready;
 assign S_AXI_BRESP	= axi_bresp;
@@ -249,7 +249,7 @@ begin
     begin // clear slave regs
         for (integer i = 0; i < 2**C_S_AXI_ADDR_WIDTH; i++)
         begin
-           slv_regs[i] <= 0; // eventually accesses index that doesnt exist??
+           slv_regs[i] <= 0;
         end
     end
   else begin
@@ -389,6 +389,7 @@ begin
 end    
 
 // Add user logic here
+assign word = slv_regs[addr];
 
 // User logic ends
 
