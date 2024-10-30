@@ -61,7 +61,7 @@ module  color_mapper ( input  logic [9:0] DrawX, DrawY,
         byte_num = 80*DrawY[9:4] + DrawX[9:3];
         addr = 12'(byte_num / 4);
         byte_index = byte_num % 4;
-        chardat = word[((byte_index+1)*8)-1 +: 8];
+        chardat = word[(byte_index*8) +: 8];
         code = chardat[7:0];
     end
     

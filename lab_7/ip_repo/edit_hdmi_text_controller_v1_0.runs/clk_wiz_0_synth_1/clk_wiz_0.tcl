@@ -94,7 +94,7 @@ set_property ip_output_repo c:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet c:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/edit_hdmi_text_controller_v1_0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+read_ip -quiet C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/edit_hdmi_text_controller_v1_0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
 set_property used_in_implementation false [get_files -all c:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/edit_hdmi_text_controller_v1_0.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/edit_hdmi_text_controller_v1_0.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/edit_hdmi_text_controller_v1_0.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
