@@ -6,7 +6,6 @@ Starting static elaboration
 Pass Through NonSizing Optimizer
 WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'axi_awaddr' [C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_tb.sv:74]
 WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'axi_araddr' [C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_tb.sv:88]
-WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 11 for port 'addr' [C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0/src/Color_Mapper.sv:69]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis

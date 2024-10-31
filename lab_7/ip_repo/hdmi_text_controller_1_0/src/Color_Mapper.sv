@@ -16,6 +16,7 @@
 
 module  color_mapper ( input  logic [9:0] DrawX, DrawY,
                        input logic [31:0] word, // from hdmi_text_controller_v1_0_AXI
+                       input logic [31:0] ctrl_reg, // from slave reg 601
                        output logic [3:0]  Red, Green, Blue,
                        output logic [11:0] addr // to hdmi_text_controller_v1_0_AXI
                        );
@@ -23,9 +24,9 @@ module  color_mapper ( input  logic [9:0] DrawX, DrawY,
     integer byte_num; // byte number
     logic [7:0] dat_row;
     logic dat_pixel;
-    logic [8:0] chardat; // character
-    logic [7:0] code; // character code
-    
+    logic [7:0] chardat; // character
+    logic [6:0] code; // character code
+    //logic [3:0];
 
 // OVERVIEW
 // each character is 8 bit wide 16 bit tall
@@ -62,7 +63,7 @@ module  color_mapper ( input  logic [9:0] DrawX, DrawY,
         addr = 12'(byte_num / 4);
         byte_index = byte_num % 4;
         chardat = word[(byte_index*8) +: 8];
-        code = chardat[7:0];
+        code = chardat[6:0];
     end
     
     font_rom font_rom(
@@ -72,17 +73,17 @@ module  color_mapper ( input  logic [9:0] DrawX, DrawY,
     
     always_comb
     begin:RGB_Display
-//        if ((ball_on == 1'b1)) begin 
-//            Red = 4'hf;
-//            Green = 4'h7;
-//            Blue = 4'h0;
-//        end       
-        //else begin 
-            Red = 4'b0000; 
-            Green = {dat_pixel, dat_pixel, dat_pixel, dat_pixel};
-            Blue = 4'b0000;
-        //end      
-    end 
+        if (dat_pixel) begin
+            Red = ctrl_reg[24:21];
+            Green = ctrl_reg[20:17];
+            Blue = ctrl_reg[16:13];
+        end
+        else begin
+            Red = ctrl_reg[12:9];
+            Blue = ctrl_reg[8:5];
+            Green = ctrl_reg[4:1];
+        end
+    end
 //    logic ball_on;
 	 
  /* Old Ball: Generated square box by checking if the current pixel is within a square of length

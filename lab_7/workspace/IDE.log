@@ -15,3 +15,95 @@
 04:54:03 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
 04:54:03 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/Orion/Documents/GitHub/ece385/lab_7/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
 04:54:03 INFO  : Checking for BSP changes to sync application flags for project 'lab7'...
+21:13:52 DEBUG : Logs will be stored at 'C:/Users/Orion/Documents/GitHub/ece385/lab_7/workspace/IDE.log'.
+21:13:53 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\Orion\Documents\GitHub\ece385\lab_7\workspace\temp_xsdb_launch_script.tcl
+21:13:57 INFO  : XSCT server has started successfully.
+21:13:57 INFO  : plnx-install-location is set to ''
+21:13:57 INFO  : Successfully done setting XSCT server connection channel  
+21:13:57 INFO  : Successfully done setting workspace for the tool. 
+21:14:09 INFO  : Platform repository initialization has completed.
+21:14:09 INFO  : Registering command handlers for Vitis TCF services
+21:14:13 INFO  : Successfully done query RDI_DATADIR 
+21:14:27 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+21:15:19 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+21:15:19 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/Orion/Documents/GitHub/ece385/lab_7/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+21:15:19 INFO  : Checking for BSP changes to sync application flags for project 'lab7'...
+21:15:22 INFO  : The hardware specification used by project 'lab7' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+21:15:22 INFO  : The file 'C:\Users\Orion\Documents\GitHub\ece385\lab_7\workspace\lab7\_ide\bitstream\mb_usb_hdmi_top.bit' stored in project is removed.
+21:15:22 INFO  : The file 'C:\Users\Orion\Documents\GitHub\ece385\lab_7\workspace\lab7\_ide\bitstream\mb_usb_hdmi_top.mmi' stored in project is removed.
+21:15:22 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\Orion\Documents\GitHub\ece385\lab_7\workspace\lab7\_ide\bitstream' in project 'lab7'.
+21:16:26 INFO  : Checking for BSP changes to sync application flags for project 'lab7'...
+21:17:01 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:17:02 INFO  : Jtag cable 'RealDigital Boo 88710000000AA' is selected.
+21:17:02 INFO  : 'jtag frequency' command is executed.
+21:17:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000AA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+21:17:03 INFO  : Device configured successfully with "C:/Users/Orion/Documents/GitHub/ece385/lab_7/workspace/lab7/_ide/bitstream/mb_usb_hdmi_top.bit"
+21:17:04 INFO  : Context for processor 'microblaze_0' is selected.
+21:17:04 INFO  : Hardware design and registers information is loaded from 'C:/Users/Orion/Documents/GitHub/ece385/lab_7/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+21:17:04 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:17:04 INFO  : Context for processor 'microblaze_0' is selected.
+21:17:04 INFO  : System reset is completed.
+21:17:07 INFO  : 'after 3000' command is executed.
+21:17:07 INFO  : Context for processor 'microblaze_0' is selected.
+21:17:07 INFO  : The application 'C:/Users/Orion/Documents/GitHub/ece385/lab_7/workspace/lab7/Debug/lab7.elf' is downloaded to processor 'microblaze_0'.
+21:17:07 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000AA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/Orion/Documents/GitHub/ece385/lab_7/workspace/lab7/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/Orion/Documents/GitHub/ece385/lab_7/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/Orion/Documents/GitHub/ece385/lab_7/workspace/lab7/Debug/lab7.elf
+----------------End of Script----------------
+
+21:17:07 INFO  : Context for processor 'microblaze_0' is selected.
+21:17:07 INFO  : 'con' command is executed.
+21:17:07 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:17:07 INFO  : Disconnected from the channel tcfchan#2.
+21:17:31 INFO  : Hardware specification for platform project 'mb_usb_hdmi_top' is updated.
+21:18:03 INFO  : Result from executing command 'getProjects': mb_usb_hdmi_top
+21:18:03 INFO  : Result from executing command 'getPlatforms': mb_usb_hdmi_top|C:/Users/Orion/Documents/GitHub/ece385/lab_7/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/mb_usb_hdmi_top.xpfm
+21:18:04 INFO  : Checking for BSP changes to sync application flags for project 'lab7'...
+21:18:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:18:23 INFO  : Jtag cable 'RealDigital Boo 88710000000AA' is selected.
+21:18:23 INFO  : 'jtag frequency' command is executed.
+21:18:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000AA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}' command is executed.
+21:18:25 INFO  : Device configured successfully with "C:/Users/Orion/Documents/GitHub/ece385/lab_7/workspace/lab7/_ide/bitstream/mb_usb_hdmi_top.bit"
+21:18:25 INFO  : Context for processor 'microblaze_0' is selected.
+21:18:25 INFO  : Hardware design and registers information is loaded from 'C:/Users/Orion/Documents/GitHub/ece385/lab_7/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa'.
+21:18:25 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:18:25 INFO  : Context for processor 'microblaze_0' is selected.
+21:18:25 INFO  : System reset is completed.
+21:18:28 INFO  : 'after 3000' command is executed.
+21:18:28 INFO  : Context for processor 'microblaze_0' is selected.
+21:18:29 INFO  : The application 'C:/Users/Orion/Documents/GitHub/ece385/lab_7/workspace/lab7/Debug/lab7.elf' is downloaded to processor 'microblaze_0'.
+21:18:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "RealDigital Boo 88710000000AA" && level==0 && jtag_device_ctx=="jsn1-0362f093-0"}
+fpga -file C:/Users/Orion/Documents/GitHub/ece385/lab_7/workspace/lab7/_ide/bitstream/mb_usb_hdmi_top.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/Orion/Documents/GitHub/ece385/lab_7/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/hw/mb_usb_hdmi_top.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/Orion/Documents/GitHub/ece385/lab_7/workspace/lab7/Debug/lab7.elf
+----------------End of Script----------------
+
+21:18:29 INFO  : Context for processor 'microblaze_0' is selected.
+21:18:29 INFO  : 'con' command is executed.
+21:18:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:18:29 INFO  : Disconnected from the channel tcfchan#4.

@@ -94,6 +94,7 @@
       <File Path="$PSRCDIR/sources_1/imports/design_source/VGA_controller.sv">
         <FileInfo>
           <Attr Name="Library" Val="xil_defaultlib"/>
+          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../lab6/lab6_2_provided/design_source/VGA_controller.sv"/>
           <Attr Name="ImportTime" Val="1729727826"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -162,6 +163,7 @@
       </File>
       <File Path="$PGENDIR/sources_1/bd/mb_block_i/hdl/mb_block_i_wrapper.v">
         <FileInfo>
+          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -170,6 +172,7 @@
       <File Path="$PSRCDIR/sources_1/imports/design_source/Color_Mapper.sv">
         <FileInfo>
           <Attr Name="Library" Val="xil_defaultlib"/>
+          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../lab6/lab6_2_provided/design_source/Color_Mapper.sv"/>
           <Attr Name="ImportTime" Val="1729727826"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -180,6 +183,7 @@
       <File Path="$PSRCDIR/sources_1/imports/design_source/ball.sv">
         <FileInfo>
           <Attr Name="Library" Val="xil_defaultlib"/>
+          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../lab6/lab6_2_provided/design_source/ball.sv"/>
           <Attr Name="ImportTime" Val="1729736174"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -190,6 +194,7 @@
       <File Path="$PSRCDIR/sources_1/imports/lab_7_1_provided_fa24/font_rom.sv">
         <FileInfo>
           <Attr Name="Library" Val="xil_defaultlib"/>
+          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/lab_7_1_provided_fa24/font_rom.sv"/>
           <Attr Name="ImportTime" Val="1730108436"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -200,6 +205,7 @@
       <File Path="$PSRCDIR/sources_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0.sv">
         <FileInfo>
           <Attr Name="Library" Val="xil_defaultlib"/>
+          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/lab_7_1_provided_fa24/hdmi_text_controller_v1_0.sv"/>
           <Attr Name="ImportTime" Val="1730213793"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -210,6 +216,7 @@
       <File Path="$PSRCDIR/sources_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_AXI.sv">
         <FileInfo>
           <Attr Name="Library" Val="xil_defaultlib"/>
+          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_AXI.sv"/>
           <Attr Name="ImportTime" Val="1730189794"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -220,6 +227,7 @@
       <File Path="$PSRCDIR/sources_1/imports/design_source/hex_driver.sv">
         <FileInfo>
           <Attr Name="Library" Val="xil_defaultlib"/>
+          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../lab6/lab6_2_provided/design_source/hex_driver.sv"/>
           <Attr Name="ImportTime" Val="1729727826"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -307,6 +315,7 @@
       <File Path="$PSRCDIR/sources_1/ip/clk_wiz_0/clk_wiz_0.xci">
         <FileInfo>
           <Attr Name="Library" Val="xil_defaultlib"/>
+          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../lab6/lab6.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci"/>
           <Attr Name="ImportTime" Val="1729727826"/>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -376,6 +385,7 @@
     <FileSet Name="hdmi_tx_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/hdmi_tx_0" RelGenDir="$PGENDIR/hdmi_tx_0">
       <File Path="$PSRCDIR/sources_1/ip/hdmi_tx_0/hdmi_tx_0.xci">
         <FileInfo>
+          <Attr Name="UserDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -641,7 +651,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7s50csga324-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../lab6/lab6.srcs/utils_1/imports/impl_1" AutoRQSDir="$PPRDIR/../lab6/lab6.srcs/utils_1/imports/impl_1">
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7s50csga324-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" SynthRun="synth_1" IncludeInArchive="true" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../lab6/lab6.srcs/utils_1/imports/impl_1" AutoRQSDir="$PPRDIR/../lab6/lab6.srcs/utils_1/imports/impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
         <Step Id="init_design"/>
@@ -654,7 +664,6 @@
         <Step Id="post_route_phys_opt_design"/>
         <Step Id="write_bitstream"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>

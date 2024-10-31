@@ -1,16 +1,8 @@
-04:54:04 **** Build of configuration Debug for project lab7 ****
+21:18:04 **** Incremental Build of configuration Debug for project lab7 ****
 make all 
 'Building file: ../src/hdmi_text_controller.c'
 'Invoking: MicroBlaze gcc compiler'
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/hdmi_text_controller.o" -IC:/Users/Orion/Documents/GitHub/ece385/lab_7/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/hdmi_text_controller.d" -MT"src/hdmi_text_controller.o" -o "src/hdmi_text_controller.o" "../src/hdmi_text_controller.c"
-In file included from ../src/hdmi_text_controller.h:8,
-                 from ../src/hdmi_text_controller.c:4:
-C:/Users/Orion/Documents/GitHub/ece385/lab_7/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bspinclude/include/xparameters.h:574:50: warning: initialization of 'volatile struct HDMI_TEXT_STRUCT *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
-  574 | #define XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR 0x44A00000
-      |                                                  ^~~~~~~~~~
-../src/hdmi_text_controller.h:92:54: note: in expansion of macro 'XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR'
-   92 | static volatile struct HDMI_TEXT_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR;
-      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ../src/hdmi_text_controller.c: In function 'hdmiTestWeek1':
 ../src/hdmi_text_controller.c:51:46: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
    51 |                 printf ("Row: %d, Checksum: %x, Read-back Checksum: %x\n\r", j, checksum[j], readsum[j]);
@@ -48,9 +40,9 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/Orion/Documents/GitHub/ece385/lab
 'Invoking: MicroBlaze Print Size'
 mb-size lab7.elf  |tee "lab7.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  67892	   1728	   3172	  72792	  11c58	lab7.elf
+  67892	   1724	   3176	  72792	  11c58	lab7.elf
 'Finished building: lab7.elf.size'
 ' '
 
-04:54:07 Build Finished (took 3s.424ms)
+21:18:07 Build Finished (took 2s.952ms)
 

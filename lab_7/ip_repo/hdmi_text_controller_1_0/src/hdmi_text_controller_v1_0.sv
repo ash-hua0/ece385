@@ -60,7 +60,7 @@ module hdmi_text_controller_v1_0 #
     logic locked;
     logic [31:0] word;
     logic [11:0] addr;
-    
+    logic [31:0] ctrl_reg;
     assign reset_ah = ~axi_aresetn;
     
 // Instantiation of Axi Bus Interface AXI
@@ -70,6 +70,7 @@ hdmi_text_controller_v1_0_AXI # (
 ) hdmi_text_controller_v1_0_AXI_inst (
     .addr(addr),
     .word(word),
+    .ctrl_reg(ctrl_reg),
     .S_AXI_ACLK(axi_aclk),
     .S_AXI_ARESETN(axi_aresetn),
     .S_AXI_AWADDR(axi_awaddr),
@@ -149,6 +150,7 @@ hdmi_text_controller_v1_0_AXI # (
     
     //Color Mapper Module   
     color_mapper color_instance(
+        .ctrl_reg(ctrl_reg),
         .addr(addr),
         .word(word),
         .DrawX(drawX),

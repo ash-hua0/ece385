@@ -89,7 +89,7 @@ struct HDMI_TEXT_STRUCT {
 };
 
 //you may have to change this line depending on the memory map of your block design
-static volatile struct HDMI_TEXT_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR;
+static volatile struct HDMI_TEXT_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_0_S00_AXI_BASEADDR;
 
 void hdmiSetColor(int background, int foreground);
 void hdmiClr();

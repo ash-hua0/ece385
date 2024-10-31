@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7s50csga324-1" LaunchTime="1730266676">
+<GenRun Id="impl_1" LaunchPart="xc7s50csga324-1" LaunchTime="1730362100">
   <File Type="ROUTE-PWR" Name="mb_usb_hdmi_top_power_routed.rpt"/>
   <File Type="PA-TCL" Name="mb_usb_hdmi_top.tcl"/>
   <File Type="BITSTR-MMI" Name="mb_usb_hdmi_top.mmi"/>
@@ -84,6 +84,7 @@
     <File Path="$PSRCDIR/sources_1/imports/design_source/VGA_controller.sv">
       <FileInfo>
         <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../lab6/lab6_2_provided/design_source/VGA_controller.sv"/>
         <Attr Name="ImportTime" Val="1729727826"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -101,6 +102,7 @@
     </File>
     <File Path="$PGENDIR/sources_1/bd/mb_block_i/hdl/mb_block_i_wrapper.v">
       <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -109,6 +111,7 @@
     <File Path="$PSRCDIR/sources_1/imports/design_source/Color_Mapper.sv">
       <FileInfo>
         <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../lab6/lab6_2_provided/design_source/Color_Mapper.sv"/>
         <Attr Name="ImportTime" Val="1729727826"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -119,6 +122,7 @@
     <File Path="$PSRCDIR/sources_1/imports/design_source/ball.sv">
       <FileInfo>
         <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../lab6/lab6_2_provided/design_source/ball.sv"/>
         <Attr Name="ImportTime" Val="1729736174"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -129,6 +133,7 @@
     <File Path="$PSRCDIR/sources_1/imports/lab_7_1_provided_fa24/font_rom.sv">
       <FileInfo>
         <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/lab_7_1_provided_fa24/font_rom.sv"/>
         <Attr Name="ImportTime" Val="1730108436"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -139,6 +144,7 @@
     <File Path="$PSRCDIR/sources_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0.sv">
       <FileInfo>
         <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/lab_7_1_provided_fa24/hdmi_text_controller_v1_0.sv"/>
         <Attr Name="ImportTime" Val="1730213793"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -149,6 +155,7 @@
     <File Path="$PSRCDIR/sources_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_AXI.sv">
       <FileInfo>
         <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_AXI.sv"/>
         <Attr Name="ImportTime" Val="1730189794"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -159,6 +166,7 @@
     <File Path="$PSRCDIR/sources_1/imports/design_source/hex_driver.sv">
       <FileInfo>
         <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="UserDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../lab6/lab6_2_provided/design_source/hex_driver.sv"/>
         <Attr Name="ImportTime" Val="1729727826"/>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -226,17 +234,15 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="mb_block_i_clk_wiz_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="hdmi_tx_0"/>
   <BlockFileSet Type="BlockSrcs" Name="mb_block_i_dlmb_bram_if_cntlr_0"/>
   <BlockFileSet Type="BlockSrcs" Name="mb_block_i_rst_clk_wiz_1_100M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="mb_block_i_axi_uartlite_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_block_i_dlmb_v10_0"/>
   <BlockFileSet Type="BlockSrcs" Name="mb_block_i_xbar_0"/>
   <BlockFileSet Type="BlockSrcs" Name="mb_block_i_microblaze_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="mb_block_i_mdm_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="mb_block_i_ilmb_bram_if_cntlr_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="mb_block_i_dlmb_v10_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_block_i_clk_wiz_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="mb_block_i_mdm_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="mb_block_i_ilmb_v10_0"/>
   <BlockFileSet Type="BlockSrcs" Name="mb_block_i_lmb_bram_0"/>
   <BlockFileSet Type="BlockSrcs" Name="mb_block_i_microblaze_0_axi_intc_0"/>

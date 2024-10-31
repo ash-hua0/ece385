@@ -70,9 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_msg_config -id {HDL 9-1061} -limit 100000
-set_msg_config -id {HDL 9-1654} -limit 100000
-set_msg_config -id {HDL-1065} -limit 10000
 set_msg_config  -id {Synth 8-87}  -new_severity {ERROR} 
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7s50csga324-1
@@ -95,17 +92,7 @@ set_property ip_output_repo c:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.c
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib -sv {
-  C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/imports/design_source/VGA_controller.sv
-  C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/imports/design_source/Color_Mapper.sv
-  C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/imports/design_source/ball.sv
-  C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/imports/lab_7_1_provided_fa24/font_rom.sv
-  C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0.sv
-  C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/imports/lab_7_1_provided_fa24/hdmi_text_controller_v1_0_AXI.sv
-  C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/imports/design_source/hex_driver.sv
-  C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/imports/lab_7_1_provided_fa24/mb_usb_hdmi_top.sv
-}
-read_verilog -library xil_defaultlib C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/bd/mb_block_i/hdl/mb_block_i_wrapper.v
+read_verilog -library xil_defaultlib -sv C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/imports/lab_7_1_provided_fa24/mb_usb_hdmi_top.sv
 add_files C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/bd/mb_block/mb_block_i.bd
 set_property used_in_implementation false [get_files -all c:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/bd/mb_block_i/ip/mb_block_i_microblaze_0_0/mb_block_i_microblaze_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/bd/mb_block_i/ip/mb_block_i_microblaze_0_0/mb_block_i_microblaze_0_0_ooc_debug.xdc]
@@ -134,14 +121,6 @@ set_property used_in_implementation false [get_files -all c:/Users/Orion/Documen
 set_property used_in_implementation false [get_files -all c:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/bd/mb_block/ip/mb_block_i_hdmi_text_controller_0_0/src/clk_wiz_0/clk_wiz_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/bd/mb_block_i/mb_block_i_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/bd/mb_block_i/ip/mb_block_i_microblaze_0_0/data/mb_bootloop_le.elf]
-
-read_ip -quiet C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-set_property used_in_implementation false [get_files -all c:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_late.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
-
-read_ip -quiet C:/Users/Orion/Documents/GitHub/ece385/lab_7/lab_7.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0.xci
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
