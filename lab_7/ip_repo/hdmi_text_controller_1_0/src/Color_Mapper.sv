@@ -57,13 +57,13 @@ module  color_mapper ( input  logic [9:0] DrawX, DrawY,
 
     always_comb
     begin
-        dat_pixel = dat_row[7-DrawX[2:0]] ^ chardat[7];
         //assign byte_index = 0;
         byte_num = 80*DrawY[9:4] + DrawX[9:3];
         addr = 12'(byte_num / 4);
         byte_index = byte_num % 4;
         chardat = word[(byte_index*8) +: 8];
         code = chardat[6:0];
+        //dat_pixel = 0;
     end
     
     font_rom font_rom(
@@ -73,6 +73,7 @@ module  color_mapper ( input  logic [9:0] DrawX, DrawY,
     
     always_comb
     begin:RGB_Display
+        dat_pixel = dat_row[7-DrawX[2:0]] ^ chardat[7];
         if (dat_pixel) begin
             Red = ctrl_reg[24:21];
             Green = ctrl_reg[20:17];
