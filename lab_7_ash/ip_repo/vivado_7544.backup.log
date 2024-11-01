@@ -1,0 +1,330 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Thu Oct 31 01:59:20 2024
+# Process ID: 7544
+# Current directory: C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16620 C:\Users\Orion\Documents\GitHub\ece385\lab_7\ip_repo\edit_hdmi_text_controller_v1_0.xpr
+# Log file: C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/vivado.log
+# Journal file: C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo\vivado.jou
+# Running On: DESKTOP-SK26SJD, OS: Windows, CPU Frequency: 2096 MHz, CPU Physical cores: 12, Host memory: 16473 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/edit_hdmi_text_controller_v1_0.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26c:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26c/1.4/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.2/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.3/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:k26i:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/k26i/1.4/board.xml as part xck26-sfvc784-2lvi-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.4/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu116:part0:1.5 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu116/1.5/board.xml as part xcku5p-ffvb676-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu1500:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu1500/1.2/board.xml as part xcku115-flvb2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kr260_som/1.0/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kr260_som:part0:1.1 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kr260_som/1.1/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.2/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.3/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kv260_som:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kv260_som/1.4/board.xml as part xck26-sfvc784-2lv-c specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.6 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.6/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu108:part0:1.7 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu108/1.7/board.xml as part xcvu095-ffva2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu110:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu110/1.4/board.xml as part xcvu190-flgc2104-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.0/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.3/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu118:part0:2.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu118/2.4/board.xml as part xcvu9p-flga2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu128:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu128/production/1.0/board.xml as part xcvu37p-fsvh2892-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu129:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu129/production/1.0/board.xml as part xcvu29p-fsga2577-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vcu1525:part0:1.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vcu1525/1.3/board.xml as part xcvu9p-fsgd2104-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_mpsoc:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_mpsoc/1.0/board.xml as part xczu19eg-ffvd1760-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vermeo_t1_rfsoc:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vermeo_t1_rfsoc/1.0/board.xml as part xczu21dr-ffvd1156-2l-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc702:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc702/1.4/board.xml as part xc7z020clg484-1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zc706/1.4/board.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.3/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu102:part0:3.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu102/3.4/board.xml as part xczu9eg-ffvb1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu104:part0:1.1 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu104/1.1/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.4/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.5 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.5/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu106:part0:2.6 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu106/2.6/board.xml as part xczu7ev-ffvc1156-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.2 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.2/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.3 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.3/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu111:part0:1.4 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu111/1.4/board.xml as part xczu28dr-ffvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1275:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1275/1.0/board.xml as part xczu29dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu1285:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu1285/1.0/board.xml as part xczu39dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/production/2.0/board.xml as part xczu48dr-fsvg1517-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/production/2.0/board.xml as part xczu49dr-ffvf1760-2-e specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Orion/Documents/GitHub/ece385/lab_7/hdmi_tx_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+open_project: Time (s): cpu = 00:00:34 ; elapsed = 00:00:15 . Memory (MB): peak = 1113.852 ; gain = 287.133
+set_property library xil_defaultlib [get_files]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'hdmi_text_controller_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/edit_hdmi_text_controller_v1_0.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/edit_hdmi_text_controller_v1_0.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'hdmi_text_controller_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/edit_hdmi_text_controller_v1_0.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj hdmi_text_controller_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0/src/font_rom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module font_rom
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/edit_hdmi_text_controller_v1_0.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot hdmi_text_controller_tb_behav xil_defaultlib.hdmi_text_controller_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot hdmi_text_controller_tb_behav xil_defaultlib.hdmi_text_controller_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'axi_awaddr' [C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_tb.sv:74]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'axi_araddr' [C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_tb.sv:88]
+WARNING: [VRFC 10-3091] actual bit length 9 differs from formal bit length 8 for port 'data' [C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0/src/Color_Mapper.sv:71]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0/src/font_rom.sv" Line 1. Module font_rom doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0/src/font_rom.sv" Line 1. Module font_rom doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hdmi_text_controller_v1_0_AXI(C_...
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.vga_controller
+Compiling module unisims_ver.SRL16E_default
+Compiling module xil_defaultlib.srldelay(WIDTH=40,TAPS=4'b1010)
+Compiling module xil_defaultlib.encode_default
+Compiling module xil_defaultlib.encode(CHANNEL="GREEN")
+Compiling module xil_defaultlib.encode(CHANNEL="RED")
+Compiling module unisims_ver.OSERDESE2(DATA_RATE_TQ="SDR",DAT...
+Compiling module unisims_ver.OSERDESE2(DATA_RATE_TQ="SDR",DAT...
+Compiling module xil_defaultlib.serdes_10_to_1
+Compiling module unisims_ver.OBUFDS(IOSTANDARD="TMDS_33")
+Compiling module xil_defaultlib.hdmi_tx_v1_0(C_RED_WIDTH=4,C_GRE...
+Compiling module xil_defaultlib.hdmi_tx_0
+Compiling module xil_defaultlib.font_rom
+Compiling module xil_defaultlib.color_mapper
+Compiling module xil_defaultlib.hdmi_text_controller_v1_0(C_AXI_...
+Compiling module xil_defaultlib.hdmi_text_controller_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot hdmi_text_controller_tb_behav
+run_program: Time (s): cpu = 00:00:03 ; elapsed = 00:00:19 . Memory (MB): peak = 1167.391 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '19' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/edit_hdmi_text_controller_v1_0.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "hdmi_text_controller_tb_behav -key {Behavioral:sim_1:Functional:hdmi_text_controller_tb} -tclbatch {hdmi_text_controller_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source hdmi_text_controller_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/hdmi_text_controller_tb/bitmap" to the wave window because it has 10080000 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run all
+Info: Read back of control register: 001f6000
+Time: 192360 ns  Iteration: 0  Process: /hdmi_text_controller_tb/Initial258_906  Scope: hdmi_text_controller_tb.TEST_VECTORS  File: C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_tb.sv Line: 284
+Saving bitmap 'lab7_1_sim.bmp'.
+$finish called at time : 15648350 ns : File "C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_tb.sv" Line 293
+run: Time (s): cpu = 00:06:01 ; elapsed = 00:15:28 . Memory (MB): peak = 1196.957 ; gain = 0.000
+xsim: Time (s): cpu = 00:06:03 ; elapsed = 00:15:31 . Memory (MB): peak = 1196.957 ; gain = 29.566
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'hdmi_text_controller_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for all
+launch_simulation: Time (s): cpu = 00:06:08 ; elapsed = 00:15:54 . Memory (MB): peak = 1196.957 ; gain = 37.297
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 96044 KB (Peak: 96044 KB), Simulation CPU Usage: 861077 ms
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'hdmi_text_controller_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/edit_hdmi_text_controller_v1_0.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2022.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/edit_hdmi_text_controller_v1_0.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'hdmi_text_controller_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-100] Fetching design files from 'sources_1'...(this may take a while)...
+INFO: [USF-XSim-101] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/edit_hdmi_text_controller_v1_0.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj hdmi_text_controller_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_text_controller_v1_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0/src/Color_Mapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module color_mapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_text_controller_tb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0/src/VGA_controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vga_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_AXI.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hdmi_text_controller_v1_0_AXI
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0/src/font_rom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module font_rom
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/edit_hdmi_text_controller_v1_0.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot hdmi_text_controller_tb_behav xil_defaultlib.hdmi_text_controller_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot hdmi_text_controller_tb_behav xil_defaultlib.hdmi_text_controller_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'axi_awaddr' [C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_tb.sv:74]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 16 for port 'axi_araddr' [C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_tb.sv:88]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hdmi_text_controller_v1_0_AXI(C_...
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling module xil_defaultlib.vga_controller
+Compiling module unisims_ver.SRL16E_default
+Compiling module xil_defaultlib.srldelay(WIDTH=40,TAPS=4'b1010)
+Compiling module xil_defaultlib.encode_default
+Compiling module xil_defaultlib.encode(CHANNEL="GREEN")
+Compiling module xil_defaultlib.encode(CHANNEL="RED")
+Compiling module unisims_ver.OSERDESE2(DATA_RATE_TQ="SDR",DAT...
+Compiling module unisims_ver.OSERDESE2(DATA_RATE_TQ="SDR",DAT...
+Compiling module xil_defaultlib.serdes_10_to_1
+Compiling module unisims_ver.OBUFDS(IOSTANDARD="TMDS_33")
+Compiling module xil_defaultlib.hdmi_tx_v1_0(C_RED_WIDTH=4,C_GRE...
+Compiling module xil_defaultlib.hdmi_tx_0
+Compiling module xil_defaultlib.font_rom
+Compiling module xil_defaultlib.color_mapper
+Compiling module xil_defaultlib.hdmi_text_controller_v1_0(C_AXI_...
+Compiling module xil_defaultlib.hdmi_text_controller_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot hdmi_text_controller_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1196.957 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/edit_hdmi_text_controller_v1_0.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "hdmi_text_controller_tb_behav -key {Behavioral:sim_1:Functional:hdmi_text_controller_tb} -tclbatch {hdmi_text_controller_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source hdmi_text_controller_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/hdmi_text_controller_tb/bitmap" to the wave window because it has 10080000 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run all
+Info: Read back of control register: 001f6000
+Time: 192360 ns  Iteration: 0  Process: /hdmi_text_controller_tb/Initial258_906  Scope: hdmi_text_controller_tb.TEST_VECTORS  File: C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_tb.sv Line: 284
+Saving bitmap 'lab7_1_sim.bmp'.
+$finish called at time : 15648350 ns : File "C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_tb.sv" Line 293
+run: Time (s): cpu = 00:05:14 ; elapsed = 00:14:07 . Memory (MB): peak = 1205.062 ; gain = 2.238
+xsim: Time (s): cpu = 00:05:15 ; elapsed = 00:14:12 . Memory (MB): peak = 1205.062 ; gain = 8.105
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'hdmi_text_controller_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for all
+launch_simulation: Time (s): cpu = 00:05:16 ; elapsed = 00:14:26 . Memory (MB): peak = 1205.062 ; gain = 8.105
+ipx::open_ipxact_file C:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0/component.xml
+WARNING: [IP_Flow 19-5226] Project source file 'c:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0/component.xml' ignored by IP packager.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/edit_hdmi_text_controller_v1_0.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0.xci' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/edit_hdmi_text_controller_v1_0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0/src/Color_Mapper.sv' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0/src/VGA_controller.sv' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0/src/font_rom.sv' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_AXI.sv' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogsynthesis (Verilog Synthesis)': File 'c:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0.sv' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-4308] Project file 'c:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_tb.sv' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File 'c:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/edit_hdmi_text_controller_v1_0.srcs/sources_1/ip/hdmi_tx_0/hdmi_tx_0.xci' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File 'c:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/edit_hdmi_text_controller_v1_0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File 'c:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0/src/Color_Mapper.sv' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File 'c:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0/src/VGA_controller.sv' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File 'c:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0/src/font_rom.sv' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File 'c:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_AXI.sv' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-3898] File Group 'xilinx_verilogbehavioralsimulation (Verilog Simulation)': File 'c:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0.sv' is not found in the project sources. It will be removed from the packaged IP when the sources are merged. If still required, please add this file to the project and re-package.
+WARNING: [IP_Flow 19-4308] Project file 'c:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0/src/hdmi_text_controller_v1_0_tb.sv' is not found in the component files. It will be added automatically when merging sources and repackaging. Please remove the file from the source project if this is not desired.
+WARNING: [IP_Flow 19-5897] The set of required XPM macros has changed from 'XPM_CDC' to ''
+set_property core_revision 12 [ipx::current_core]
+ipx::create_xgui_files [ipx::current_core]
+ipx::update_checksums [ipx::current_core]
+ipx::check_integrity [ipx::current_core]
+WARNING: [IP_Flow 19-5905] All packaged files should be located below the IP definition file (xml)
+WARNING: [IP_Flow 19-5905] All packaged files should be located below the IP definition file (xml)
+WARNING: [IP_Flow 19-5905] All packaged files should be located below the IP definition file (xml)
+WARNING: [IP_Flow 19-5905] All packaged files should be located below the IP definition file (xml)
+WARNING: [IP_Flow 19-5661] Bus Interface 'hdmi_clk_n' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-4751] Bus Interface 'hdmi_clk_n': FREQ_HZ bus parameter is missing for output clock interface.
+WARNING: [IP_Flow 19-5661] Bus Interface 'hdmi_clk_p' does not have any bus interfaces associated with it.
+WARNING: [IP_Flow 19-4751] Bus Interface 'hdmi_clk_p': FREQ_HZ bus parameter is missing for output clock interface.
+WARNING: [IP_Flow 19-3158] Bus Interface 'AXI': FREQ_HZ bus parameter missing from AXI interface when interface is not associated to a clock.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "DDC_SCL_I" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "DDC_SCL_O" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "DDC_SCL_T" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "DDC_SDA_I" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "DDC_SDA_O" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "DDC_SDA_T" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "CABLE_CONNECT" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1965] Bus Interface 'HDMI': A port map to the required logical port "HPD" of the bus abstraction "xilinx.com:interface:hdmi_rtl:2.0" is missing.
+WARNING: [IP_Flow 19-1980] The memory map 'S00_AXI' is not referenced by any bus interface.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+INFO: [Ipptcl 7-1486] check_integrity: Integrity check passed.
+ipx::save_core [ipx::current_core]
+update_ip_catalog -rebuild -repo_path c:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0
+INFO: [IP_Flow 19-725] Reloaded user IP repository 'c:/Users/Orion/Documents/GitHub/ece385/lab_7/ip_repo/hdmi_text_controller_1_0'
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 84196 KB (Peak: 84196 KB), Simulation CPU Usage: 789437 ms
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 31 03:01:48 2024...
