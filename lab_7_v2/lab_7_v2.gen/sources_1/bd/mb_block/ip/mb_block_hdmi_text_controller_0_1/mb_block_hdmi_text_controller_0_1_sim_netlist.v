@@ -1,7 +1,7 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-// Date        : Fri Nov  1 06:50:48 2024
+// Date        : Fri Nov  1 08:09:40 2024
 // Host        : HP running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_text_controller_0_1/mb_block_hdmi_text_controller_0_1_sim_netlist.v
@@ -303409,7 +303409,7 @@ module mb_block_hdmi_text_controller_0_1_hdmi_text_controller_v1_0_AXI
   LUT6 #(
     .INIT(64'hEEEBBBEB22288828)) 
     vga_to_hdmi_i_10
-       (.I0(ctrl_reg[8]),
+       (.I0(ctrl_reg[4]),
         .I1(vga_to_hdmi_i_15_n_0),
         .I2(vga_to_hdmi_i_16_n_0),
         .I3(Q[0]),
@@ -304359,7 +304359,7 @@ module mb_block_hdmi_text_controller_0_1_hdmi_text_controller_v1_0_AXI
   LUT6 #(
     .INIT(64'hEEEBBBEB22288828)) 
     vga_to_hdmi_i_11
-       (.I0(ctrl_reg[7]),
+       (.I0(ctrl_reg[3]),
         .I1(vga_to_hdmi_i_15_n_0),
         .I2(vga_to_hdmi_i_16_n_0),
         .I3(Q[0]),
@@ -305469,7 +305469,7 @@ module mb_block_hdmi_text_controller_0_1_hdmi_text_controller_v1_0_AXI
   LUT6 #(
     .INIT(64'hEEEBBBEB22288828)) 
     vga_to_hdmi_i_12
-       (.I0(ctrl_reg[6]),
+       (.I0(ctrl_reg[2]),
         .I1(vga_to_hdmi_i_15_n_0),
         .I2(vga_to_hdmi_i_16_n_0),
         .I3(Q[0]),
@@ -306579,7 +306579,7 @@ module mb_block_hdmi_text_controller_0_1_hdmi_text_controller_v1_0_AXI
   LUT6 #(
     .INIT(64'hEEEBBBEB22288828)) 
     vga_to_hdmi_i_13
-       (.I0(ctrl_reg[5]),
+       (.I0(ctrl_reg[1]),
         .I1(vga_to_hdmi_i_15_n_0),
         .I2(vga_to_hdmi_i_16_n_0),
         .I3(Q[0]),
@@ -346617,7 +346617,7 @@ module mb_block_hdmi_text_controller_0_1_hdmi_text_controller_v1_0_AXI
   LUT6 #(
     .INIT(64'hEEEBBBEB22288828)) 
     vga_to_hdmi_i_6
-       (.I0(ctrl_reg[4]),
+       (.I0(ctrl_reg[8]),
         .I1(vga_to_hdmi_i_15_n_0),
         .I2(vga_to_hdmi_i_16_n_0),
         .I3(Q[0]),
@@ -347287,7 +347287,7 @@ module mb_block_hdmi_text_controller_0_1_hdmi_text_controller_v1_0_AXI
   LUT6 #(
     .INIT(64'hEEEBBBEB22288828)) 
     vga_to_hdmi_i_7
-       (.I0(ctrl_reg[3]),
+       (.I0(ctrl_reg[7]),
         .I1(vga_to_hdmi_i_15_n_0),
         .I2(vga_to_hdmi_i_16_n_0),
         .I3(Q[0]),
@@ -347857,7 +347857,7 @@ module mb_block_hdmi_text_controller_0_1_hdmi_text_controller_v1_0_AXI
   LUT6 #(
     .INIT(64'hEEEBBBEB22288828)) 
     vga_to_hdmi_i_8
-       (.I0(ctrl_reg[2]),
+       (.I0(ctrl_reg[6]),
         .I1(vga_to_hdmi_i_15_n_0),
         .I2(vga_to_hdmi_i_16_n_0),
         .I3(Q[0]),
@@ -348427,7 +348427,7 @@ module mb_block_hdmi_text_controller_0_1_hdmi_text_controller_v1_0_AXI
   LUT6 #(
     .INIT(64'hEEEBBBEB22288828)) 
     vga_to_hdmi_i_9
-       (.I0(ctrl_reg[1]),
+       (.I0(ctrl_reg[5]),
         .I1(vga_to_hdmi_i_15_n_0),
         .I2(vga_to_hdmi_i_16_n_0),
         .I3(Q[0]),
