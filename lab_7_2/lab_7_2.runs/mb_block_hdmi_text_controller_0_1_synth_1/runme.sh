@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.runs/mb_block_hdmi_text_controller_0_1_synth_1'
+HD_PWD='C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.runs/mb_block_hdmi_text_controller_0_1_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

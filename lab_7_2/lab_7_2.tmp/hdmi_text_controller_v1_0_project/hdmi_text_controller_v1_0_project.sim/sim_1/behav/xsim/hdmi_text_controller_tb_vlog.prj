@@ -8,7 +8,7 @@ verilog xil_defaultlib  --include "../../../../hdmi_text_controller_v1_0_project
 "../../../../hdmi_text_controller_v1_0_project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
 "../../../../hdmi_text_controller_v1_0_project.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v" \
 "../../../../hdmi_text_controller_v1_0_project.ip_user_files/ipstatic/simulation/blk_mem_gen_v8_4.v" \
-"../../../../../../ip_repo/hdmi_text_controller_1_0/src/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
+"../../../../hdmi_text_controller_v1_0_project.gen/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v" \
 
 sv xil_defaultlib  --include "../../../../hdmi_text_controller_v1_0_project.gen/sources_1/ip/clk_wiz_0" \
 "../../../../../../ip_repo/hdmi_text_controller_1_0/src/Color_Mapper.sv" \

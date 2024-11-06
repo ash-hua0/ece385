@@ -1,7 +1,7 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.560773",
-   "Default View_TopLeft":"-125,-410",
+   "Default View_ScaleFactor":"0.910978",
+   "Default View_TopLeft":"733,-321",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
 #  -string -flagsOSRD
@@ -38,7 +38,7 @@ preplace netloc microblaze_0_ilmb_1 1 1 1 700 -200n
 preplace netloc microblaze_0_intc_axi 1 0 4 50 -310 N -310 N -310 1430
 preplace netloc microblaze_0_interrupt 1 0 2 70 -210 670J
 levelinfo -pg 1 0 430 910 1280 1650 1940
-pagesize -pg 1 -db -bbox -sgen -130 -330 2060 680
+pagesize -pg 1 -db -bbox -sgen -130 -330 2050 680
 "
 }
 {

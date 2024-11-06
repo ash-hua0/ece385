@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.runs/synth_1/mb_usb_hdmi_top.tcl"
+  variable script "C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.runs/synth_1/mb_usb_hdmi_top.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,7 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 2
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL-1065} -limit 10000
 set_msg_config  -id {Synth 8-87}  -new_severity {ERROR} 
 OPTRACE "Creating in-memory project" START { }
@@ -80,46 +80,47 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.cache/wt [current_project]
-set_property parent.project_path C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.cache/wt [current_project]
+set_property parent.project_path C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_repo_paths c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/ip_repo [current_project]
+set_property ip_repo_paths c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/ip_repo [current_project]
 update_ip_catalog
-set_property ip_output_repo c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.cache/ip [current_project]
+set_property ip_output_repo c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib -sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.srcs/sources_1/imports/lab_7_1_provided_fa24/mb_usb_hdmi_top.sv
-add_files C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.srcs/sources_1/bd/mb_block/mb_block.bd
-set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_0/mb_block_microblaze_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_0/mb_block_microblaze_0_0_ooc_debug.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_0/mb_block_microblaze_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.gen/sources_1/bd/mb_block/ip/mb_block_dlmb_v10_0/mb_block_dlmb_v10_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.gen/sources_1/bd/mb_block/ip/mb_block_ilmb_v10_0/mb_block_ilmb_v10_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.gen/sources_1/bd/mb_block/ip/mb_block_dlmb_bram_if_cntlr_0/mb_block_dlmb_bram_if_cntlr_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.gen/sources_1/bd/mb_block/ip/mb_block_ilmb_bram_if_cntlr_0/mb_block_ilmb_bram_if_cntlr_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.gen/sources_1/bd/mb_block/ip/mb_block_lmb_bram_0/mb_block_lmb_bram_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.gen/sources_1/bd/mb_block/ip/mb_block_xbar_0/mb_block_xbar_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_axi_intc_0/mb_block_microblaze_0_axi_intc_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_axi_intc_0/mb_block_microblaze_0_axi_intc_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_axi_intc_0/mb_block_microblaze_0_axi_intc_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.gen/sources_1/bd/mb_block/ip/mb_block_mdm_1_0/mb_block_mdm_1_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.gen/sources_1/bd/mb_block/ip/mb_block_mdm_1_0/mb_block_mdm_1_0_ooc_trace.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.gen/sources_1/bd/mb_block/ip/mb_block_clk_wiz_1_0/mb_block_clk_wiz_1_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.gen/sources_1/bd/mb_block/ip/mb_block_clk_wiz_1_0/mb_block_clk_wiz_1_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.gen/sources_1/bd/mb_block/ip/mb_block_clk_wiz_1_0/mb_block_clk_wiz_1_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.gen/sources_1/bd/mb_block/ip/mb_block_rst_clk_wiz_1_100M_0/mb_block_rst_clk_wiz_1_100M_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.gen/sources_1/bd/mb_block/ip/mb_block_rst_clk_wiz_1_100M_0/mb_block_rst_clk_wiz_1_100M_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.gen/sources_1/bd/mb_block/ip/mb_block_rst_clk_wiz_1_100M_0/mb_block_rst_clk_wiz_1_100M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.gen/sources_1/bd/mb_block/ip/mb_block_axi_uartlite_0_0/mb_block_axi_uartlite_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.gen/sources_1/bd/mb_block/ip/mb_block_axi_uartlite_0_0/mb_block_axi_uartlite_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.gen/sources_1/bd/mb_block/ip/mb_block_axi_uartlite_0_0/mb_block_axi_uartlite_0_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_text_controller_0_1/src/clk_wiz_0/clk_wiz_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_text_controller_0_1/src/clk_wiz_0/clk_wiz_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.gen/sources_1/bd/mb_block/mb_block_ooc.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_0/data/mb_bootloop_le.elf]
+read_verilog -library xil_defaultlib -sv C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.srcs/sources_1/imports/lab_7_1_provided_fa24/mb_usb_hdmi_top.sv
+add_files C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.srcs/sources_1/bd/mb_block/mb_block.bd
+set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_0/mb_block_microblaze_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_0/mb_block_microblaze_0_0_ooc_debug.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_0/mb_block_microblaze_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.gen/sources_1/bd/mb_block/ip/mb_block_dlmb_v10_0/mb_block_dlmb_v10_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.gen/sources_1/bd/mb_block/ip/mb_block_ilmb_v10_0/mb_block_ilmb_v10_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.gen/sources_1/bd/mb_block/ip/mb_block_dlmb_bram_if_cntlr_0/mb_block_dlmb_bram_if_cntlr_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.gen/sources_1/bd/mb_block/ip/mb_block_ilmb_bram_if_cntlr_0/mb_block_ilmb_bram_if_cntlr_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.gen/sources_1/bd/mb_block/ip/mb_block_lmb_bram_0/mb_block_lmb_bram_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.gen/sources_1/bd/mb_block/ip/mb_block_xbar_0/mb_block_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_axi_intc_0/mb_block_microblaze_0_axi_intc_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_axi_intc_0/mb_block_microblaze_0_axi_intc_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_axi_intc_0/mb_block_microblaze_0_axi_intc_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.gen/sources_1/bd/mb_block/ip/mb_block_mdm_1_0/mb_block_mdm_1_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.gen/sources_1/bd/mb_block/ip/mb_block_mdm_1_0/mb_block_mdm_1_0_ooc_trace.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.gen/sources_1/bd/mb_block/ip/mb_block_clk_wiz_1_0/mb_block_clk_wiz_1_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.gen/sources_1/bd/mb_block/ip/mb_block_clk_wiz_1_0/mb_block_clk_wiz_1_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.gen/sources_1/bd/mb_block/ip/mb_block_clk_wiz_1_0/mb_block_clk_wiz_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.gen/sources_1/bd/mb_block/ip/mb_block_rst_clk_wiz_1_100M_0/mb_block_rst_clk_wiz_1_100M_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.gen/sources_1/bd/mb_block/ip/mb_block_rst_clk_wiz_1_100M_0/mb_block_rst_clk_wiz_1_100M_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.gen/sources_1/bd/mb_block/ip/mb_block_rst_clk_wiz_1_100M_0/mb_block_rst_clk_wiz_1_100M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.gen/sources_1/bd/mb_block/ip/mb_block_axi_uartlite_0_0/mb_block_axi_uartlite_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.gen/sources_1/bd/mb_block/ip/mb_block_axi_uartlite_0_0/mb_block_axi_uartlite_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.gen/sources_1/bd/mb_block/ip/mb_block_axi_uartlite_0_0/mb_block_axi_uartlite_0_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_text_controller_0_1/src/clk_wiz_0/clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_text_controller_0_1/src/clk_wiz_0/clk_wiz_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.gen/sources_1/bd/mb_block/ip/mb_block_hdmi_text_controller_0_1/src/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.gen/sources_1/bd/mb_block/mb_block_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.gen/sources_1/bd/mb_block/ip/mb_block_microblaze_0_0/data/mb_bootloop_le.elf]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -130,14 +131,14 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.srcs/constrs_1/imports/lab7_1_provided_fa24/mb_usb_hdmi_top.xdc
-set_property used_in_implementation false [get_files C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.srcs/constrs_1/imports/lab7_1_provided_fa24/mb_usb_hdmi_top.xdc]
+read_xdc C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.srcs/constrs_1/imports/lab7_1_provided_fa24/mb_usb_hdmi_top.xdc
+set_property used_in_implementation false [get_files C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.srcs/constrs_1/imports/lab7_1_provided_fa24/mb_usb_hdmi_top.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_v2/lab_7_v2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp
+read_checkpoint -auto_incremental -incremental C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.srcs/utils_1/imports/synth_1/mb_usb_hdmi_top.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
