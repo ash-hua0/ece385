@@ -11,13 +11,13 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="216,237.620 ns"></ZoomStartTime>
-      <ZoomEndTime time="216,413.621 ns"></ZoomEndTime>
-      <Cursor1Time time="216,321.920 ns"></Cursor1Time>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="1,784.000001 us"></ZoomEndTime>
+      <Cursor1Time time="179.182100 us"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="312"></NameColumnWidth>
-      <ValueColumnWidth column_width="109"></ValueColumnWidth>
+      <NameColumnWidth column_width="307"></NameColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="38" />
    <wvobject fp_name="/hdmi_text_controller_tb/arstn" type="logic">
@@ -106,6 +106,10 @@
       <obj_property name="ElementShortName">read_addr_ready</obj_property>
       <obj_property name="ObjectShortName">read_addr_ready</obj_property>
    </wvobject>
+   <wvobject fp_name="/hdmi_text_controller_tb/read_data_valid" type="logic">
+      <obj_property name="ElementShortName">read_data_valid</obj_property>
+      <obj_property name="ObjectShortName">read_data_valid</obj_property>
+   </wvobject>
    <wvobject fp_name="/hdmi_text_controller_tb/read_data_ready" type="logic">
       <obj_property name="ElementShortName">read_data_ready</obj_property>
       <obj_property name="ObjectShortName">read_data_ready</obj_property>
@@ -113,10 +117,6 @@
    <wvobject fp_name="/hdmi_text_controller_tb/read_resp" type="array">
       <obj_property name="ElementShortName">read_resp[1:0]</obj_property>
       <obj_property name="ObjectShortName">read_resp[1:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/hdmi_text_controller_tb/read_data_valid" type="logic">
-      <obj_property name="ElementShortName">read_data_valid</obj_property>
-      <obj_property name="ObjectShortName">read_data_valid</obj_property>
    </wvobject>
    <wvobject type="divider" fp_name="divider707">
       <obj_property name="label">SRAM</obj_property>

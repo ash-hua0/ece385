@@ -496,4 +496,3 @@ xfft_v7_2_13=$RDI_DATADIR/xsim/ip/xfft_v7_2_13
 v_demosaic_v1_1_6=$RDI_DATADIR/xsim/ip/v_demosaic_v1_1_6
 axi_lite_ipif_v3_0_4=$RDI_DATADIR/xsim/ip/axi_lite_ipif_v3_0_4
 c_addsub_v12_0_14=$RDI_DATADIR/xsim/ip/c_addsub_v12_0_14
-xil_defaultlib=xsim.dir/xil_defaultlib

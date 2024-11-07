@@ -29,6 +29,7 @@ void hdmiTestWeek1()
 
 	//Register write and readback test
 	uint32_t checksum[ROWS], readsum[ROWS];
+	uint32_t testRow[COLUMNS];
 
 	for (int j = 0; j < ROWS; j++)
 	{
@@ -52,9 +53,32 @@ void hdmiTestWeek1()
 		if (checksum[j] != readsum[j])
 		{
 			printf ("Checksum mismatch!, check your Avalon-MM code\n\r");
-			while (1){};
+			//while (1){};
 		}
 	}
+	printf("Starting user code... buckle up fella\n");
+
+	readsum[0] = hdmi_ctrl->VRAM[0];
+	readsum[1] = hdmi_ctrl->VRAM[1];
+	readsum[2] = hdmi_ctrl->VRAM[2];
+	readsum[3] = hdmi_ctrl->VRAM[3];
+	readsum[4] = hdmi_ctrl->VRAM[4];
+	readsum[5] = hdmi_ctrl->VRAM[5];
+	readsum[6] = hdmi_ctrl->VRAM[4];
+	readsum[7] = hdmi_ctrl->VRAM[0];
+	readsum[8] = hdmi_ctrl->VRAM[0];
+
+
+	printf("This should be a 0: %d\n", readsum[0]);
+	printf("This should be a 1: %d\n", readsum[1]);
+	printf("This should be a 2: %d\n", readsum[2]);
+	printf("This should be a 3: %d\n", readsum[3]);
+	printf("This should be a 4: %d\n", readsum[4]);
+	printf("This should be a 5: %d\n", readsum[5]);
+	printf("This should also be a 4: %d\n", readsum[6]);
+	printf("This should also be a 0: %d\n", readsum[0]);
+	printf("This should also also be a 0: %d\n", readsum[8]);
+
 	
 	printf ("Checksum code passed!...starting color test \n\r");
 	sleep_MB (5);

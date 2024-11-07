@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Wed Nov  6 08:02:16 2024
+| Date         : Thu Nov  7 10:28:14 2024
 | Host         : HP running 64-bit major release  (build 9200)
 | Command      : report_utilization -file mb_block_hdmi_text_controller_0_1_utilization_synth.rpt -pb mb_block_hdmi_text_controller_0_1_utilization_synth.pb
 | Design       : mb_block_hdmi_text_controller_0_1
@@ -31,13 +31,13 @@ Table of Contents
 +----------------------------+------+-------+------------+-----------+-------+
 |          Site Type         | Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*                |  633 |     0 |          0 |     32600 |  1.94 |
-|   LUT as Logic             |  594 |     0 |          0 |     32600 |  1.82 |
+| Slice LUTs*                |  644 |     0 |          0 |     32600 |  1.98 |
+|   LUT as Logic             |  605 |     0 |          0 |     32600 |  1.86 |
 |   LUT as Memory            |   39 |     0 |          0 |      9600 |  0.41 |
 |     LUT as Distributed RAM |    0 |     0 |            |           |       |
 |     LUT as Shift Register  |   39 |     0 |            |           |       |
-| Slice Registers            |  301 |     0 |          0 |     65200 |  0.46 |
-|   Register as Flip Flop    |  301 |     0 |          0 |     65200 |  0.46 |
+| Slice Registers            |  317 |     0 |          0 |     65200 |  0.49 |
+|   Register as Flip Flop    |  317 |     0 |          0 |     65200 |  0.49 |
 |   Register as Latch        |    0 |     0 |          0 |     65200 |  0.00 |
 | F7 Muxes                   |   89 |     0 |          0 |     16300 |  0.55 |
 | F8 Muxes                   |    1 |     0 |          0 |      8150 |  0.01 |
@@ -61,7 +61,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 | 0     |          Yes |           - |          Set |
 | 66    |          Yes |           - |        Reset |
 | 1     |          Yes |         Set |            - |
-| 234   |          Yes |       Reset |            - |
+| 250   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -151,15 +151,15 @@ Warning! LUT value is adjusted to account for LUT combining.
 +------------+------+---------------------+
 |  Ref Name  | Used | Functional Category |
 +------------+------+---------------------+
-| LUT6       |  421 |                 LUT |
-| FDRE       |  234 |        Flop & Latch |
-| LUT5       |  107 |                 LUT |
+| LUT6       |  419 |                 LUT |
+| FDRE       |  250 |        Flop & Latch |
+| LUT5       |  112 |                 LUT |
 | MUXF7      |   89 |               MuxFx |
-| LUT3       |   77 |                 LUT |
+| LUT3       |   88 |                 LUT |
 | FDCE       |   66 |        Flop & Latch |
 | SRL16E     |   39 |  Distributed Memory |
 | LUT4       |   39 |                 LUT |
-| LUT2       |   24 |                 LUT |
+| LUT2       |   25 |                 LUT |
 | OSERDESE2  |    8 |                  IO |
 | CARRY4     |    5 |          CarryLogic |
 | OBUFDS     |    4 |                  IO |
