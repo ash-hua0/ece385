@@ -2,10 +2,10 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Wed Nov  6 08:30:59 2024
-# Process ID: 26300
+# Start of session at: Fri Nov  8 08:14:41 2024
+# Process ID: 44764
 # Current directory: C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent41868 C:\Users\Shane\Documents\Classes\ECE_385\Lab_7\lab_7_2\lab_7_2.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent47284 C:\Users\Shane\Documents\Classes\ECE_385\Lab_7\lab_7_2\lab_7_2.xpr
 # Log file: C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/vivado.log
 # Journal file: C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2\vivado.jou
 # Running On: HP, OS: Windows, CPU Frequency: 3418 MHz, CPU Physical cores: 4, Host memory: 16917 MB
@@ -13,93 +13,10 @@
 start_gui
 open_project C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.xpr
 update_compile_order -fileset sources_1
-open_project C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.xpr
-update_compile_order -fileset sources_1
-launch_simulation
-open_wave_config C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_tb_behav.wcfg
-source hdmi_text_controller_tb.tcl
-create_wave_config; add_wave /; set_property needs_save false [current_wave_config]
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top hdmi_text_controller_v1_0_AXI [current_fileset]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sources_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.srcs/sources_1/bd/mb_block/mb_block.bd]
 synth_design -rtl -rtl_skip_mlo -name rtl_1
-close_sim
-launch_simulation
-refresh_design
-launch_simulation
-open_wave_config C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_tb_behav.wcfg
-source hdmi_text_controller_tb.tcl
-current_wave_config {hdmi_text_controller_tb_behav.wcfg}
-add_wave {{/hdmi_text_controller_tb/hdmi_text_controller_v1_0_inst/hdmi_text_controller_v1_0_AXI_inst/w_ena}} {{/hdmi_text_controller_tb/hdmi_text_controller_v1_0_inst/hdmi_text_controller_v1_0_AXI_inst/r_ena}} 
-save_wave_config {C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_tb_behav.wcfg}
-close_sim
-launch_simulation
-open_wave_config C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_tb_behav.wcfg
-source hdmi_text_controller_tb.tcl
-save_wave_config {C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_tb_behav.wcfg}
-close_sim
-launch_simulation
-open_wave_config C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_tb_behav.wcfg
-source hdmi_text_controller_tb.tcl
-current_wave_config {hdmi_text_controller_tb_behav.wcfg}
-add_wave {{/hdmi_text_controller_tb/hdmi_text_controller_v1_0_inst/hdmi_text_controller_v1_0_AXI_inst/S_AXI_RREADY}} 
-current_wave_config {hdmi_text_controller_tb_behav.wcfg}
-add_wave {{/hdmi_text_controller_tb/hdmi_text_controller_v1_0_inst/hdmi_text_controller_v1_0_AXI_inst/axi_rvalid}} 
-save_wave_config {C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_tb_behav.wcfg}
-close_sim
-launch_simulation
-open_wave_config C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_tb_behav.wcfg
-source hdmi_text_controller_tb.tcl
-close_sim
-launch_simulation
-open_wave_config C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_tb_behav.wcfg
-source hdmi_text_controller_tb.tcl
-create_wave_config; add_wave /; set_property needs_save false [current_wave_config]
-close_sim
-launch_simulation
-open_wave_config C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_tb_behav.wcfg
-source hdmi_text_controller_tb.tcl
-save_wave_config {C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_tb_behav.wcfg}
-close_sim
-launch_simulation
-open_wave_config C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_tb_behav.wcfg
-source hdmi_text_controller_tb.tcl
-close_sim
-launch_simulation
-open_wave_config C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_tb_behav.wcfg
-source hdmi_text_controller_tb.tcl
-close_sim
-close_project
 ipx::edit_ip_in_project -upgrade true -name hdmi_text_controller_v1_0_project -directory C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/ip_repo/hdmi_text_controller_1_0/component.xml
 update_compile_order -fileset sources_1
-set_property core_revision 9 [ipx::current_core]
-ipx::update_source_project_archive -component [ipx::current_core]
-ipx::create_xgui_files [ipx::current_core]
-ipx::update_checksums [ipx::current_core]
-ipx::check_integrity [ipx::current_core]
-ipx::save_core [ipx::current_core]
-current_project lab_7_2
-open_bd_design {C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.srcs/sources_1/bd/mb_block/mb_block.bd}
-update_ip_catalog -rebuild -scan_changes
-report_ip_status -name ip_status
-upgrade_ip -vlnv xilinx.com:user:hdmi_text_controller:1.0 [get_ips  mb_block_hdmi_text_controller_0_1] -log ip_upgrade.log
-export_ip_user_files -of_objects [get_ips mb_block_hdmi_text_controller_0_1] -no_script -sync -force -quiet
-report_ip_status -name ip_status 
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-write_hw_platform -fixed -include_bit -force -file C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/mb_usb_hdmi_top.xsa
-current_project hdmi_text_controller_v1_0_project
-set_property -name {xsim.simulate.runtime} -value {all} -objects [get_filesets sim_1]
-set_property dataflow_viewer_settings "min_width=16"   [current_fileset]
-set_property library xil_defaultlib [get_files]
 generate_target Simulation [get_files c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0/hdmi_tx_0.xci]
 export_ip_user_files -of_objects [get_files c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0/hdmi_tx_0.xci] -no_script -sync -force -quiet
 export_simulation -of_objects [get_files c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0/hdmi_tx_0.xci] -directory c:/users/shane/documents/classes/ece_385/lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/shane/documents/classes/ece_385/lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/shane/documents/classes/ece_385/lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/shane/documents/classes/ece_385/lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/shane/documents/classes/ece_385/lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/shane/documents/classes/ece_385/lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/shane/documents/classes/ece_385/lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
@@ -110,19 +27,63 @@ generate_target Simulation [get_files c:/Users/Shane/Documents/Classes/ECE_385/L
 export_ip_user_files -of_objects [get_files c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/ip_repo/hdmi_text_controller_1_0/src/blk_mem_gen_0/blk_mem_gen_0.xci] -no_script -sync -force -quiet
 export_simulation -of_objects [get_files c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/ip_repo/hdmi_text_controller_1_0/src/blk_mem_gen_0/blk_mem_gen_0.xci] -directory c:/users/shane/documents/classes/ece_385/lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files/sim_scripts -ip_user_files_dir c:/users/shane/documents/classes/ece_385/lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files -ipstatic_source_dir c:/users/shane/documents/classes/ece_385/lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.ip_user_files/ipstatic -lib_map_path [list {modelsim=c:/users/shane/documents/classes/ece_385/lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/modelsim} {questa=c:/users/shane/documents/classes/ece_385/lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/questa} {riviera=c:/users/shane/documents/classes/ece_385/lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/riviera} {activehdl=c:/users/shane/documents/classes/ece_385/lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
 launch_simulation
+set_property library xil_defaultlib [get_files]
+set_property -name {xsim.simulate.runtime} -value {all} -objects [get_filesets sim_1]
+set_property dataflow_viewer_settings "min_width=16"   [current_fileset]
+generate_target all [get_files c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/ip_repo/hdmi_text_controller_1_0/src/hdmi_tx_0/hdmi_tx_0.xci]
+generate_target all [get_files c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/ip_repo/hdmi_text_controller_1_0/src/clk_wiz_0/clk_wiz_0.xci]
+generate_target all [get_files c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/ip_repo/hdmi_text_controller_1_0/src/blk_mem_gen_0/blk_mem_gen_0.xci]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+current_project lab_7_2
+current_project hdmi_text_controller_v1_0_project
+launch_simulation
 open_wave_config c:/users/shane/documents/classes/ece_385/lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_tb_behav.wcfg
 source hdmi_text_controller_tb.tcl
-current_project lab_7_2
-open_run synth_1 -name synth_1
-current_project hdmi_text_controller_v1_0_project
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top hdmi_text_controller_v1_0_AXI [current_fileset]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sources_1
 close_sim
-synth_design -rtl -rtl_skip_mlo -name rtl_1
+launch_simulation
+open_wave_config c:/users/shane/documents/classes/ece_385/lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_tb_behav.wcfg
+source hdmi_text_controller_tb.tcl
+current_wave_config {hdmi_text_controller_tb_behav.wcfg}
+add_wave {{/hdmi_text_controller_tb/hdmi_text_controller_v1_0_inst/hdmi_text_controller_v1_0_AXI_inst/palette}} 
+save_wave_config {c:/users/shane/documents/classes/ece_385/lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config c:/users/shane/documents/classes/ece_385/lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_tb_behav.wcfg
+source hdmi_text_controller_tb.tcl
+save_wave_config {c:/users/shane/documents/classes/ece_385/lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config c:/users/shane/documents/classes/ece_385/lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_tb_behav.wcfg
+source hdmi_text_controller_tb.tcl
+close_sim
+launch_simulation
+open_wave_config c:/users/shane/documents/classes/ece_385/lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_tb_behav.wcfg
+source hdmi_text_controller_tb.tcl
+current_wave_config {hdmi_text_controller_tb_behav.wcfg}
+add_wave {{/hdmi_text_controller_tb/hdmi_text_controller_v1_0_inst/hdmi_text_controller_v1_0_AXI_inst/flag}} 
+save_wave_config {c:/users/shane/documents/classes/ece_385/lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config c:/users/shane/documents/classes/ece_385/lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_tb_behav.wcfg
+source hdmi_text_controller_tb.tcl
+ipx::unload_core c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/ip_repo/hdmi_text_controller_1_0/component.xml
+current_wave_config {hdmi_text_controller_tb_behav.wcfg}
+add_wave {{/hdmi_text_controller_tb/hdmi_text_controller_v1_0_inst/hdmi_text_controller_v1_0_AXI_inst/axi_araddr}} 
+save_wave_config {c:/users/shane/documents/classes/ece_385/lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config c:/users/shane/documents/classes/ece_385/lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_tb_behav.wcfg
+source hdmi_text_controller_tb.tcl
+save_wave_config {c:/users/shane/documents/classes/ece_385/lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config c:/users/shane/documents/classes/ece_385/lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_tb_behav.wcfg
+source hdmi_text_controller_tb.tcl
+close_sim
+launch_simulation
+open_wave_config c:/users/shane/documents/classes/ece_385/lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_tb_behav.wcfg
+source hdmi_text_controller_tb.tcl
+close_sim
 launch_simulation
 open_wave_config c:/users/shane/documents/classes/ece_385/lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_tb_behav.wcfg
 source hdmi_text_controller_tb.tcl

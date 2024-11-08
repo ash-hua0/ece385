@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
-      <ZoomEndTime time="1,784.000001 us"></ZoomEndTime>
-      <Cursor1Time time="179.182100 us"></Cursor1Time>
+      <ZoomStartTime time="142.062 ns"></ZoomStartTime>
+      <ZoomEndTime time="233.363 ns"></ZoomEndTime>
+      <Cursor1Time time="167.812 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="307"></NameColumnWidth>
+      <NameColumnWidth column_width="265"></NameColumnWidth>
       <ValueColumnWidth column_width="90"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="38" />
+   <WVObjectSize size="41" />
    <wvobject fp_name="/hdmi_text_controller_tb/arstn" type="logic">
       <obj_property name="ElementShortName">arstn</obj_property>
       <obj_property name="ObjectShortName">arstn</obj_property>
@@ -123,9 +123,9 @@
       <obj_property name="DisplayName">label</obj_property>
       <obj_property name="BkColor">#00FF00</obj_property>
    </wvobject>
-   <wvobject fp_name="/hdmi_text_controller_tb/hdmi_text_controller_v1_0_inst/hdmi_text_controller_v1_0_AXI_inst/sram_wait" type="logic">
-      <obj_property name="ElementShortName">sram_wait</obj_property>
-      <obj_property name="ObjectShortName">sram_wait</obj_property>
+   <wvobject fp_name="/hdmi_text_controller_tb/hdmi_text_controller_v1_0_inst/hdmi_text_controller_v1_0_AXI_inst/sram_wait" type="array">
+      <obj_property name="ElementShortName">sram_wait[1:0]</obj_property>
+      <obj_property name="ObjectShortName">sram_wait[1:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/hdmi_text_controller_tb/sram_addra" type="array">
       <obj_property name="ElementShortName">sram_addra[10:0]</obj_property>
@@ -146,6 +146,18 @@
    <wvobject fp_name="/hdmi_text_controller_tb/sram_douta" type="array">
       <obj_property name="ElementShortName">sram_douta[31:0]</obj_property>
       <obj_property name="ObjectShortName">sram_douta[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hdmi_text_controller_tb/hdmi_text_controller_v1_0_inst/hdmi_text_controller_v1_0_AXI_inst/palette" type="array">
+      <obj_property name="ElementShortName">palette[0:15][11:0]</obj_property>
+      <obj_property name="ObjectShortName">palette[0:15][11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hdmi_text_controller_tb/hdmi_text_controller_v1_0_inst/hdmi_text_controller_v1_0_AXI_inst/flag" type="logic">
+      <obj_property name="ElementShortName">flag</obj_property>
+      <obj_property name="ObjectShortName">flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/hdmi_text_controller_tb/hdmi_text_controller_v1_0_inst/hdmi_text_controller_v1_0_AXI_inst/axi_araddr" type="array">
+      <obj_property name="ElementShortName">axi_araddr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">axi_araddr[15:0]</obj_property>
    </wvobject>
    <wvobject type="divider" fp_name="divider702">
       <obj_property name="label">Video</obj_property>

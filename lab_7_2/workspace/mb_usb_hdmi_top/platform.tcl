@@ -20,7 +20,14 @@ platform generate -quick
 platform generate
 platform clean
 platform generate
-platform active {mb_usb_hdmi_top}
 platform config -updatehw {C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/mb_usb_hdmi_top.xsa}
+platform clean
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate
+platform clean
+platform generate
 platform clean
 platform generate

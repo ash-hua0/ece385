@@ -1,87 +1,50 @@
-13:52:14 **** Incremental Build of configuration Debug for project mb_hdmi ****
+10:08:25 **** Build of configuration Debug for project mb_hdmi ****
 make all 
 'Building file: ../src/hdmi_text_controller.c'
 'Invoking: MicroBlaze gcc compiler'
 mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/hdmi_text_controller.o" -IC:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/hdmi_text_controller.d" -MT"src/hdmi_text_controller.o" -o "src/hdmi_text_controller.o" "../src/hdmi_text_controller.c"
 In file included from ../src/hdmi_text_controller.h:8,
                  from ../src/hdmi_text_controller.c:4:
-C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bspinclude/include/xparameters.h:574:50: warning: initialization of 'volatile struct HDMI_TEXT_STRUCT *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bspinclude/include/xparameters.h:574:50: warning: initialization of 'volatile struct TEXT_HDMI_STRUCT *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
   574 | #define XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR 0x44A00000
       |                                                  ^~~~~~~~~~
-../src/hdmi_text_controller.h:92:54: note: in expansion of macro 'XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR'
-   92 | static volatile struct HDMI_TEXT_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR;
+../src/hdmi_text_controller.h:28:54: note: in expansion of macro 'XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR'
+   28 | static volatile struct TEXT_HDMI_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR;
       |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-../src/hdmi_text_controller.c: In function 'hdmiTestWeek1':
-../src/hdmi_text_controller.c:52:46: warning: format '%x' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
-   52 |                 printf ("Row: %d, Checksum: %x, Read-back Checksum: %x\n\r", j, checksum[j], readsum[j]);
-      |                                             ~^                                  ~~~~~~~~~~~
-      |                                              |                                          |
-      |                                              unsigned int                               uint32_t {aka long unsigned int}
-      |                                             %lx
-../src/hdmi_text_controller.c:52:70: warning: format '%x' expects argument of type 'unsigned int', but argument 4 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
-   52 |                 printf ("Row: %d, Checksum: %x, Read-back Checksum: %x\n\r", j, checksum[j], readsum[j]);
-      |                                                                     ~^                       ~~~~~~~~~~
-      |                                                                      |                              |
-      |                                                                      unsigned int                   uint32_t {aka long unsigned int}
-      |                                                                     %lx
-../src/hdmi_text_controller.c:72:38: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
-   72 |         printf("This should be a 0: %d\n", readsum[0]);
-      |                                     ~^     ~~~~~~~~~~
-      |                                      |            |
-      |                                      int          uint32_t {aka long unsigned int}
-      |                                     %ld
-../src/hdmi_text_controller.c:73:38: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
-   73 |         printf("This should be a 1: %d\n", readsum[1]);
-      |                                     ~^     ~~~~~~~~~~
-      |                                      |            |
-      |                                      int          uint32_t {aka long unsigned int}
-      |                                     %ld
-../src/hdmi_text_controller.c:74:38: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
-   74 |         printf("This should be a 2: %d\n", readsum[2]);
-      |                                     ~^     ~~~~~~~~~~
-      |                                      |            |
-      |                                      int          uint32_t {aka long unsigned int}
-      |                                     %ld
-../src/hdmi_text_controller.c:75:38: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
-   75 |         printf("This should be a 3: %d\n", readsum[3]);
-      |                                     ~^     ~~~~~~~~~~
-      |                                      |            |
-      |                                      int          uint32_t {aka long unsigned int}
-      |                                     %ld
-../src/hdmi_text_controller.c:76:38: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
-   76 |         printf("This should be a 4: %d\n", readsum[4]);
-      |                                     ~^     ~~~~~~~~~~
-      |                                      |            |
-      |                                      int          uint32_t {aka long unsigned int}
-      |                                     %ld
-../src/hdmi_text_controller.c:77:38: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
-   77 |         printf("This should be a 5: %d\n", readsum[5]);
-      |                                     ~^     ~~~~~~~~~~
-      |                                      |            |
-      |                                      int          uint32_t {aka long unsigned int}
-      |                                     %ld
-../src/hdmi_text_controller.c:78:43: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
-   78 |         printf("This should also be a 4: %d\n", readsum[6]);
-      |                                          ~^     ~~~~~~~~~~
-      |                                           |            |
-      |                                           int          uint32_t {aka long unsigned int}
-      |                                          %ld
-../src/hdmi_text_controller.c:79:43: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
-   79 |         printf("This should also be a 0: %d\n", readsum[0]);
-      |                                          ~^     ~~~~~~~~~~
-      |                                           |            |
-      |                                           int          uint32_t {aka long unsigned int}
-      |                                          %ld
-../src/hdmi_text_controller.c:80:48: warning: format '%d' expects argument of type 'int', but argument 2 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
-   80 |         printf("This should also also be a 0: %d\n", readsum[8]);
-      |                                               ~^     ~~~~~~~~~~
-      |                                                |            |
-      |                                                int          uint32_t {aka long unsigned int}
-      |                                               %ld
-../src/hdmi_text_controller.c:32:18: warning: unused variable 'testRow' [-Wunused-variable]
-   32 |         uint32_t testRow[COLUMNS];
-      |                  ^~~~~~~
+../src/hdmi_text_controller.c:91:1: warning: return type defaults to 'int' [-Wimplicit-int]
+   91 | hdmiTestWeek2()
+      | ^~~~~~~~~~~~~
+../src/hdmi_text_controller.c:91:1: warning: conflicting types for 'hdmiTestWeek2'
+In file included from ../src/hdmi_text_controller.c:4:
+../src/hdmi_text_controller.h:117:6: note: previous declaration of 'hdmiTestWeek2' with type 'void()'
+  117 | void hdmiTestWeek2(); //call this for your Week 2 demo
+      |      ^~~~~~~~~~~~~
 'Finished building: ../src/hdmi_text_controller.c'
+' '
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -IC:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+In file included from C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bspinclude/include/xil_printf.h:16,
+                 from ../src/helloworld.c:50:
+C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bspinclude/include/xparameters.h:574:50: warning: initialization of 'volatile struct TEXT_HDMI_STRUCT *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  574 | #define XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR 0x44A00000
+      |                                                  ^~~~~~~~~~
+../src/hdmi_text_controller.h:28:54: note: in expansion of macro 'XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR'
+   28 | static volatile struct TEXT_HDMI_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR;
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/helloworld.c:51:
+../src/hdmi_text_controller.h:31:21: warning: 'colors' defined but not used [-Wunused-variable]
+   31 | static struct COLOR colors[]={
+      |                     ^~~~~~
+../src/hdmi_text_controller.h:28:42: warning: 'hdmi_ctrl' defined but not used [-Wunused-variable]
+   28 | static volatile struct TEXT_HDMI_STRUCT* hdmi_ctrl = XPAR_HDMI_TEXT_CONTROLLER_0_AXI_BASEADDR;
+      |                                          ^~~~~~~~~
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IC:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/workspace/mb_usb_hdmi_top/export/mb_usb_hdmi_top/sw/mb_usb_hdmi_top/standalone_microblaze_0/bspinclude/include -mno-xl-reorder -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
 ' '
 'Building target: mb_hdmi.elf'
 'Invoking: MicroBlaze gcc linker'
@@ -91,9 +54,9 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/Shane/Documents/Classes/ECE_385/L
 'Invoking: MicroBlaze Print Size'
 mb-size mb_hdmi.elf  |tee "mb_hdmi.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  69160	   1728	   3168	  74056	  12148	mb_hdmi.elf
+  86324	   2096	   3172	  91592	  165c8	mb_hdmi.elf
 'Finished building: mb_hdmi.elf.size'
 ' '
 
-13:52:16 Build Finished (took 1s.813ms)
+10:08:28 Build Finished (took 2s.136ms)
 

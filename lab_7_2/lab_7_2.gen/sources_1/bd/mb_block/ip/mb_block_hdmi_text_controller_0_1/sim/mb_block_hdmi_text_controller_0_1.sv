@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:user:hdmi_text_controller:1.0
-// IP Revision: 9
+// IP Revision: 13
 
 `timescale 1ns/1ps
 
@@ -98,7 +98,7 @@ input wire axi_aclk;
 (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 AXI_RST RST" *)
 input wire axi_aresetn;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 AXI AWADDR" *)
-input wire [11 : 0] axi_awaddr;
+input wire [12 : 0] axi_awaddr;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 AXI AWPROT" *)
 input wire [2 : 0] axi_awprot;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 AXI AWVALID" *)
@@ -120,7 +120,7 @@ output wire axi_bvalid;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 AXI BREADY" *)
 input wire axi_bready;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 AXI ARADDR" *)
-input wire [11 : 0] axi_araddr;
+input wire [12 : 0] axi_araddr;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 AXI ARPROT" *)
 input wire [2 : 0] axi_arprot;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 AXI ARVALID" *)
@@ -133,14 +133,14 @@ output wire [31 : 0] axi_rdata;
 output wire [1 : 0] axi_rresp;
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 AXI RVALID" *)
 output wire axi_rvalid;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME AXI, WIZ_DATA_WIDTH 32, WIZ_NUM_REG 4, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 12, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN /clk_wiz_1_clk_out1, NUM_REA\
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME AXI, WIZ_DATA_WIDTH 32, WIZ_NUM_REG 4, SUPPORTS_NARROW_BURST 0, DATA_WIDTH 32, PROTOCOL AXI4LITE, FREQ_HZ 100000000, ID_WIDTH 0, ADDR_WIDTH 13, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 0, HAS_LOCK 0, HAS_PROT 1, HAS_CACHE 0, HAS_QOS 0, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, NUM_READ_OUTSTANDING 1, NUM_WRITE_OUTSTANDING 1, MAX_BURST_LENGTH 1, PHASE 0.0, CLK_DOMAIN /clk_wiz_1_clk_out1, NUM_REA\
 D_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 AXI RREADY" *)
 input wire axi_rready;
 
   hdmi_text_controller_v1_0 #(
     .C_AXI_DATA_WIDTH(32),  // Width of S_AXI data bus
-    .C_AXI_ADDR_WIDTH(12)  // Width of S_AXI address bus
+    .C_AXI_ADDR_WIDTH(13)  // Width of S_AXI address bus
   ) inst (
     .hdmi_clk_n(hdmi_clk_n),
     .hdmi_clk_p(hdmi_clk_p),

@@ -264,6 +264,7 @@ module hdmi_text_controller_tb();
     assign sram_ena = hdmi_text_controller_v1_0_inst.sram_ena;
     assign sram_wea = hdmi_text_controller_v1_0_inst.sram_wea;
     assign sram_douta = hdmi_text_controller_v1_0_inst.sram_douta;
+    logic [3:0] color;
     
     // Initial block for test vectors begins below
     initial begin: TEST_VECTORS
@@ -290,11 +291,20 @@ module hdmi_text_controller_tb();
         */
         //End user tests
     
-    
+        color <= 4'b0001;
         arstn = 0; //reset IP
         repeat (4) @(posedge aclk);
         arstn <= 1;
         
+        @(posedge aclk) axi_write( 4 * (13'h4b0 + color), 32'h00000FFF); //Setting first color reg to white
+        @(posedge aclk) axi_write((13'h0001), 32'h00005555); //Setting random reg to 5555
+        
+        @(posedge aclk) axi_read(4 * (13'h4b0 + color), tb_read);
+		$display("first color reg: %x", tb_read);
+		@(posedge aclk) axi_read(13'h0001, tb_read);
+		$display("random reg: %x", tb_read);
+        
+        /*
         //remember AXI addresses are BYTE addresses!
         //This writes something into the Control Register so that we're not simulating a black screen
         repeat (4) @(posedge aclk) axi_write((600*4), 32'h001F6000); //write control reg to set foreground and background
@@ -325,6 +335,7 @@ module hdmi_text_controller_tb();
 		wait (~pixel_vs);
 		save_bmp ("lab7_1_sim.bmp");
 		`endif
+		*/
 		$finish();
 	end
     

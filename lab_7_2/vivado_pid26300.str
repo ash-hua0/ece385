@@ -19654,3 +19654,214 @@ dismissDialog("Launch Vitis IDE"); // bq
 // TclEventType: SIMULATION_UPDATE_STACKS
 // WARNING: HEventQueue.dispatchEvent() is taking  456633 ms.
 // HMemoryUtils.trashcanNow. Engine heap size: 2,028 MB. GUI used memory: 238 MB. Current time: 11/7/24, 2:21:42 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,028 MB. GUI used memory: 237 MB. Current time: 11/7/24, 2:51:42 PM CST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1438 ms. Increasing delay to 4314 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,028 MB. GUI used memory: 237 MB. Current time: 11/7/24, 3:21:43 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,028 MB. GUI used memory: 237 MB. Current time: 11/7/24, 3:51:43 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,028 MB. GUI used memory: 237 MB. Current time: 11/7/24, 4:21:43 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 2,028 MB. GUI used memory: 237 MB. Current time: 11/7/24, 4:51:44 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  871592 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,028 MB. GUI used memory: 238 MB. Current time: 11/7/24, 5:34:38 PM CST
+// Elapsed time: 14246 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 9, 264); // ac
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_PROTOCOL_INSTANCE_TREE
+// Elapsed time: 10 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // j
+closeTask("Simulation", "Behavioral Simulation - Functional - sim_1 - hdmi_text_controller_tb", "DesignTask.SIMULATION");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Confirm Close"); // u
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// TclEventType: SIMULATION_CLOSE_SIMULATION
+// WARNING: HEventQueue.dispatchEvent() is taking  1324 ms.
+// Tcl Message: close_sim 
+// Tcl Message: INFO: xsimkernel Simulation Memory Usage: 69240 KB (Peak: 69240 KB), Simulation CPU Usage: 22717 ms 
+// Tcl Message: INFO: [Simtcl 6-16] Simulation closed 
+dismissDialog("Close"); // bq
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 3); // o
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), hdmi_text_controller_v1_0_AXI_inst : hdmi_text_controller_v1_0_AXI (hdmi_text_controller_v1_0_AXI.sv)]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), hdmi_text_controller_v1_0_AXI_inst : hdmi_text_controller_v1_0_AXI (hdmi_text_controller_v1_0_AXI.sv)]", 2, false, false, false, false, false, true); // D - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), hdmi_text_controller_v1_0_AXI_inst : hdmi_text_controller_v1_0_AXI (hdmi_text_controller_v1_0_AXI.sv)]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), hdmi_text_controller_v1_0_AXI_inst : hdmi_text_controller_v1_0_AXI (hdmi_text_controller_v1_0_AXI.sv)]", 2, false, false, false, false, false, true); // D - Double Click
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // j
+closeTask("RTL Analysis", "Elaborated Design", "DesignTask.RTL_PLANNING");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Confirm Close"); // u
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,028 MB. GUI used memory: 225 MB. Current time: 11/7/24, 5:36:32 PM CST
+// Engine heap size: 2,028 MB. GUI used memory: 226 MB. Current time: 11/7/24, 5:36:32 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1073 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Close"); // bq
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 2); // o
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 15, 155); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 45, 235, false, false, false, true, false); // ac - Popup Trigger
+selectMenu(RDIResource.HCodeEditor_BLANK_OPERATIONS, "Blank Operations"); // ag
+selectMenu(RDIResource.HCodeEditor_DIFF_AGAINST, "Diff against"); // ag
+selectMenu(RDIResource.HCodeEditor_COMMANDS_TO_FOLD_TEXT, "Folding"); // ag
+selectMenuItem(PAResourceCommand.PACommandNames_COLLAPSE_CURRENT_FOLDED_TEXT, "Collapse Current"); // ao
+floatFrame(PAResourceOtoP.PAViews_CODE, "hdmi_text_controller_v1_0_AXI.sv"); // R
+// PAResourceOtoP.PAViews_CODE: Code: float view
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "hdmi_text_controller_v1_0_AXI.sv"); // R
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 78, 597); // ac
+// Elapsed time: 29 seconds
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 33, 635); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 29, 617); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 29, 617, false, false, false, true, false); // ac - Popup Trigger
+selectMenu(RDIResource.HCodeEditor_BLANK_OPERATIONS, "Blank Operations"); // ag
+selectMenu(RDIResource.HCodeEditor_DIFF_AGAINST, "Diff against"); // ag
+selectMenu(RDIResource.HCodeEditor_COMMANDS_TO_FOLD_TEXT, "Folding"); // ag
+selectMenuItem(PAResourceCommand.PACommandNames_COLLAPSE_CURRENT_FOLDED_TEXT, "Collapse Current"); // ao
+// PAResourceOtoP.PAViews_CODE: Code: close view
+closeFrame(PAResourceOtoP.PAViews_CODE, "hdmi_text_controller_v1_0_AXI.sv"); // R
+dockFrame(PAResourceOtoP.PAViews_CODE, "hdmi_text_controller_v1_0_AXI.sv"); // R
+maximizeFrame(PAResourceOtoP.PAViews_CODE, "hdmi_text_controller_v1_0_AXI.sv"); // R
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // E
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), hdmi_text_controller_v1_0_AXI_inst : hdmi_text_controller_v1_0_AXI (hdmi_text_controller_v1_0_AXI.sv)]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), hdmi_text_controller_v1_0_AXI_inst : hdmi_text_controller_v1_0_AXI (hdmi_text_controller_v1_0_AXI.sv)]", 2, false, false, false, false, false, true); // D - Double Click
+closeMainWindow("hdmi_text_controller_v1_0_project - [c:/users/shane/documents/classes/ece_385/lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project/hdmi_text_controller_v1_0_project.xpr] - Vivado 2022.2"); // aK
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Close Project"); // u
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,028 MB. GUI used memory: 215 MB. Current time: 11/7/24, 5:37:54 PM CST
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bq
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_CONSTRAINTS, "Constraints"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IP, "IP"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_EXPORT, "Export"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_IMPORT, "Import"); // al
+selectMenu(PAResourceItoN.MainMenuMgr_TEXT_EDITOR, "Text Editor"); // al
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // f
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "hdmi_text_controller_v1_0_AXI.sv", 1); // o
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // E
+closeView(PAResourceOtoP.PAViews_SCHEMATIC, "Schematic"); // j
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // j
+closeTask("Synthesis", "Synthesized Design", "DesignTask.NETLIST_PLANNING");
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Confirm Close"); // u
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,028 MB. GUI used memory: 217 MB. Current time: 11/7/24, 5:38:11 PM CST
+// Engine heap size: 2,028 MB. GUI used memory: 218 MB. Current time: 11/7/24, 5:38:11 PM CST
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Close"); // bq
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // f
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0); // z
+collapseTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0); // z
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "User Repository ;  ;  ;  ; ", 0); // z
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Peripheral ;  ;  ;  ; ", 1); // z
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Peripheral ;  ;  ;  ; ", 1, "AXI Peripheral", 0, true); // z - Node
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "hdmi_text_controller_v1.0 ; AXI4 ; Pre-Production ; Included ; xilinx.com:user:hdmi_text_controller:1.0", 2, "hdmi_text_controller_v1.0", 0, false); // z
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "hdmi_text_controller_v1.0 ; AXI4 ; Pre-Production ; Included ; xilinx.com:user:hdmi_text_controller:1.0", 2, "hdmi_text_controller_v1.0", 0, false, false, false, false, true, false); // z - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER, "Edit in IP Packager"); // ao
+// Run Command: PAResourceCommand.PACommandNames_EDIT_IN_IP_PACKAGER
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+selectButton("OptionPane.button", "OK"); // JButton
+// TclEventType: FILE_SET_NEW
+// Tcl Message: ipx::edit_ip_in_project -upgrade true -name hdmi_text_controller_v1_0_project -directory C:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/ip_repo/hdmi_text_controller_1_0/component.xml 
+// TclEventType: FILE_SET_NEW
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'c:/users/shane/documents/classes/ece_385/lab_7/lab_7_2/lab_7_2.tmp/hdmi_text_controller_v1_0_project' 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  2872 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 3415.770 ; gain = 0.000 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/Shane/Documents/Classes/ECE_385/Lab_7/lab_7_2/ip_repo'. INFO: [IP_Flow 19-795] Syncing license key meta-data 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PACKAGER_CURRENT_CORE
+// Run Command: PAResourceCommand.PACommandNames_IP_PACKAGER
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_MESSAGE_UPDATE
+// Tcl Message: ipx::edit_ip_in_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:26 . Memory (MB): peak = 3415.770 ; gain = 0.000 
+// 'h' command handler elapsed time: 28 seconds
+// Elapsed time: 26 seconds
+dismissDialog("Edit in IP Packager"); // bq
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), hdmi_text_controller_v1_0_AXI_inst : hdmi_text_controller_v1_0_AXI (hdmi_text_controller_v1_0_AXI.sv)]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), hdmi_text_controller_v1_0_AXI_inst : hdmi_text_controller_v1_0_AXI (hdmi_text_controller_v1_0_AXI.sv)]", 2, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), hdmi_text_controller_v1_0_AXI_inst : hdmi_text_controller_v1_0_AXI (hdmi_text_controller_v1_0_AXI.sv)]", 2, false); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 10); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 11); // D
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aa
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, "set_property library xil_defaultlib [get_files]", true); // h.a
+// Tcl Command: 'set_property library xil_defaultlib [get_files]'
+// Tcl Command: 'set_property library xil_defaultlib [get_files]'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property library xil_defaultlib [get_files] 
+// Tcl Message: INFO: [filemgmt 56-586] Changing the library of an IP is not allowed INFO: [filemgmt 56-586] Changing the library of an IP is not allowed INFO: [filemgmt 56-586] Changing the library of an IP is not allowed 
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Custom Commands"); // al
+selectMenuItem(RDIResourceCommand.RDICommands_SETTINGS, "Settings..."); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // ag
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// WARNING: HEventQueue.dispatchEvent() is taking  1072 ms.
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, Simulation]", 1, false); // s
+selectTab(PAResourceOtoP.ProjectSettingsSimulationPanel_TABBED_PANE, PAResourceOtoP.ProjectSettingsSimulationPanel_SIMULATION, "Simulation", 2); // g
+// [GUI Memory]: 337 MB (+39081kb) [33:08:06]
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property -name {xsim.simulate.runtime} -value {all} -objects [get_filesets sim_1] 
+// Tcl Message: set_property dataflow_viewer_settings "min_width=16"   [current_fileset] 
+dismissDialog("Settings"); // d
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 104, 178); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 33, 173); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 23, 149); // ac
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 21, 153, false, false, false, false, true); // ac - Double Click
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 21, 156); // ac
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mb_usb_hdmi_top (mb_usb_hdmi_top.sv)]", 1); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mb_usb_hdmi_top (mb_usb_hdmi_top.sv)]", 1); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mb_usb_hdmi_top (mb_usb_hdmi_top.sv), mb_block : mb_block (mb_block.bd), mb_block (mb_block.v)]", 3); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mb_usb_hdmi_top (mb_usb_hdmi_top.sv), mb_block : mb_block (mb_block.bd), mb_block (mb_block.v), hdmi_text_controller_0 : mb_block_hdmi_text_controller_0_1 (mb_block_hdmi_text_controller_0_1.xci)]", 6); // D
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Show IP Hierarchy"); // u
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mb_usb_hdmi_top (mb_usb_hdmi_top.sv), mb_block : mb_block (mb_block.bd), mb_block (mb_block.v), hdmi_text_controller_0 : mb_block_hdmi_text_controller_0_1 (mb_block_hdmi_text_controller_0_1.xci), mb_block_hdmi_text_controller_0_1 (mb_block_hdmi_text_controller_0_1.sv)]", 7); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mb_usb_hdmi_top (mb_usb_hdmi_top.sv), mb_block : mb_block (mb_block.bd), mb_block (mb_block.v), hdmi_text_controller_0 : mb_block_hdmi_text_controller_0_1 (mb_block_hdmi_text_controller_0_1.xci), mb_block_hdmi_text_controller_0_1 (mb_block_hdmi_text_controller_0_1.sv), inst : hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv)]", 8, true); // D - Node
+// Tcl Message: current_project lab_7_2 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mb_usb_hdmi_top (mb_usb_hdmi_top.sv), mb_block : mb_block (mb_block.bd), mb_block (mb_block.v), hdmi_text_controller_0 : mb_block_hdmi_text_controller_0_1 (mb_block_hdmi_text_controller_0_1.xci), mb_block_hdmi_text_controller_0_1 (mb_block_hdmi_text_controller_0_1.sv), inst : hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), hdmi_text_controller_v1_0_AXI_inst : hdmi_text_controller_v1_0_AXI (hdmi_text_controller_v1_0_AXI.sv)]", 9, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mb_usb_hdmi_top (mb_usb_hdmi_top.sv), mb_block : mb_block (mb_block.bd), mb_block (mb_block.v), hdmi_text_controller_0 : mb_block_hdmi_text_controller_0_1 (mb_block_hdmi_text_controller_0_1.xci), mb_block_hdmi_text_controller_0_1 (mb_block_hdmi_text_controller_0_1.sv), inst : hdmi_text_controller_v1_0 (hdmi_text_controller_v1_0.sv), hdmi_text_controller_v1_0_AXI_inst : hdmi_text_controller_v1_0_AXI (hdmi_text_controller_v1_0_AXI.sv)]", 9, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("hdmi_text_controller_v1_0_AXI.sv", 128, 362); // ac
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 215ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7415 ms.
