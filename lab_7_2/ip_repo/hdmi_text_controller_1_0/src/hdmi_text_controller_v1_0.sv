@@ -13,7 +13,7 @@ module hdmi_text_controller_v1_0 #
     // Modify parameters as necessary for access of full VRAM range
 
     parameter integer C_AXI_DATA_WIDTH	= 32,
-    parameter integer C_AXI_ADDR_WIDTH	= 13
+    parameter integer C_AXI_ADDR_WIDTH	= 14
 )
 (
     // Users to add ports here
@@ -62,7 +62,7 @@ module hdmi_text_controller_v1_0 #
     logic [11:0] addr;
     logic [31:0] ctrl_reg;
     assign reset_ah = ~axi_aresetn;
-    logic [11:0] palette[16];
+    logic [31:0] palette[8];
     
 //Logic to support BRAM    
     logic [10:0] sram_addra;
@@ -82,7 +82,7 @@ hdmi_text_controller_v1_0_AXI # (
     .C_S_AXI_DATA_WIDTH(C_AXI_DATA_WIDTH),
     .C_S_AXI_ADDR_WIDTH(C_AXI_ADDR_WIDTH)
 ) hdmi_text_controller_v1_0_AXI_inst (
-    .ctrl_reg(ctrl_reg),
+    //.ctrl_reg(ctrl_reg),
     .S_AXI_ACLK(axi_aclk),
     .S_AXI_ARESETN(axi_aresetn),
     .S_AXI_AWADDR(axi_awaddr),
@@ -186,7 +186,7 @@ hdmi_text_controller_v1_0_AXI # (
     
     //Color Mapper Module   
     color_mapper color_instance(
-        .ctrl_reg(ctrl_reg),
+        //.ctrl_reg(ctrl_reg),
         .addr(addr),
         .word(word),
         .DrawX(drawX),
