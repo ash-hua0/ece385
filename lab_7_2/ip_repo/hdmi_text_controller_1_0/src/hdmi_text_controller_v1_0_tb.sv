@@ -9,7 +9,7 @@
 //Used for simulation of AXI4-Lite bus as well as generating
 //simulation video image for testing
 
-//`define SIM_VIDEO //Comment out to simulate AXI bus only
+`define SIM_VIDEO //Comment out to simulate AXI bus only
                     //Uncomment to simulate entire screen and write BMP (slow)
 
 module hdmi_text_controller_tb();
@@ -254,11 +254,13 @@ module hdmi_text_controller_tb();
     endtask;
   
     //User logic here
+    logic [31:0] palette1;
     logic [10:0] sram_addra;
     logic [31:0] sram_dina;
     logic sram_ena;
     logic [3:0] sram_wea;
     logic [31:0] sram_douta;
+    assign palette1 = hdmi_text_controller_v1_0_inst.palette[0];
     assign sram_addra = hdmi_text_controller_v1_0_inst.sram_addra;
     assign sram_dina = hdmi_text_controller_v1_0_inst.sram_dina;
     assign sram_ena = hdmi_text_controller_v1_0_inst.sram_ena;
@@ -290,19 +292,58 @@ module hdmi_text_controller_tb();
         $display("Reading data after changing up the address, got a %h", sram_douta);
         */
         //End user tests
-    
-        color <= 4'b0001;
+
         arstn = 0; //reset IP
-        repeat (4) @(posedge aclk);
+        repeat (2) @(posedge aclk);
         arstn <= 1;
         
-        @(posedge aclk) axi_write( 4 * (13'h4b0 + color), 32'h00000FFF); //Setting first color reg to white
-        @(posedge aclk) axi_write((13'h0001), 32'h00005555); //Setting random reg to 5555
+        repeat (4) @(posedge aclk) axi_write(16'h12c0, 32'h00f00000); //set c0 to Bk, c1 to G
+        repeat (4) @(posedge aclk) axi_write(16'h12c4, 32'h0f000fff); // set c2 to W, c3 to B
+        repeat (4) @(posedge aclk) axi_write(16'h12c8, 32'h00000000);
+        // make the bkg black; just set the addr to anything except c0 or c1
+        repeat (4) @(posedge aclk) axi_read(16'h12c0, tb_read);
+		$display("first color regs: %x", tb_read);
         
-        @(posedge aclk) axi_read(4 * (13'h4b0 + color), tb_read);
-		$display("first color reg: %x", tb_read);
-		@(posedge aclk) axi_read(13'h0001, tb_read);
-		$display("random reg: %x", tb_read);
+        //VRAM encoded code1, fgd1, bkd1, code0, fgd0, bkd0
+        // print SPACE akhuang3 SPACE in blue
+        repeat (4) @(posedge aclk) axi_write(16'h0000, 32'h61300030);
+        repeat (4) @(posedge aclk) axi_write(16'h0004, 32'h68306b30);
+        repeat (4) @(posedge aclk) axi_write(16'h0008, 32'h61307530);
+        repeat (4) @(posedge aclk) axi_write(16'h000C, 32'h67306e30);
+        repeat (4) @(posedge aclk) axi_write(16'h0010, 32'h00003330);
+        
+        //and SPACE in white
+        repeat (4) @(posedge aclk) axi_write(16'h0014, 32'h6e206124);
+        repeat (4) @(posedge aclk) axi_write(16'h0018, 32'h00206424);
+        
+        // print shaneta2 in blue
+        repeat (4) @(posedge aclk) axi_write(16'h001C, 32'h68347334);
+        repeat (4) @(posedge aclk) axi_write(16'h0020, 32'h6e346134);
+        repeat (4) @(posedge aclk) axi_write(16'h0024, 32'h74346534);
+        repeat (4) @(posedge aclk) axi_write(16'h0028, 32'h32346134);
+        
+        // print SPACE completed in white
+        repeat (4) @(posedge aclk) axi_write(16'h002C, 32'h63240024);
+        repeat (4) @(posedge aclk) axi_write(16'h0030, 32'h6d246f24);
+        repeat (4) @(posedge aclk) axi_write(16'h0034, 32'h6c247024);
+        repeat (4) @(posedge aclk) axi_write(16'h0038, 32'h74246524);
+        repeat (4) @(posedge aclk) axi_write(16'h003C, 32'h64246524);
+        
+        //print SPACE ECE385! in green
+        repeat (4) @(posedge aclk) axi_write(16'h0040, 32'h45140014);
+        repeat (4) @(posedge aclk) axi_write(16'h0044, 32'h45144314);
+        repeat (4) @(posedge aclk) axi_write(16'h0048, 32'h38143314);
+        repeat (4) @(posedge aclk) axi_write(16'h004C, 32'h21143514);
+        
+        for(integer i=16'h0050; i < 16'h12c0; i=i+4) begin 
+		  repeat (4) @(posedge aclk) axi_write(i, 0);
+        end
+        
+        //VRAM fill start of row 1 and row 2 (this is words 0 and 80)
+        //vram0 holds 0, [code1], 0000, 0100, 0, [code0], 0000, 0100 ; will print 2 chars in blue
+        // chars to print in blue: akhuang3 shaneta2
+        // chars to print in white: and completed
+        // chars to print in green: ECE 385!
         
         /*
         //remember AXI addresses are BYTE addresses!
@@ -336,6 +377,10 @@ module hdmi_text_controller_tb();
 		save_bmp ("lab7_1_sim.bmp");
 		`endif
 		*/
+		`ifdef SIM_VIDEO
+		wait (~pixel_vs);
+		save_bmp ("lab7_2_sim.bmp");
+		`endif
 		$finish();
 	end
     
