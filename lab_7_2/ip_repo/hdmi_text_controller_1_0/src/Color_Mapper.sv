@@ -16,8 +16,7 @@
 
 module  color_mapper ( input  logic [9:0]  DrawX, DrawY,
                        input logic [31:0]  word, // from BRAM
-                       input logic [31:0]  ctrl_reg, // from hdmi_text_controller_v1_0_AXI
-                       input logic [11:0] palette[16],
+                       input logic [31:0]  palette [8], // from hdmi_text_controller_v1_0_AXI
                        output logic [3:0]  Red, Green, Blue,
                        output logic [10:0] addr // to BRAM
                        //TODO: addr only needs to be 11 bits wide, max. It is the address of the word in BRAM, not of each byte itself.
@@ -32,6 +31,7 @@ module  color_mapper ( input  logic [9:0]  DrawX, DrawY,
     logic [6:0] code; // character code
     logic [11:0] fgd; // foreground color
     logic [11:0] bkd; // background color
+    //logic [3:0];
 
 // OVERVIEW
 // each character is 8 bit wide 16 bit tall
@@ -68,15 +68,19 @@ module  color_mapper ( input  logic [9:0]  DrawX, DrawY,
         byte_index = byte_num[0]; // byte_num % 2
         if (byte_index) begin // if index odd, use upper half of vram
             chardat = word[31:24];
-            fgd = palette[word[23:20]][11:0];
-            bkd = palette[word[19:16]][11:0];
+            // LSB is 'odd/even' color.
+            // even indices are 11:0, odd indices are 27:16
+            // then MSBs dictate which reg
+            fgd = palette[word[23:21]][16*word[20] +: 12];
+            bkd = palette[word[19:17]][16*word[16] +: 12];
         end
         else begin
             chardat = word[15:8];
-            fgd = palette[word[7:4]][11:0];
-            bkd = palette[word[3:0]][11:0];
+            fgd = palette[word[7:5]][16*word[4] +: 12];
+            bkd = palette[word[3:1]][16*word[0] +: 12];
         end
         code = chardat[6:0];
+        //dat_pixel = 0;
     end
     
     font_rom font_rom(
@@ -84,7 +88,7 @@ module  color_mapper ( input  logic [9:0]  DrawX, DrawY,
         .data(dat_row)
     );
     
-     always_comb
+    always_comb
     begin:RGB_Display
         dat_pixel = dat_row[7-DrawX[2:0]] ^ chardat[7];
         if (dat_pixel) begin
@@ -98,5 +102,33 @@ module  color_mapper ( input  logic [9:0]  DrawX, DrawY,
             Blue = bkd[3:0];
         end
     end
- 
+//    logic ball_on;
+	 
+ /* Old Ball: Generated square box by checking if the current pixel is within a square of length
+    2*BallS, centered at (BallX, BallY).  Note that this requires unsigned comparisons.
+	 
+    if ((DrawX >= BallX - Ball_size) &&
+       (DrawX <= BallX + Ball_size) &&
+       (DrawY >= BallY - Ball_size) &&
+       (DrawY <= BallY + Ball_size))
+       )
+
+     New Ball: Generates (pixelated) circle by using the standard circle formula.  Note that while 
+     this single line is quite powerful descriptively, it causes the synthesis tool to use up three
+     of the 120 available multipliers on the chip!  Since the multiplicants are required to be signed,
+	  we have to first cast them from logic to int (signed by default) before they are multiplied). */
+	  
+//    int DistX, DistY, Size;
+//    assign DistX = DrawX - BallX;
+//    assign DistY = DrawY - BallY;
+//    assign Size = Ball_size;
+  
+//    always_comb
+//    begin:Ball_on_proc
+//        if ( (DistX*DistX + DistY*DistY) <= (Size * Size) )
+//            ball_on = 1'b1;
+//        else 
+//            ball_on = 1'b0;
+//     end 
+           
 endmodule
