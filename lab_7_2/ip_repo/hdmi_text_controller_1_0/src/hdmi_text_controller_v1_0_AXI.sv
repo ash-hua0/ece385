@@ -34,7 +34,7 @@ module hdmi_text_controller_v1_0_AXI #
     // Width of S_AXI data bus
     parameter integer C_S_AXI_DATA_WIDTH	= 32,
     // Width of S_AXI address bus
-    parameter integer C_S_AXI_ADDR_WIDTH	= 13 //Increased to support 2^13 byte addresses
+    parameter integer C_S_AXI_ADDR_WIDTH	= 14
 )
 (
     // BRAM Ports
@@ -45,10 +45,8 @@ module hdmi_text_controller_v1_0_AXI #
     input logic [31:0] S_SRAM_DOUTA,
     
     //Control Register Ports
-    output logic [31:0] ctrl_reg,
-    
-    // Color Palette Register / Port
-    output logic [11:0] palette[16],
+    output logic [31:0] palette [8],
+    // User ports ends
 
     // Global Clock Signal
     input logic  S_AXI_ACLK,
@@ -130,8 +128,7 @@ logic  	axi_rvalid;
 // ADDR_LSB = 2 for 32 bits (n downto 2)
 // ADDR_LSB = 3 for 64 bits (n downto 3)
 localparam integer ADDR_LSB = (C_S_AXI_DATA_WIDTH/32) + 1;
-localparam integer OPT_MEM_ADDR_BITS = 10; // number of mem bits (0-9)
-//NOTE: increased to 10 to support 2^13 byte addresses
+localparam integer OPT_MEM_ADDR_BITS = 11; // number of mem bits (0-9)
 //----------------------------------------------
 //-- Signals for user logic register space example
 //------------------------------------------------
@@ -143,6 +140,7 @@ localparam integer OPT_MEM_ADDR_BITS = 10; // number of mem bits (0-9)
 
 // Signals for accessing VRAM memory
 //logic [C_S_AXI_DATA_WIDTH-1:0] slv_regs[601]; Obsolete with introduction of BRAM
+logic [31:0] palette_regs [8];
 logic	 slv_reg_rden;
 logic	 slv_reg_wren;
 logic [C_S_AXI_DATA_WIDTH-1:0]	 reg_data_out;
@@ -160,6 +158,8 @@ assign S_SRAM_ENA = sram_ena;
 assign S_SRAM_WEA = sram_wea;
 assign sram_douta = S_SRAM_DOUTA;
 
+
+
 // I/O Connections assignments
 assign S_AXI_AWREADY	= axi_awready;
 assign S_AXI_WREADY	= axi_wready;
@@ -169,14 +169,6 @@ assign S_AXI_ARREADY = axi_arready;
 assign S_AXI_RDATA	= axi_rdata;
 assign S_AXI_RRESP	= axi_rresp;
 assign S_AXI_RVALID	= axi_rvalid;
-
-
-
-
-
-
-
-
 
 
 // Implement axi_awready generation
@@ -278,14 +270,21 @@ begin
   begin
     w_ena <= 1'b0;
     sram_wea <= 4'b0000;
+    for (integer i = 0; i < 8; i++)
+    begin
+        palette_regs[i] <= 0;
+    end
   end
   else 
   begin
     if (slv_reg_wren) //Logic for writing to control regs or memory
     begin
-      if (axi_awaddr[ADDR_LSB + OPT_MEM_ADDR_BITS:ADDR_LSB] > 11'h4af) //Bit 11 is high when selecting the color palette
+      if ( axi_awaddr[ADDR_LSB+OPT_MEM_ADDR_BITS:ADDR_LSB] > 12'h4af) // if addr is regs
       begin //Sets control register if input address is 600
-        palette[axi_awaddr[3 + ADDR_LSB:ADDR_LSB]][11:0] <= S_AXI_WDATA[11:0];
+        for (byte_index = 0; byte_index <= (C_S_AXI_DATA_WIDTH/8)-1; byte_index++)
+        begin
+            palette_regs[axi_awaddr[ADDR_LSB+2:ADDR_LSB]][(byte_index*8) +: 8]<= S_AXI_WDATA[(byte_index*8) +: 8];
+        end
       end
       else
       begin // write regs with write strobe hi
@@ -373,7 +372,7 @@ end
 // bus and axi_rresp indicates the status of read transaction.axi_rvalid 
 // is deasserted on reset (active low). axi_rresp and axi_rdata are 
 // cleared to zero on reset (active low).
-logic [1:0] sram_wait; //Two-bit wait state, causes AXI to pause 2 extra states before signaling the read is complete
+logic sram_wait; //Single bit wait state, causes AXI to pause 1 extra state before signaling the read is complete
 
 always_ff @( posedge S_AXI_ACLK )
 begin
@@ -381,24 +380,20 @@ begin
     begin
       axi_rvalid <= 0;
       axi_rresp  <= 0;
-      sram_wait <= 2'b00;
+      sram_wait <= 1'b0;
     end 
   else
     begin    
-      if (axi_arready && S_AXI_ARVALID && ~axi_rvalid && (sram_wait == 2'b00))
+      if (axi_arready && S_AXI_ARVALID && ~axi_rvalid && ~sram_wait)
         begin
-          sram_wait <= 2'b01; //If not in wait state, do not say read data is ready
+          sram_wait <= 1'b1; //If not in wait state, do not say read data is ready
         end
-      else if ((sram_wait == 2'b01) && S_AXI_RREADY)
-        begin
-          sram_wait <= 2'b10; //If not in wait state, do not say read data is ready
-        end
-      else if ((sram_wait == 2'b10) && S_AXI_RREADY)
+      else if (sram_wait && S_AXI_RREADY)
         begin
           // Valid read data is available at the read data bus
           axi_rvalid <= 1'b1;
           axi_rresp  <= 2'b0; // 'OKAY' response
-          sram_wait  <= 2'b00; //Resetting wait state bits
+          sram_wait  <= 1'b0; //Resetting wait state bit
         end   
       else if (axi_rvalid)
         begin
@@ -443,11 +438,11 @@ begin
   end
   else if (S_AXI_AWVALID) //Sets sram_addra to write address at the start of a transaction
   begin
-    sram_addra <= axi_awaddr[ADDR_LSB+OPT_MEM_ADDR_BITS:ADDR_LSB];
+    sram_addra <= {1'b0, axi_awaddr[ADDR_LSB+OPT_MEM_ADDR_BITS:ADDR_LSB]};
   end
   else if(S_AXI_ARVALID) //Sets sram_addra to read address at the start of a transaction
   begin
-    sram_addra <= axi_araddr[ADDR_LSB+OPT_MEM_ADDR_BITS:ADDR_LSB];
+    sram_addra <= {1'b0, axi_araddr[ADDR_LSB+OPT_MEM_ADDR_BITS:ADDR_LSB]};
   end
   
 end
@@ -458,13 +453,13 @@ assign sram_ena = w_ena | r_ena;
 // Output register or memory read data
 assign slv_reg_rden = axi_arready & S_AXI_ARVALID & ~axi_rvalid;
 assign reg_data_out = sram_douta; //The output of every read operation will always come from sram_dout
-logic flag;
+assign palette = palette_regs;
+
 always_ff @( posedge S_AXI_ACLK )
 begin
   if ( S_AXI_ARESETN == 1'b0 )
     begin
       axi_rdata  <= 0;
-      flag <= 1'b0;
     end 
   else
     begin    
@@ -472,10 +467,9 @@ begin
       // acceptance of read address by the slave (axi_arready), 
       // output the read dada 
       if (slv_reg_rden)
-        if ( axi_araddr[ADDR_LSB + OPT_MEM_ADDR_BITS:ADDR_LSB] > 11'h4af ) //Bit 11 is high when selecting the color palette
+        if ( axi_araddr[ADDR_LSB+OPT_MEM_ADDR_BITS:ADDR_LSB] > 12'h4af) //TODO: Change to actual memory-mapped address of ctrl register
           begin //Reads from control register if input address is 600
-            flag <= 1'b1;
-            axi_rdata <= {20'h00000, palette[axi_araddr[ADDR_LSB + 3:ADDR_LSB]][11:0]}; //Returns color palette on lowest 12 bits
+            axi_rdata <= palette_regs[axi_awaddr[ADDR_LSB+2:ADDR_LSB]];
           end
         else
           begin
@@ -484,4 +478,3 @@ begin
     end
 end    
 endmodule
-
